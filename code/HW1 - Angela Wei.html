@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grocery Supply and Recall Notices</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+<h1>Grocery Supply and Recall Notices</h1>
+<h2>Enter Your Information</h2>
+<form id = "domainForm">
+    <label for = "sid4">Primary Field * :</label><br>
+    <input type = "text" id = "sid4" placeholder= "Primary Field" required><br>
+
+    <label for = "portBase">Secondary Field * :</label><br>
+    <input type = "text" id =  "portBase" placeholder = "Secondary Field" required><br>
+
+    <label for  = "prefix">Email * :</label><br>
+    <input type = "text" id = "prefix" required><br>
+
+    <label for = "content">Content Description * :</label><br>
+    <input type = "text" id = "content" required><br>
+
+    <label for = "domain_id">Select Domain * :</label><br>
+    <select id = "domain_id" required>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+    </select><br>
+
+    <button type = "submit">Submit</button>
+    <input type = "checkbox" id = "acceptTerms" name = "acceptTerms" value = "Terms">
+    <label for = "acceptTerms">I accept the Terms and Conditions</label><br>
+</form>
+<script src = "HW1 - Angela Wei.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+import argparse, json, os, re, sys, time
+from dataclasses import dataclass
+from typing import List, Dict, Any, Iterable, Tuple
+
+from langchain_community.chat_models import ChatOllama
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+@dataclass
+class SimpleAgent:
+    name:str
+    system:str
+    model:any 
+
+    def respond (self, conversation: List[Dict[str, str]], task: str, title: str, content: str, strict: bool,) -> Dict[str, any]:
+        history = json.dumps(0)
+
+        texts = (
+        
+                )
+
+        prompt = ChatPromptTemplate.from_messages([("system", self.system),
+                                                   ("human")])
+
+        chain = prompt | self.model | StrOutputParser()
+
+        raw = chain.invoke({"input_text"})
+
+        response = json.loads(raw)
+
+
+def main():
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--primary field", default="This is the primary field")
+    ap.add_argument("--secondary field", default="This is the secondary field")
+    ap.add_argument("--content", default="Content should go here")
+    ap.add_argument("--email", default="student@example.com")
+    ap.add_argument("--model", default=os.environ.get("SMOL_MODEL", "your-ollama-model-tag"))
+    ap.add_argument("--base_url", default=os.environ.get("OLLAMA_URL", "http://localhost:11434"))
+    ap.add_argument("--turns", type=int, default=1)
+    ap.add_argument("--strict", action="store_true")
+    args = ap.parse_args()
+
+    try:
+        llm = ChatOllama(
+            model=args.model,
+            temperature=0.0,
+            base_url=args.base_url,
+            num_ctx=2048,
+            format="json", 
+        )
+    except Exception:
+        print(
+            "Failed to initialize ChatOllama. Is Ollama running and the model available?\n"
+            "Try: `ollama serve` and `ollama pull <your-model-tag>`.",
+            file=sys.stderr,
+        )
+        raise
+
+    planner = SimpleAgent(name = "Planner",
+                          system = (""),
+                          model = llm)
+
+    reviewer = SimpleAgent(name = "Reviewer",
+                           system = (""),
+                           model = llm)
+
+    finalizer = SimpleAgent(name = "Finalizer",
+                           system = (""),
+                           model = llm)
+
+    transcript = []
+    task = ""
+
+    # Planner Agent
+    t0 = time.time()
+    a = planner.respond(transcript, task, args.title, args.content, args.strict)
+    t1 = time.time()
+    transcript.append({"role": "Planner", "content": json.dumps(a)})
+    print(f"\n--- Planner ({int((t1 - t0) * 1000)} ms) ---\n{json.dumps(a, indent=2)}")
+
+    # Reviewer Agent
+    t0 = time.time()
+    b = reviewer.respond(transcript, task, args.title, args.content, args.strict)
+    t1 = time.time()
+    transcript.append({"role": "Reviewer", "content": json.dumps(b)})
+    print(f"\n--- Reviewer ({int((t1 - t0) * 1000)} ms) ---\n{json.dumps(b, indent=2)}")
+
+    # Finalization
+    final = finalizer.respond(transcript, task, args.title, args.content, args.strict)
+    print(f"\n Finalized Output \n{json.dumps(final, indent=2)}")
+
+
+
+if __name__ == "__main__":
+    main()
