@@ -3,7 +3,7 @@
 const validateFormSubmission = () => {
     const confirmInput = document.getElementById('content');
     const value = confirmInput ? confirmInput.value.trim() : '';
-    if (value.length < 25){
+    if (value.length <= 25){
         alert('Must be longer that 25 characters');
         return false
     }
@@ -31,7 +31,10 @@ document.getElementById().addEventListener('submit', (event) => {
     // stop form from submitting if neither is validated
     if (!validateContent || !validateTerms) {
         event.preventDefault();
+        return;
     }
+
+    event.preventDefault();
 
     const primary = document.getElementById("sid4").value;
     const secondary = document.getElementById("portBase").value;
