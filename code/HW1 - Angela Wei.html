@@ -19,16 +19,16 @@
 <h2>Enter Your Information</h2>
 <form id = "domainForm">
     <label for = "sid4">Primary Field * :</label><br>
-    <input type = "text" id = "sid4" placeholder= "Primary Field" required><br>
+    <input type = "text" id = "sid4" placeholder= "Primary Field" required autofocus><br>
 
     <label for = "portBase">Secondary Field * :</label><br>
     <input type = "text" id =  "portBase" placeholder = "Secondary Field" required><br>
 
     <label for  = "prefix">Email * :</label><br>
-    <input type = "text" id = "prefix" required><br>
+    <input type = "email" id = "prefix" placeholder = "email" required><br>
 
     <label for = "content">Content Description * :</label><br>
-    <input type = "text" id = "content" required><br>
+    <textarea id = "content" placeholder = "Write your description here" required></textarea><br>
 
     <label for = "domain_id">Select Domain * :</label><br>
     <select id = "domain_id" required>
@@ -41,7 +41,7 @@
 
     <button type = "submit">Submit</button>
     <input type = "checkbox" id = "acceptTerms" name = "acceptTerms" value = "Terms">
-    <label for = "acceptTerms">I accept the Terms and Conditions</label><br>
+    <label for = "acceptTerms">I agree to the Terms and Conditions</label><br>
 </form>
 <script src = "HW1 - Angela Wei.js"></script>
 </body>

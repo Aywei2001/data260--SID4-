@@ -3,7 +3,7 @@ import argparse, json, os, re, sys, time
 from dataclasses import dataclass
 from typing import List, Dict, Any, Iterable, Tuple
 
-from langchain_community.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -14,28 +14,31 @@ class SimpleAgent:
     model:any 
 
     def respond (self, conversation: List[Dict[str, str]], task: str, title: str, content: str, strict: bool,) -> Dict[str, any]:
-        history = json.dumps(0)
+        history = json.dumps(conversation, indent = 2) if conversation else "no history"
 
         texts = (
-        
+                    f"task: {task}\n"
+                    f"title: {title}\n"
+                    f"content: {content}\n"
+                    f"transcript: \n{history}\n"
                 )
 
         prompt = ChatPromptTemplate.from_messages([("system", self.system),
-                                                   ("human")])
+                                                   ("human", "{input_text}")])
 
         chain = prompt | self.model | StrOutputParser()
 
-        raw = chain.invoke({"input_text"})
+        raw = chain.invoke({"input_text": texts})
 
         response = json.loads(raw)
+        return response
 
 
 def main():
 
     ap = argparse.ArgumentParser()
-    ap.add_argument("--primary field", default="This is the primary field")
-    ap.add_argument("--secondary field", default="This is the secondary field")
-    ap.add_argument("--content", default="Content should go here")
+    ap.add_argument("--title", default="Grocery Supply and Recall Notices")
+    ap.add_argument("--content", default="Groceries will be recalled if products are contaminated, contain foregin objects or contain allergens. Products are then removed from store.")
     ap.add_argument("--email", default="student@example.com")
     ap.add_argument("--model", default=os.environ.get("SMOL_MODEL", "your-ollama-model-tag"))
     ap.add_argument("--base_url", default=os.environ.get("OLLAMA_URL", "http://localhost:11434"))
@@ -58,21 +61,33 @@ def main():
             file=sys.stderr,
         )
         raise
-
+    
     planner = SimpleAgent(name = "Planner",
-                          system = (""),
+                          system = ("Generate a draft with: "
+                                    "3 topical tags based on the given topic."
+                                    "A summary with 25 words maximum. No more than 25 words."
+                                    "tags format is [tag1, tag2, tag3]"
+                                    ),
                           model = llm)
 
     reviewer = SimpleAgent(name = "Reviewer",
-                           system = (""),
+                           system = ("Review everything from the Planner's output"
+                                    "Planner should have generate 3 topical tags"
+                                    "The summary should have 25 words maximum. No more than 25 words"
+                                    "tags format is [tag1, tag2, tag3]"
+                                    ),
                            model = llm)
 
     finalizer = SimpleAgent(name = "Finalizer",
-                           system = (""),
+                           system = ("Use Reviewer to finalize feedback"
+                                    "Ensure output has exactly 3 topical tags and summary has 25 words maximum"
+                                    "Output should be JSON with keys 'tags' and 'summary' "
+                                    "tags format is [tag1, tag2, tag3]"
+                                    ),
                            model = llm)
 
     transcript = []
-    task = ""
+    task = "Extract 3 topical tags and a summary of at most 25 words from provided title and content"
 
     # Planner Agent
     t0 = time.time()
