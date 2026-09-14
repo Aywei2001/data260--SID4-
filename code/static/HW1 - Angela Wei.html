@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grocery Supply and Recall Notices</title>
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        width: 90%;
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #FFD6A7;
+        line-height: 1.6;
+    }
+
+    form {
+        padding: 60px;
+        background-color: #FEF9C2;
+        border-radius: 8px;
+    }
+
+    textarea{
+        height: 100px;
+        width: 400px;
+    }
+
+    button {
+        background-color: #BB8FCE;
+        color: #C0392B;
+        padding: 10px;
+        margin-top: 30px;
+        margin-right: 65px;
+    }
+
+    button:hover {
+        background-color: #A3E4D7;
+    }
+
+    #resultsContainer {
+        background-color: #FEF9C2;
+        padding: 60px;
+        border-radius: 8px;
+    }
+
+    .state {
+        display: none;
+        padding: 15px
+    }
+
+    .state.active {
+        display: block;
+    }
+
+    .state-error {
+        background-color: #FEF9C2;
+        font-family: Verdana, sans-serif;
+    }
+
+    .state-empty{
+        background-color: #FEF9C2;
+        font-family: Verdana, sans-serif;
+    }
+
+    .state-success {
+        background-color: #FEF9C2;
+        font-family: Verdana, sans-serif;
+        text-align: left;
+    }
+
+</style>
+</head>
+<body>
+<h1>Grocery Supply and Recall Notices</h1>
+<h2>Enter Your Information</h2>
+<form id = "domainForm">
+    <label for = "sid4">Primary Field * :</label><br>
+    <input type = "text" id = "sid4" placeholder= "Primary Field" required autofocus><br>
+
+    <label for = "portBase">Secondary Field * :</label><br>
+    <input type = "text" id =  "portBase" placeholder = "Secondary Field" required><br>
+
+    <label for  = "prefix">Email * :</label><br>
+    <input type = "email" id = "prefix" placeholder = "email" required><br>
+
+    <label for = "content">Content Description * :</label><br>
+    <textarea id = "content" placeholder = "Write your description here" required></textarea><br>
+
+    <label for = "domain_id">Select Domain * :</label><br>
+    <select id = "domain_id" required>
+        <option value = "" disabled selected>Choose</option>
+        <option>Grocery Recall</option>
+        <option>Supply Recall</option>
+        <option>Food Safety</option>
+        <option>Quality Control</option>
+    </select><br>
+
+    <button type = "submit">Submit</button>
+    <input type = "checkbox" id = "acceptTerms" name = "acceptTerms" value = "Terms">
+    <label for = "acceptTerms">I agree to the Terms and Conditions</label><br>
+</form>
+<div id = "resultsContainer">
+    <div id = "emptyState" class = "state state-empty active">
+        <p>Please finish filling out the form before submitting</p>
+    </div>
+    <div id = "loadingState" class = "state">
+        <p>Processing you submission</p>
+    </div>
+    <div id = "errorState" class = "state state-error">
+        <p id = "errorMessage">There was an error in processing your submission</p>
+    </div>
+    <div id  = "successState" class = "state state-success">
+        <p>Sucessfully Submitted!</p>
+        <p>Here are your details of your submission:</p>
+        <p id = "show_Output"></p>
+    </div>
+</div>
+<script src = "/static/HW1 - Angela Wei.js"></script>
+</body>
+</html>

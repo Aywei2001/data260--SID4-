@@ -1,0 +1,15 @@
+name: Workflow Smoke Test
+
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+  
+  steps:
+  - name: Check out Repository
+    uses: actions

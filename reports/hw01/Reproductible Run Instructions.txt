@@ -1,0 +1,51 @@
+mkdir my-web-app
+
+cd my-web-app
+
+docker build -t my-web-app
+
+docker build -t my-web-app .
+
+docker run -d -p 8080:80 --name my-web-app-container my-web-app
+
+docker stop my-web-app-container
+
+docker rm my-web-app-container
+
+aws --version
+
+aws configure
+
+aws sts get-caller-identity
+
+docker tag my-web-app:latest 834788437026.dkr.ecr.us-east-1.amazonaws.com/my-web-app:latest
+
+docker push my-web-app:latest 834788437026.dkr.ecr.us-east-1.amazonaws.com/my-web-app:latest
+
+docker push 834788437026.dkr.ecr.us-east-1.amazonaws.com/my-web-app:latest
+
+docker tag my-web-app:latest 834788437026.dkr.ecr.us-east-2.amazonaws.com/my-web-app:latest
+
+docker push 834788437026.dkr.ecr.us-east-2.amazonaws.com/my-web-app:latest
+
+ollama
+
+pip install langchain-community langchain-core
+
+python -m pip install --user langchain-community langchain-core
+
+python -m pip install langchain-ollama
+
+python agents_demo.py --model llama3.2
+
+ollama pull llama3.2
+
+python HW1_client.py
+
+ollama ps 
+
+ollama run llama3.2 "Hello" 
+
+ollama serve
+
+python HW1_client.py --model llama3.2 --temperature 0.0

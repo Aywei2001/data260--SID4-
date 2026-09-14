@@ -1,0 +1,40 @@
+Turn Count: 1
+No proposal. Going to Planner
+Stream update from supervisor
+
+--- Planner (14591 ms) ---
+{
+  "Grocery Supply and Recall Notices": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "Summary: 25 words": "Groceries recalled due to contamination, foreign objects, or allergens. Products removed from stores to ensure consumer safety and prevent health risks."
+}
+Stream update from planner
+
+--- Reviewer (5741 ms) ---
+{
+  "has_issues": true,
+  "feedback": "Issues detected: missing 'content' key in output, missing 'transcript' key in output. Summary too long. Tags not extracted correctly.",
+  "tags": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "summary": "Groceries recalled due to contamination or allergens. Products removed for consumer safety."
+}
+Stream update from reviewer
+Turn Count: 2
+Process Complete
+Stream update from supervisor
+
+ Finalized Output
+{
+  "tags": [
+    "Recall",
+    "Grocery",
+    "Safety"
+  ],
+  "summary": "Grocery recall notices issued for contaminated products with foreign objects or allergens, products removed from store."
+}

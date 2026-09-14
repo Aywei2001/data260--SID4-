@@ -1,0 +1,133 @@
+Running main.py to access webpage on browser through PORT_BASE:
+
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python -c "import fastapi; print(fastapi.__version__)"
+0.141.1
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python main.py
+INFO:     Started server process [35148]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8439 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57781 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57781 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57781 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61484 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61484 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50761 - "GET /?acceptTerms=Terms HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50761 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52003 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35148]
+
+
+
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python main.py
+INFO:     Started server process [32816]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8439 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58279 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53797 - "GET /HW1%20-%20Angela%20Wei.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52236 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52236 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52236 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52236 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58904 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58904 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /static/HW1%20-%20Angela%20Wei.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58904 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python agents_demo.py --model llama3.2
+Turn Count: 1 / 1
+No proposal. Going to Planner
+Stream update from supervisor
+
+--- Planner (14240 ms) ---
+{
+  "Grocery Supply and Recall Notices": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "Summary: 25 words": "Groceries recalled due to contamination, foreign objects, or allergens. Products removed from stores to ensure consumer safety and prevent health risks."
+}
+Stream update from planner
+
+--- Reviewer (3534 ms) ---
+{
+  "recall": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "Summary": "Groceries recalled due to contamination, foreign objects, or allergens. Products removed from stores."
+}
+Stream update from reviewer
+Turn Count: 2 / 1
+Process Complete
+Stream update from supervisor
+
+ Finalized Output
+{
+  "tags": [
+    "Recall",
+    "Grocery",
+    "Safety"
+  ],
+  "summary": "Grocery recall notices issued for contaminated products with foreign objects or allergens, products removed from store."
+}
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code>
+
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python agents_demo.py --model llama3.2
+Turn Count: 1
+No proposal. Going to Planner
+Stream update from supervisor
+
+--- Planner (15803 ms) ---
+{
+  "Grocery Supply and Recall Notices": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "Summary: 25 words": "Groceries recalled due to contamination, foreign objects, or allergens. Products removed from stores to ensure consumer safety and prevent health risks."
+}
+Stream update from planner
+
+--- Reviewer (3584 ms) ---
+{
+  "recall": [
+    "recall",
+    "grocery",
+    "contamination"
+  ],
+  "Summary": "Groceries recalled due to contamination, foreign objects, or allergens. Products removed from stores."
+}
+Stream update from reviewer
+Turn Count: 2
+Process Complete
+Stream update from supervisor
+
+ Finalized Output
+{
+  "tags": [
+    "Recall",
+    "Grocery",
+    "Safety"
+  ],
+  "summary": "Grocery recall notices issued for contaminated products with foreign objects or allergens, products removed from store."
+}
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code>

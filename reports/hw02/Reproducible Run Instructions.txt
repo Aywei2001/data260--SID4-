@@ -1,0 +1,16 @@
+To run the FastAPI python file and launch the website on the LocalHost in designated port
+python main.py
+
+
+Install these before launching main.py if not installed already
+python -m pip install --user fastapi uvicorn pydantic
+
+python -c "import fastapi; print(fastapi.__version__)"
+
+
+Install before launching agents_demo.py if not installed already
+pip install langgraph
+
+
+To run agents_demo.py
+python agents_demo.py --model llama3.2
