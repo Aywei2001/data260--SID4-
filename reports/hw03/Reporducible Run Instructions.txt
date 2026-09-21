@@ -1,0 +1,17 @@
+Part 1
+To start up the FastAPI application:
+python hw3_main.py
+
+If the application will not run and you get an error message, install this first:
+pip install python-multipart
+
+
+Part 2
+To install all required packages for Part 2 in one go:
+pip install llama-index llama-index-embeddings-huggingface sentence-transformers faiss-cpu numpy pandas
+
+If above command does not work:
+pip install --user llama-index llama-index-embeddings-huggingface sentence-transformers faiss-cpu numpy pandas
+
+To run the file:
+python hw3-chunking.py

@@ -1,0 +1,15 @@
+questions:
+- id: Q1
+	question: "What are some of the most commonly recalled products?"
+
+
+- id: Q2
+	question: "Which grocery chains or companies tend to have the highest number of recalls?"
+
+
+- id: Q3
+	question: "What are the most common events that lead to a grocery recall?"
+
+	
+- id: Q4
+	question: "Name some common allergens or contaminants in that occur in a recall."
