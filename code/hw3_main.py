@@ -1,7 +1,7 @@
 import os
 import uvicorn
 from fastapi import FastAPI
-from starlette.middleware.sessions import SessionMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 from hw3_authentication import router as auth_router
 
 app = FastAPI()
@@ -9,11 +9,11 @@ app = FastAPI()
 SECRET_KEY = os.getenv("SECRET_KEY", "dev-only-secret-key")
 
 app.add_middleware(
-    SessionMiddleware,
-    secret_key=SECRET_KEY,
+    CORSMiddleware,
+    allow_origins = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "http://127.0.0.1:3000"],
     https_only=True,
-    same_site="lax",
-    max_age=3600
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 #connect the router for hw3_authentication.py to work upon running the file

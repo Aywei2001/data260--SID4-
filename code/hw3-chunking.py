@@ -128,7 +128,7 @@ def run_retrieval_pipeline(query: str, technique: str, docs: List[Document], k: 
     query_v = np.array(query_embedding)
     stacked_document = np.array(doc_embeddings)
     print(f"Query Vector Shape: {query_v.shape}")
-    print(f"Stacked Doc Vectors Shape: {stacked_document.shape}\n")
+    print(f"Stacked Document Vectors Shape: {stacked_document.shape}\n")
     
     df = pd.DataFrame(results)
     print(df.to_string(index=False))
@@ -148,7 +148,7 @@ def run_retrieval_pipeline(query: str, technique: str, docs: List[Document], k: 
     with open(filename, "w") as f:
         json.dump(raw_payload, f, indent=2)
         
-    print(f"\nSaved raw data to: {filename}")
+    print(f"Saved raw data to: {filename}")
     return df
 
 
