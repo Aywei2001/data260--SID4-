@@ -1,0 +1,6 @@
+Attempt to run FastAPI backend and react client 
+python hw3_main.py
+
+
+Attempt to run N + 1 Measurement Query Tuning file 
+python db_seed.py  

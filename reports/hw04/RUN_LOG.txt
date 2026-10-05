@@ -1,0 +1,39 @@
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python hw3_main.py
+Traceback (most recent call last):
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\hw3_main.py", line 5, in <module>
+    from hw3_authentication import router as auth_router
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\hw3_authentication.py", line 16, in <module>
+    engine = create_engine(DATABASE_URL)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\create.py", line 564, in create_engine
+    u = _url.make_url(url)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\url.py", line 860, in make_url
+    raise exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Expected string or URL object, got None
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code>
+
+
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python db_seed.py
+Traceback (most recent call last):
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\db_seed.py", line 4, in <module>
+    from hw3_authentication import SessionLocal, Record, Base, engine
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\hw3_authentication.py", line 16, in <module>
+    engine = create_engine(DATABASE_URL)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\create.py", line 564, in create_engine
+    u = _url.make_url(url)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\url.py", line 860, in make_url
+    raise exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Expected string or URL object, got None
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code>
+
