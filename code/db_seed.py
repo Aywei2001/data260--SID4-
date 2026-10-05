@@ -26,10 +26,7 @@ def seed_data():
     db.commit()
 
     #seed the 5000 records
-    records = [
-        Record(primary_field=f"record: {i}", secondary_field=f"description: {i}")
-        for i in range(1, 5001)
-    ]
+    records = [Record(primary_field=f"record: {i}", secondary_field=f"description: {i}") for i in range(1, 5001)]
     db.bulk_save_objects(records)
     db.commit()
 

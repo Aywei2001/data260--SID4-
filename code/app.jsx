@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import CreateUser from "./pages/CreateRecord.jsx";
@@ -7,7 +7,7 @@ import UpdateUser from "./pages/UpdateRecord.jsx";
 import DeleteUser from "./pages/DeleteRecord.jsx";
 
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "http://localhost:8439";
 
 //important functions to get the user information in order to modify them (create, update or delete)
 async function fetchUsers() {

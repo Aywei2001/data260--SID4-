@@ -1,7 +1,9 @@
-from fastapi import APIRouter, Request, Form, FastAPI, Request, Response, HTTPException, status
+import os
+from fastapi import APIRouter, Request, Form, FastAPI, Request, Response, HTTPException, status, Depends
 from fastapi.responses import RedirectResponse
 from starlette.status import HTTP_302_FOUND
 import time 
+from pydantic import BaseModel, EmailStr
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, String, Text, create_engine
 from sqlalchemy.orm import Session, declarative_base, sessionmaker
 from fastapi.middleware.cors import CORSMiddleware
@@ -9,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 #set up and get connection from MySQL
 
-DATABASE_URL = "mysql+pymysql://your_user:your_password@localhost/myprefix_rel"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -120,7 +122,6 @@ def get_current_user(request: Request, db: Session = Depends(get_db)):
 def login(credentials: LoginSchema, response: Response, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.email == credentials.email).first()
     
-    # Note: Replace user.password_hash check with passlib hash check in production
     if not user or user.password_hash != credentials.password:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED, 
@@ -130,12 +131,12 @@ def login(credentials: LoginSchema, response: Response, db: Session = Depends(ge
     token = secrets.token_hex(32)
     expires = datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
     
-    # Persist session in MySQL sessions table
+    #create session in MySQL sessions table
     new_session = SessionModel(id=token, user_id=user.id, expires_at=expires)
     db.add(new_session)
     db.commit()
     
-    # Set Opaque token in HTTP-only cookie
+    #set token in HTTP cookie
     response.set_cookie(
         key="session_token",
         value=token,

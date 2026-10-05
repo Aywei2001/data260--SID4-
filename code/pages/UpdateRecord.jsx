@@ -49,14 +49,14 @@ function UpdateRecord({onUpdateRecord}) {
                     <input id="record-id" type="number" value={id} onChange={(e) => setId(e.target.value)} required />
                 </div>
                 <div>
-                    <label htmlFor="update-name">Primary Field (Name): </label>
+                    <label htmlFor="update-name">Primary Field: </label>
                     <input id="update-name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
                 </div>
                 <div>
-                    <label htmlFor="update-description">Secondary Field (Description): </label>
+                    <label htmlFor="update-description">Secondary Field: </label>
                     <input id="update-description" type="text" value={description} onChange={(e) => setDescription(e.target.value)} required />
                 </div>
-                <button type="submit">Confirm Update</button>
+                <button type="submit">Confirm Record Update</button>
             </form>
         </div>
     );

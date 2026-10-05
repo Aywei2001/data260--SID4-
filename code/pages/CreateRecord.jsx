@@ -39,14 +39,24 @@ function CreateRecord({onAddRecord}) {
     };
 
     return (
-        <router>
-            <routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                {/* Render CreateRecord on '/create' */}
-                <Route path="/create" element={<CreateRecord onAddRecord={handleAddRecord} />} />
-            </routes>
-        </router>
+        <div style={{ padding: '20px' }}>
+        <h2>Add New Record</h2>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        
+        <form onSubmit={handleSubmit}>
+            <div>
+            <label htmlFor="name">Primary Field: </label>
+            <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+            </div>
+
+            <div>
+            <label htmlFor="description">Secondary Field: </label>
+            <input id="description" type="text" value={description} onChange={(e) => setDescription(e.target.value)} required />
+            </div>
+
+            <button type="submit">Create Record</button>
+        </form>
+        </div>
     );
 
 }
