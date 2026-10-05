@@ -1,0 +1,145 @@
+{
+    "timestamp": "2026-10-05T13:44:46.114088",
+    "summary": {
+        "total_tests": 13,
+        "passed": 12,
+        "failed": 1,
+        "status": "FAILED"
+    },
+    "tests": [
+        {
+            "test_id": 1,
+            "part": "Part 2",
+            "test_name": "Envelope Success Format {ok: True, data: ..., error: None}",
+            "status": "PASS",
+            "details": {
+                "ok": true,
+                "data": {
+                    "test_key": "val"
+                },
+                "error": null
+            }
+        },
+        {
+            "test_id": 2,
+            "part": "Part 2",
+            "test_name": "Envelope Error Format {ok: False, data: None, error: ...}",
+            "status": "PASS",
+            "details": {
+                "ok": false,
+                "data": null,
+                "error": "Sample error"
+            }
+        },
+        {
+            "test_id": 3,
+            "part": "Part 3",
+            "test_name": "Direct search_grocery_recalls - Valid query ('cheese')",
+            "status": "PASS",
+            "details": {
+                "ok": true,
+                "item_count": 5
+            }
+        },
+        {
+            "test_id": 4,
+            "part": "Part 3",
+            "test_name": "Direct search_grocery_recalls - Invalid query ('The Avengers')",
+            "status": "PASS",
+            "details": {
+                "ok": false,
+                "error": "No matching grocery recalls found! Try again."
+            }
+        },
+        {
+            "test_id": 5,
+            "part": "Part 3",
+            "test_name": "Direct recall_detail_lookup - Valid number ('F-0975-2021')",
+            "status": "PASS",
+            "details": {
+                "ok": true
+            }
+        },
+        {
+            "test_id": 6,
+            "part": "Part 3",
+            "test_name": "Direct recall_detail_lookup - Invalid number ('67')",
+            "status": "PASS",
+            "details": {
+                "ok": false,
+                "error": "Could not find any information on this recall number."
+            }
+        },
+        {
+            "test_id": 7,
+            "part": "Part 3",
+            "test_name": "Direct aggregate_company_stats - Valid firm ('Safeway')",
+            "status": "PASS",
+            "details": {
+                "ok": true
+            }
+        },
+        {
+            "test_id": 8,
+            "part": "Part 3",
+            "test_name": "Direct aggregate_company_stats - Invalid firm ('Pokemon')",
+            "status": "PASS",
+            "details": {
+                "ok": false,
+                "error": "Could not find any recall data for this company."
+            }
+        },
+        {
+            "test_id": 9,
+            "part": "Part 4",
+            "test_name": "execute_tool dispatch - search_grocery_recalls",
+            "status": "PASS",
+            "details": {
+                "ok": true
+            }
+        },
+        {
+            "test_id": 10,
+            "part": "Part 4",
+            "test_name": "execute_tool error boundary - Unknown Tool name",
+            "status": "PASS",
+            "details": {
+                "ok": false,
+                "data": null,
+                "error": "Unknown tool: nonexistent_tool"
+            }
+        },
+        {
+            "test_id": 11,
+            "part": "Part 5",
+            "test_name": "Safety Rule - Allowed query ('cheese')",
+            "status": "PASS",
+            "details": {
+                "ok": true
+            }
+        },
+        {
+            "test_id": 12,
+            "part": "Part 5",
+            "test_name": "Safety Rule - Blocked query ('banned substance')",
+            "status": "FAIL",
+            "details": {
+                "ok": false,
+                "data": null,
+                "error": "You are not authorized to access banned or restricted grocery recall records"
+            }
+        },
+        {
+            "test_id": 13,
+            "part": "Part 5",
+            "test_name": "Offline Agent Loop - max_steps limit ceiling reached",
+            "status": "PASS",
+            "details": {
+                "user_input": "Find cheese recalls repeatedly",
+                "steps": 2,
+                "tool_call_count": 2,
+                "stop_reason": "max_steps_exceeded"
+            }
+        }
+    ]
+}

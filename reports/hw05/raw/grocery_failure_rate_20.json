@@ -1,0 +1,2352 @@
+[
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 845.3941345214844,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 866.138219833374,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 864.5913600921631,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 810.7163906097412,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 858.4308624267578,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 766.3238048553467,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 1177.4885654449463,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 805.1857948303223,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 810.6083869934082,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 858.1678867340088,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 888.2322311401367,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 824.2688179016113,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 794.6374416351318,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 487.0715141296387,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 470.9334373474121,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 485.3794574737549,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 483.14666748046875,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 438.81893157958984,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 447.0500946044922,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 449.2676258087158,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 471.93074226379395,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 464.07604217529297,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 476.8838882446289,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 454.78248596191406,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 458.01329612731934,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 491.4565086364746,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 449.66888427734375,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 434.0496063232422,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 472.73874282836914,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 471.5096950531006,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 461.61556243896484,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 444.1876411437988,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 447.31998443603516,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 431.70714378356934,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 563.1909370422363,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 471.463680267334,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 461.9877338409424,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 502.2714138031006,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 448.86302947998047,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 475.10409355163574,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 475.5864143371582,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 458.12082290649414,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 481.75692558288574,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 4,
+    "latency_ms": 425.5239963531494,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 443.02892684936523,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 454.87213134765625,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 3,
+    "latency_ms": 487.0190620422363,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 2,
+    "latency_ms": 427.19316482543945,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 465.17157554626465,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  },
+  {
+    "success": true,
+    "attempts": 1,
+    "latency_ms": 459.26523208618164,
+    "result": {
+      "ok": true,
+      "data": [
+        {
+          "recall_number": "F-1892-2016",
+          "product_description": "Integrated Food Service  Turkey Breast & Cheese Sandwich  on a Whole Grain French Roll  Code #C16001/160001",
+          "reason_for_recall": "Potential Listeria monocytogenes contamination.",
+          "company_name": "Let's Do Lunch, Inc.",
+          "recall_date": "20160817"
+        },
+        {
+          "recall_number": "F-0431-2017",
+          "product_description": "Hot Pepper Cheese, forty-five 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to inadequate pasteurization.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        },
+        {
+          "recall_number": "F-0459-2023",
+          "product_description": "Bistro To Go, Gourmet Cheese & Fruit Plate, Net Wt. 6 Oz. Single Serving, Keep refrigerated",
+          "reason_for_recall": "On 02/03/2023, FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine of Baltimore, MD is  initiating a recall of  various products sold from January 24, 2023 through January 30, 2023 because the products have the potential to be contaminated with Listeria monocytogenes .",
+          "company_name": "FRESH IDEATION FOOD GROUP, LLC dba Fresh Creative Cuisine",
+          "recall_date": "20230322"
+        },
+        {
+          "recall_number": "F-2016-2014",
+          "product_description": "El Original pa' ya To Go by hot pandeyuca brand   Cheese Bread Pan de Queso Grande",
+          "reason_for_recall": "During an FDA inspection, it was discovered that the label of several products failed to declare the components ingredients of a butter flavor that included allergens FD&C Yellow #5, FD&C Yellow #6 and FD&C Red #40.",
+          "company_name": "Hot Pandeyuca & Company Inc",
+          "recall_date": "20140618"
+        },
+        {
+          "recall_number": "F-0428-2017",
+          "product_description": "White Cheddar Cheese, 40 lb. blocks",
+          "reason_for_recall": "Farm Country Cheese House is conducting a voluntary recall of multiple vats of cheese due to potential contamination with Listeria monocytogenes.",
+          "company_name": "Farm Country Cheese House, Inc.",
+          "recall_date": "20161123"
+        }
+      ],
+      "error": null
+    },
+    "error": null
+  }
+]

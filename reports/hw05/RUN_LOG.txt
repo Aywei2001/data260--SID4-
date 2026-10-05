@@ -1,0 +1,164 @@
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code> python hw3_main.py
+Traceback (most recent call last):
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\hw3_main.py", line 7, in <module>
+    from hw3_authentication import router as auth_router
+  File "C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\hw3_authentication.py", line 75, in <module>
+    Base.metadata.create_all(bind=engine)
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\sql\schema.py", line 5929, in create_all
+    bind._run_ddl_visitor(
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 3269, in _run_ddl_visitor
+    with self.begin() as conn:
+  File "C:\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 3259, in begin
+    with self.connect() as conn:
+         ^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 3295, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 144, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 3319, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\impl.py", line 178, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wei_1\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Connection.__init__() got an unexpected keyword argument 'check_same_thread'
+PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code>
+
+(hw5_venv) PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\mcp_meals> mcp-inspector python mcp_GroceryRecall_rel.py
+Starting MCP inspector...
+
+MCP Inspector Web is up and running at:
+   http://127.0.0.1:6274?MCP_INSPECTOR_API_TOKEN=9971babcce1911e142e7143ea0edfb49b51d4b36152d5cebd9e94a8d0ac4c6c0
+
+   Sandbox (MCP Apps): http://127.0.0.1:6275/sandbox
+
+   Auth token: 9971babcce1911e142e7143ea0edfb49b51d4b36152d5cebd9e94a8d0ac4c6c0
+
+   Secrets: OS keychain
+
+Opening browser...
+
+(hw5_venv) PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\mcp_meals> python mcpGroceryRecall_toolContracts.py
+[
+  {
+    "injected_failure_rate": "0%",
+    "success_rate": "100.0%",
+    "mean_latency_ms": 494.69,
+    "p99_latency_ms": 915.29
+  },
+  {
+    "injected_failure_rate": "20%",
+    "success_rate": "100.0%",
+    "mean_latency_ms": 567.24,
+    "p99_latency_ms": 1177.49
+  },
+  {
+    "injected_failure_rate": "50%",
+    "success_rate": "96.0%",
+    "mean_latency_ms": 563.56,
+    "p99_latency_ms": 855.71
+  }
+]
+
+(hw5_venv) PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\mcp_meals> python mcpGroceryRecall_safeTool.py
+[10/05/26 00:56:11] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:contamination&li
+                             mit=5 "HTTP/1.1 200 OK"
+Test Passed: Valid Search
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:The%20Avengers&l
+                             imit=5 "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Search
+[10/05/26 00:56:12] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recall_number:F-0975-2021 "HTTP/1.1
+                             200 OK"
+Test Passed: Valid Detail Lookup
+                    INFO     HTTP Request: GET https://api.fda.gov/food/enforcement.json?search=recall_number:67   _client.py:1740
+                             "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Detail Lookup
+[10/05/26 00:56:13] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recalling_firm:Safeway&limit=100
+                             "HTTP/1.1 200 OK"
+Test Passed: Valid Aggregate Stats
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recalling_firm:Pokemon&limit=100
+                             "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Aggregate Stats
+
+Test Results: 6/6 tests passed
+
+(hw5_venv) PS C:\Users\wei_1\Desktop\AngelaWei\Angela-projects\Data260\Homework\data260--SID4-\code\mcp_meals> python mcpGroceryRecall_safeTool.py
+[10/05/26 11:09:56] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:contamination&li
+                             mit=5 "HTTP/1.1 200 OK"
+Test Passed: Valid Search
+[10/05/26 11:09:57] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:The%20Avengers&l
+                             imit=5 "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Search
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recall_number:F-0975-2021 "HTTP/1.1
+                             200 OK"
+Test Passed: Valid Detail Lookup
+[10/05/26 11:09:58] INFO     HTTP Request: GET https://api.fda.gov/food/enforcement.json?search=recall_number:67   _client.py:1740
+                             "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Detail Lookup
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recalling_firm:Safeway&limit=100
+                             "HTTP/1.1 200 OK"
+Test Passed: Valid Aggregate Stats
+[10/05/26 11:09:59] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=recalling_firm:Pokemon&limit=100
+                             "HTTP/1.1 404 Not Found"
+Test Passed: Invalid Aggregate Stats
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:cheese&limit=5
+                             "HTTP/1.1 200 OK"
+Test Passed: Safety Rule Allowed Call
+Test Failed: Safety Rule Blocked Call,
+Test Passed: Offline Test - Safety Rule Enforcement
+[10/05/26 11:10:00] INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:cheese&limit=5
+                             "HTTP/1.1 200 OK"
+                    INFO     HTTP Request: GET                                                                     _client.py:1740
+                             https://api.fda.gov/food/enforcement.json?search=product_description:cheese&limit=5
+                             "HTTP/1.1 200 OK"
+Test Passed: Offline Test - Max Steps Limit Reached
+
+Test Results: 9/10 tests passed

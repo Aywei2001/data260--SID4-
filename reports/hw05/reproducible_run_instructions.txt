@@ -1,0 +1,15 @@
+To run Part 1
+python hw3_main.py
+
+To run Part 2
+mcp-inspector python mcp_GroceryRecall_rel.py
+(original command in instructions no longer works!)
+
+To run Part 3
+python mcpGroceryRecall_toolContracts.py
+
+To run Part 4
+python mcpGroceryRecall_safeTool.py
+
+To run Part 5
+python mcpGroceryRecall_safeTool.py
