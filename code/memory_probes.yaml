@@ -1,0 +1,28 @@
+probes:
+  - question: "Which store and its location were mentioned?"
+    expected_criteria:
+      - "Safeway"
+      - "Berryessa"
+    rubric: "1 = neither fact; 3 = one fact; 5 = both facts correct"
+
+  - question: "What is the store doing with certain products?"
+    expected_criteria:
+      - "Removing them from the store"
+    rubric: "1 = incorrect or missing; 5 = Removing them from the store"
+
+  - question: "What type of products were recalled?"
+    expected_criteria:
+      - "Products containing nuts"
+      - "Mislabeled products"
+    rubric: "1 = neither; 3 = one correct; 5 = both correct"
+
+  - question: "Who supplied the removed products?"
+    expected_criteria:
+      - "HealthySnacks inc."
+    rubric: "1 = incorrect or missing; 5 = HealthySnacks inc."
+
+  - question: "What actions are being taken by the store?"
+    expected_criteria:
+      - "Conducting a safety inspection"
+      - "Keeping consumers who purchased the products informed and updated"
+    rubric: "1 = neither; 3 = one detail; 5 = both details"

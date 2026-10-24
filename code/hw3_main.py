@@ -5,6 +5,8 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.exc import IntegrityError
 from hw3_authentication import router as auth_router
+from hw6_mongodb import router as documents_router
+from hw6_mongodb_memory import router as memory_router
 
 app = FastAPI(
     title = "Extended Service API",
@@ -24,6 +26,16 @@ app.add_middleware(
 
 #connect the router for hw3_authentication.py to work upon running the file
 app.include_router(auth_router)
+app.include_router(documents_router)
+app.include_router(memory_router)
+
+@app.get("/")
+def root():
+    return {"message": "API is running", "docs": "/docs"}
+
+@app.get("/health", tags=["health"])
+def health_check():
+    return {"status": "ok"}
 
 #use to run the app on PORT_BASE 8439
 if __name__ == "__main__":

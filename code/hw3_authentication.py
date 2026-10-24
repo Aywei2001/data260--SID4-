@@ -6,12 +6,13 @@ from pydantic import BaseModel, EmailStr, Field
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, String, Text, create_engine
 from sqlalchemy.orm import Session, declarative_base, sessionmaker, relationship
 from sqlalchemy.exc import IntegrityError
-from passlib.context import CryptContext 
+from passlib.context import CryptContext
+from pydantic import ConfigDict 
 
 
-DATABASE_URL = "mysql+pymysql://username:password@localhost:8439/my_db_info"
+DATABASE_URL = "mysql+pymysql://root:RavenClaw04@127.0.0.1:3306/my_db_info"
 
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
@@ -91,8 +92,7 @@ class RelatedEntityResponse(RelatedEntityCreate):
     created_at: datetime.datetime
     updated_at: datetime.datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 class RecordSchema(BaseModel):
     name: str = Field(..., min_length=1)
@@ -111,8 +111,7 @@ class RecordResponse(BaseModel):
     created_at: datetime.datetime
     updated_at: datetime.datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 def get_current_user(request: Request, db: Session = Depends(get_db)):
