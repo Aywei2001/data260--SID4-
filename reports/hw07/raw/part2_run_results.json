@@ -1,0 +1,18 @@
+{
+  "attempts": 20,
+  "model_settings": {
+    "model_name": "llama3.2",
+    "base_url": "http://localhost:11434",
+    "temperature": 0.0
+  },
+  "well_formed_initial_rate": 0.35,
+  "well_formed_after_repair_rate": 1.0,
+  "required_chain_completion_rate": 0.95,
+  "failure_counts": {
+    "malformed_arguments": 0,
+    "unknown_tool": 0,
+    "text_when_tool_required": 7,
+    "lost_multi_step_chain": 19,
+    "invalid_model_response": 6
+  }
+}
