@@ -14,9 +14,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.model_client import ModelAdapter  # noqa: E402
+from src.model_client import ModelAdapter  
 
-from mcp_meals.mcp_GroceryRecall_rel import (  # noqa: E402
+from mcp_meals.mcp_GroceryRecall_rel import (  
     aggregate_company_stats,
     recall_detail_lookup,
     search_grocery_recalls,

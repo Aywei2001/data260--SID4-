@@ -1,3 +1,4 @@
+
 import datetime
 import os
 from enum import Enum
@@ -20,6 +21,18 @@ from sqlalchemy import (
 from sqlalchemy import (
     Enum as SqlEnum,
 )
+
+import argparse
+import json
+import logging
+import time
+from uuid import UUID, uuid4
+
+from fastapi import FastAPI
+from kafka import KafkaConsumer, KafkaProducer, TopicPartition
+from kafka.errors import KafkaError
+from pydantic import ValidationError
+
 from sqlalchemy.orm import Session, declarative_base, relationship, sessionmaker
 
 DATABASE_URL = os.environ["DATABASE_URL"]
@@ -33,6 +46,9 @@ Base = declarative_base()
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
+log = logging.getLogger("recall_service")
 
 
 class Role(str, Enum):
@@ -167,6 +183,8 @@ class RecordResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
+
+
 def create_access_token(user: User) -> str:
     expires_at = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(
         minutes=ACCESS_TOKEN_MINUTES
@@ -213,6 +231,10 @@ def require_roles(*allowed_roles: Role):
         return user
 
     return role_check
+
+class GroceryRecallNoticeCreate(RecordSchema):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid", strict=True)
+    related_entity_id: int = Field(..., gt=0)
 
 
 @router.post("/auth/login", response_model=TokenResponse)
@@ -364,210 +386,203 @@ def delete_related_entity(
     return {"message": "Successfully deleted related entity"}
 
 
-# Records: authenticated reads, writer/moderator creates,
-# moderator-only deletes.
-@router.post(
-    "/records",
-    response_model=RecordResponse,
-    status_code=status.HTTP_201_CREATED,
-)
-def create_record(
-    item: RecordSchema,
+def kafka_settings():
+    prefix = os.environ.get("KAFKA_PREFIX", "s1339").strip()
+    if not prefix:
+        raise RuntimeError("Set KAFKA_PREFIX to the prefix from Section 0")
+    return (
+        os.environ.get("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
+        f"{prefix}_entity_requests",
+        f"{prefix}_entity_responses",
+    )
+
+
+def make_producer(servers):
+    return KafkaProducer(
+        bootstrap_servers=servers,
+        value_serializer=lambda value: json.dumps(value).encode("utf-8"),
+        acks="all",
+    )
+
+
+def process_request(request, notices):
+    correlation_id = request.get("correlation_id")
+
+    def failure(message):
+        return {"correlation_id": correlation_id, "success": False, "error": message}
+
+    if not isinstance(correlation_id, str) or not correlation_id.strip():
+        return failure("Missing or invalid correlation_id")
+    if not isinstance(request.get("reply_to"), str) or not request["reply_to"].strip():
+        return failure("Missing or invalid reply_to")
+    operation = request.get("operation")
+    if operation not in ("CREATE_GROCERY_RECALL_NOTICE", "GET_GROCERY_RECALL_NOTICE"):
+        return failure("Unknown operation")
+    data = request.get("data")
+    if not isinstance(data, dict):
+        return failure("data must be an object")
+
+    if operation == "CREATE_GROCERY_RECALL_NOTICE":
+        try:
+            item = GroceryRecallNoticeCreate.model_validate(data)
+        except ValidationError as exc:
+            return failure(str(exc))
+        if any(n["unique_code"] == item.unique_code for n in notices.values()):
+            return failure("Grocery recall notice with this unique_code already exists")
+        notice_id = str(uuid4())
+        notices[notice_id] = {"grocery_recall_notice_id": notice_id, **item.model_dump()}
+        return {
+            "correlation_id": correlation_id,
+            "success": True,
+            "grocery_recall_notice_id": notice_id,
+            "message": "Grocery recall notice created",
+        }
+
+    notice_id = data.get("grocery_recall_notice_id")
+    if not isinstance(notice_id, str):
+        return failure("Missing or invalid grocery_recall_notice_id")
+    try:
+        UUID(notice_id)
+    except ValueError:
+        return failure("grocery_recall_notice_id must be a UUID")
+    if notice_id not in notices:
+        return failure("Grocery recall notice not found")
+    return {"correlation_id": correlation_id, 
+            "success": True,
+            "grocery_recall_notice": notices[notice_id]}
+
+
+def run_worker():
+    servers, requests_topic, responses_topic = kafka_settings()
+    consumer = KafkaConsumer(
+        requests_topic, bootstrap_servers=servers,
+        group_id=f"{requests_topic}_worker", auto_offset_reset="earliest",
+        enable_auto_commit=False,
+    )
+    producer = make_producer(servers)
+    notices = {}
+    completed = {}
+    try:
+        ready = False
+        while True:
+            batches = consumer.poll(timeout_ms=1000, max_records=1)
+            if consumer.assignment() and not ready:
+                log.info("Consumer is ready and listening...")
+                ready = True
+            for message in (m for batch in batches.values() for m in batch):
+                try:
+                    request = json.loads(message.value)
+                except (ValueError, UnicodeDecodeError):
+                    log.error("WORKER invalid JSON; no usable reply envelope")
+                    consumer.commit()
+                    continue
+                if not isinstance(request, dict):
+                    log.error("WORKER request must be an object")
+                    consumer.commit()
+                    continue
+                log.info("WORKER RECEIVE %s", request)
+                cid = request.get("correlation_id")
+                if request.get("reply_to") != responses_topic:
+                    response = {"correlation_id": cid, "success": False,
+                                "error": "reply_to must be the configured response topic"}
+                elif isinstance(cid, str) and cid in completed:
+                    old_request, old_response = completed[cid]
+                    response = old_response if old_request == request else {
+                        "correlation_id": cid, "success": False,
+                        "error": "correlation_id reused for a different request"}
+                else:
+                    log.info("WORKER PROCESS operation=%s correlation_id=%s",
+                             request.get("operation"), cid)
+                    response = process_request(request, notices)
+                    if isinstance(cid, str) and cid.strip():
+                        completed[cid] = (request, response)
+                producer.send(responses_topic, response).get(timeout=15)
+                log.info("WORKER REPLY topic=%s %s", responses_topic, response)
+                consumer.commit()
+    finally:
+        consumer.close()
+        producer.close()
+
+
+def send_request(operation, data, timeout=30):
+    servers, requests_topic, responses_topic = kafka_settings()
+    consumer = KafkaConsumer(bootstrap_servers=servers, group_id=None,
+                            enable_auto_commit=False)
+    producer = make_producer(servers)
+    try:
+        partitions = consumer.partitions_for_topic(responses_topic)
+        if not partitions:
+            raise RuntimeError("Response topic is unavailable; create both topics first")
+        assigned = [TopicPartition(responses_topic, p) for p in sorted(partitions)]
+        consumer.assign(assigned)
+        consumer.seek_to_end(*assigned)
+        for partition in assigned:
+            consumer.position(partition)
+        correlation_id = str(uuid4())
+        request = {"correlation_id": correlation_id, "reply_to": responses_topic,
+                   "operation": operation, "data": data}
+        log.info("CLIENT SEND topic=%s %s", requests_topic, request)
+        producer.send(requests_topic, request).get(timeout=15)
+        deadline = time.monotonic() + timeout
+        while time.monotonic() < deadline:
+            for batch in consumer.poll(timeout_ms=500).values():
+                for message in batch:
+                    try:
+                        response = json.loads(message.value)
+                    except (ValueError, UnicodeDecodeError):
+                        continue
+                    if isinstance(response, dict) and response.get("correlation_id") == correlation_id:
+                        log.info("CLIENT RECEIVE correlation preserved=True %s", response)
+                        return response
+        raise TimeoutError(f"No response for correlation_id={correlation_id}")
+    finally:
+        consumer.close()
+        producer.close()
+
+
+@router.post("/recall-notices", status_code=status.HTTP_201_CREATED)
+def create_grocery_recall_notice(
+    item: GroceryRecallNoticeCreate,
     user: User = Depends(require_roles(Role.writer, Role.moderator)),
-    db: Session = Depends(get_db),
 ):
-    related_entity = (
-        db.query(RelatedEntity)
-        .filter(RelatedEntity.id == item.related_entity_id)
-        .first()
-    )
-    if not related_entity:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Referenced related entity does not exist",
-        )
-
-    duplicate = db.query(Record).filter(Record.unique_code == item.unique_code).first()
-    if duplicate:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Record with this unique code already exists",
-        )
-
-    new_record = Record(
-        primary_field=item.name,
-        secondary_field=item.description,
-        unique_code=item.unique_code,
-        quantity=item.quantity,
-        related_entity_id=item.related_entity_id,
-    )
-    db.add(new_record)
-    db.commit()
-    db.refresh(new_record)
-    return RecordResponse(
-        id=new_record.id,
-        name=new_record.primary_field,
-        description=new_record.secondary_field,
-        unique_code=new_record.unique_code,
-        quantity=new_record.quantity,
-        related_entity_id=new_record.related_entity_id,
-        created_at=new_record.created_at,
-        updated_at=new_record.updated_at,
-    )
+    return api_request("CREATE_GROCERY_RECALL_NOTICE", item.model_dump())
 
 
-@router.get("/records", response_model=List[RecordResponse])
-def get_records(
-    skip: int = Query(0, ge=0),
-    limit: int = Query(10, ge=1, le=100),
+@router.get("/recall-notices/{grocery_recall_notice_id}")
+def get_grocery_recall_notice(
+    grocery_recall_notice_id: str,
     user: User = Depends(get_current_user),
-    db: Session = Depends(get_db),
 ):
-    records = db.query(Record).offset(skip).limit(limit).all()
-    return [
-        RecordResponse(
-            id=record.id,
-            name=record.primary_field,
-            description=record.secondary_field,
-            unique_code=record.unique_code,
-            quantity=record.quantity,
-            related_entity_id=record.related_entity_id,
-            created_at=record.created_at,
-            updated_at=record.updated_at,
-        )
-        for record in records
-    ]
+    return api_request("GET_GROCERY_RECALL_NOTICE", {"grocery_recall_notice_id": grocery_recall_notice_id})
 
 
-@router.get("/records/{record_id}", response_model=RecordResponse)
-def get_record_by_id(
-    record_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db),
-):
-    record = db.query(Record).filter(Record.id == record_id).first()
-    if not record:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Error: Cannot find record",
-        )
-
-    return RecordResponse(
-        id=record.id,
-        name=record.primary_field,
-        description=record.secondary_field,
-        unique_code=record.unique_code,
-        quantity=record.quantity,
-        related_entity_id=record.related_entity_id,
-        created_at=record.created_at,
-        updated_at=record.updated_at,
-    )
+def api_request(operation, data):
+    try:
+        response = send_request(operation, data)
+    except TimeoutError as exc:
+        raise HTTPException(status_code=504, detail=str(exc)) from exc
+    except (KafkaError, RuntimeError) as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    # Preserve the worker's success flag and correlation ID on errors too.
+    if not response["success"]:
+        from fastapi.responses import JSONResponse
+        return JSONResponse(status_code=400, content=response)
+    return response
 
 
-@router.get(
-    "/related-entities/{entity_id}/records",
-    response_model=List[RecordResponse],
-)
-def get_records_by_related_entity(
-    entity_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db),
-):
-    entity = db.query(RelatedEntity).filter(RelatedEntity.id == entity_id).first()
-    if not entity:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Related entity not found",
-        )
-
-    records = db.query(Record).filter(Record.related_entity_id == entity_id).all()
-    return [
-        RecordResponse(
-            id=record.id,
-            name=record.primary_field,
-            description=record.secondary_field,
-            unique_code=record.unique_code,
-            quantity=record.quantity,
-            related_entity_id=record.related_entity_id,
-            created_at=record.created_at,
-            updated_at=record.updated_at,
-        )
-        for record in records
-    ]
+# NEW: Standalone application; original file only exported a router.
+# If integrating with an existing app, include this router there instead.
+app = FastAPI(title="Grocery Supply and Recall Notices")
+app.include_router(router)
 
 
-@router.put("/records/{record_id}", response_model=RecordResponse)
-def update_record(
-    record_id: int,
-    item: RecordSchema,
-    user: User = Depends(require_roles(Role.writer, Role.moderator)),
-    db: Session = Depends(get_db),
-):
-    record = db.query(Record).filter(Record.id == record_id).first()
-    if not record:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Error: Cannot find record",
-        )
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("mode", choices=["worker", "demo"])
+    args = parser.parse_args()
+    if args.mode == "worker":
+        run_worker()
+    else:
+        from homework_demo import run_demo
 
-    related_entity = (
-        db.query(RelatedEntity)
-        .filter(RelatedEntity.id == item.related_entity_id)
-        .first()
-    )
-    if not related_entity:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Referenced related entity does not exist",
-        )
-
-    duplicate = (
-        db.query(Record)
-        .filter(
-            Record.unique_code == item.unique_code,
-            Record.id != record_id,
-        )
-        .first()
-    )
-    if duplicate:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Record with this unique code already exists",
-        )
-
-    record.primary_field = item.name
-    record.secondary_field = item.description
-    record.unique_code = item.unique_code
-    record.quantity = item.quantity
-    record.related_entity_id = item.related_entity_id
-
-    db.commit()
-    db.refresh(record)
-    return RecordResponse(
-        id=record.id,
-        name=record.primary_field,
-        description=record.secondary_field,
-        unique_code=record.unique_code,
-        quantity=record.quantity,
-        related_entity_id=record.related_entity_id,
-        created_at=record.created_at,
-        updated_at=record.updated_at,
-    )
-
-
-@router.delete("/records/{record_id}")
-def delete_record(
-    record_id: int,
-    user: User = Depends(require_roles(Role.moderator)),
-    db: Session = Depends(get_db),
-):
-    record = db.query(Record).filter(Record.id == record_id).first()
-    if not record:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Error: Cannot find record",
-        )
-
-    db.delete(record)
-    db.commit()
-    return {"message": "Successfully deleted user record"}
+        run_demo()
