@@ -1,0 +1,5 @@
+{
+  "correlation_id": "b1733eb5-aff5-4293-951c-e7bd49cfb444",
+  "status": "approved",
+  "answer": "Match the product name, lot code, and dates against the notice. Locate affected inventory, isolate it, and block its sale. Notify responsible staff and the supplier; follow the notice for return or disposal, and document quantities and actions."
+}
