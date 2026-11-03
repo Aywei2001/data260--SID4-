@@ -3,12 +3,11 @@ import datetime
 import os
 from enum import Enum
 from typing import List
-
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status, FastAPI
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, ValidationError
 from sqlalchemy import (
     Column,
     DateTime,
@@ -17,22 +16,15 @@ from sqlalchemy import (
     String,
     Text,
     create_engine,
-)
-from sqlalchemy import (
     Enum as SqlEnum,
 )
-
 import argparse
 import json
 import logging
 import time
 from uuid import UUID, uuid4
-
-from fastapi import FastAPI
 from kafka import KafkaConsumer, KafkaProducer, TopicPartition
 from kafka.errors import KafkaError
-from pydantic import ValidationError
-
 from sqlalchemy.orm import Session, declarative_base, relationship, sessionmaker
 
 DATABASE_URL = os.environ["DATABASE_URL"]
