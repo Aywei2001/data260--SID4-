@@ -1,11 +1,18 @@
-
+import argparse
 import datetime
+import json
+import logging
 import os
+import time
 from enum import Enum
 from typing import List
-from fastapi import APIRouter, Depends, HTTPException, Query, status, FastAPI
+from uuid import UUID, uuid4
+
+from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
+from kafka import KafkaConsumer, KafkaProducer, TopicPartition
+from kafka.errors import KafkaError
 from passlib.context import CryptContext
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 from sqlalchemy import (
@@ -16,15 +23,10 @@ from sqlalchemy import (
     String,
     Text,
     create_engine,
+)
+from sqlalchemy import (
     Enum as SqlEnum,
 )
-import argparse
-import json
-import logging
-import time
-from uuid import UUID, uuid4
-from kafka import KafkaConsumer, KafkaProducer, TopicPartition
-from kafka.errors import KafkaError
 from sqlalchemy.orm import Session, declarative_base, relationship, sessionmaker
 
 DATABASE_URL = os.environ["DATABASE_URL"]
@@ -175,8 +177,6 @@ class RecordResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-
-
 def create_access_token(user: User) -> str:
     expires_at = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(
         minutes=ACCESS_TOKEN_MINUTES
@@ -223,6 +223,7 @@ def require_roles(*allowed_roles: Role):
         return user
 
     return role_check
+
 
 class GroceryRecallNoticeCreate(RecordSchema):
     model_config = ConfigDict(str_strip_whitespace=True, extra="forbid", strict=True)
@@ -422,7 +423,10 @@ def process_request(request, notices):
         if any(n["unique_code"] == item.unique_code for n in notices.values()):
             return failure("Grocery recall notice with this unique_code already exists")
         notice_id = str(uuid4())
-        notices[notice_id] = {"grocery_recall_notice_id": notice_id, **item.model_dump()}
+        notices[notice_id] = {
+            "grocery_recall_notice_id": notice_id,
+            **item.model_dump(),
+        }
         return {
             "correlation_id": correlation_id,
             "success": True,
@@ -439,16 +443,20 @@ def process_request(request, notices):
         return failure("grocery_recall_notice_id must be a UUID")
     if notice_id not in notices:
         return failure("Grocery recall notice not found")
-    return {"correlation_id": correlation_id, 
-            "success": True,
-            "grocery_recall_notice": notices[notice_id]}
+    return {
+        "correlation_id": correlation_id,
+        "success": True,
+        "grocery_recall_notice": notices[notice_id],
+    }
 
 
 def run_worker():
     servers, requests_topic, responses_topic = kafka_settings()
     consumer = KafkaConsumer(
-        requests_topic, bootstrap_servers=servers,
-        group_id=f"{requests_topic}_worker", auto_offset_reset="earliest",
+        requests_topic,
+        bootstrap_servers=servers,
+        group_id=f"{requests_topic}_worker",
+        auto_offset_reset="earliest",
         enable_auto_commit=False,
     )
     producer = make_producer(servers)
@@ -475,16 +483,28 @@ def run_worker():
                 log.info("WORKER RECEIVE %s", request)
                 cid = request.get("correlation_id")
                 if request.get("reply_to") != responses_topic:
-                    response = {"correlation_id": cid, "success": False,
-                                "error": "reply_to must be the configured response topic"}
+                    response = {
+                        "correlation_id": cid,
+                        "success": False,
+                        "error": "reply_to must be the configured response topic",
+                    }
                 elif isinstance(cid, str) and cid in completed:
                     old_request, old_response = completed[cid]
-                    response = old_response if old_request == request else {
-                        "correlation_id": cid, "success": False,
-                        "error": "correlation_id reused for a different request"}
+                    response = (
+                        old_response
+                        if old_request == request
+                        else {
+                            "correlation_id": cid,
+                            "success": False,
+                            "error": "correlation_id reused for a different request",
+                        }
+                    )
                 else:
-                    log.info("WORKER PROCESS operation=%s correlation_id=%s",
-                             request.get("operation"), cid)
+                    log.info(
+                        "WORKER PROCESS operation=%s correlation_id=%s",
+                        request.get("operation"),
+                        cid,
+                    )
                     response = process_request(request, notices)
                     if isinstance(cid, str) and cid.strip():
                         completed[cid] = (request, response)
@@ -498,21 +518,28 @@ def run_worker():
 
 def send_request(operation, data, timeout=30):
     servers, requests_topic, responses_topic = kafka_settings()
-    consumer = KafkaConsumer(bootstrap_servers=servers, group_id=None,
-                            enable_auto_commit=False)
+    consumer = KafkaConsumer(
+        bootstrap_servers=servers, group_id=None, enable_auto_commit=False
+    )
     producer = make_producer(servers)
     try:
         partitions = consumer.partitions_for_topic(responses_topic)
         if not partitions:
-            raise RuntimeError("Response topic is unavailable; create both topics first")
+            raise RuntimeError(
+                "Response topic is unavailable; create both topics first"
+            )
         assigned = [TopicPartition(responses_topic, p) for p in sorted(partitions)]
         consumer.assign(assigned)
         consumer.seek_to_end(*assigned)
         for partition in assigned:
             consumer.position(partition)
         correlation_id = str(uuid4())
-        request = {"correlation_id": correlation_id, "reply_to": responses_topic,
-                   "operation": operation, "data": data}
+        request = {
+            "correlation_id": correlation_id,
+            "reply_to": responses_topic,
+            "operation": operation,
+            "data": data,
+        }
         log.info("CLIENT SEND topic=%s %s", requests_topic, request)
         producer.send(requests_topic, request).get(timeout=15)
         deadline = time.monotonic() + timeout
@@ -523,8 +550,13 @@ def send_request(operation, data, timeout=30):
                         response = json.loads(message.value)
                     except (ValueError, UnicodeDecodeError):
                         continue
-                    if isinstance(response, dict) and response.get("correlation_id") == correlation_id:
-                        log.info("CLIENT RECEIVE correlation preserved=True %s", response)
+                    if (
+                        isinstance(response, dict)
+                        and response.get("correlation_id") == correlation_id
+                    ):
+                        log.info(
+                            "CLIENT RECEIVE correlation preserved=True %s", response
+                        )
                         return response
         raise TimeoutError(f"No response for correlation_id={correlation_id}")
     finally:
@@ -545,7 +577,10 @@ def get_grocery_recall_notice(
     grocery_recall_notice_id: str,
     user: User = Depends(get_current_user),
 ):
-    return api_request("GET_GROCERY_RECALL_NOTICE", {"grocery_recall_notice_id": grocery_recall_notice_id})
+    return api_request(
+        "GET_GROCERY_RECALL_NOTICE",
+        {"grocery_recall_notice_id": grocery_recall_notice_id},
+    )
 
 
 def api_request(operation, data):
@@ -558,6 +593,7 @@ def api_request(operation, data):
     # Preserve the worker's success flag and correlation ID on errors too.
     if not response["success"]:
         from fastapi.responses import JSONResponse
+
         return JSONResponse(status_code=400, content=response)
     return response
 
