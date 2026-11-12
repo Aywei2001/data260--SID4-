@@ -4,10 +4,10 @@ import json
 import logging
 import os
 import time
+import redis
 from enum import Enum
 from typing import List
 from uuid import UUID, uuid4
-
 from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
@@ -37,6 +37,15 @@ ACCESS_TOKEN_MINUTES = 30
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
+REDIS_PREFIX = os.environ["REDIS_PREFIX"].strip()
+if not REDIS_PREFIX:
+    raise RuntimeError("REDIS_PREFIX must not be empty")
+
+redis_client = redis.Redis.from_url(
+    os.environ.get("REDIS_URL", "redis://localhost:6379/0"),
+    decode_responses=True,
+)
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
@@ -93,6 +102,7 @@ class Record(Base):
     secondary_field = Column(Text, nullable=False)
     unique_code = Column(String(100), unique=True, nullable=False)
     quantity = Column(Integer, default=10, nullable=False)
+    view_count = Column(Integer, default=0, nullable=False)
     related_entity_id = Column(
         Integer,
         ForeignKey("related_entities.id"),
@@ -107,6 +117,64 @@ class Record(Base):
 
     related_entity = relationship("RelatedEntity", back_populates="records")
 
+class GroceryRecallNotice(Base):
+    __tablename__ = "grocery_recall_notices"
+
+    id = Column(String(36), primary_key=True)
+    name = Column(String(255), nullable=False)
+    description = Column(Text, nullable=False)
+    unique_code = Column(String(100), unique=True, nullable=False)
+    quantity = Column(Integer, default=10, nullable=False)
+    related_entity_id = Column(
+        Integer,
+        ForeignKey("related_entities.id"),
+        nullable=False,
+    )
+    view_count = Column(Integer, default=0, nullable=False)
+
+class GroceryRecallNoticeCache:
+    def __init__(self, db: Session, redis_client, prefix: str):
+        self.db = db
+        self.redis_client = redis_client
+        self.prefix = prefix
+
+    def increment_grocery_recall_notice_views(self, notice_id: str) -> int:
+        key = f"{self.prefix}:views:grocery_recall_notice:{notice_id}"
+
+        if not self.redis_client.exists(key):
+            notice = self.db.get(GroceryRecallNotice, notice_id)
+            if notice is None:
+                raise ValueError("Grocery recall notice not found")
+
+            self.redis_client.set(
+                key,
+                notice.view_count or 0,
+                nx=True,
+            )
+
+        count = self.redis_client.incr(key)
+
+        if count % 10 == 0:
+            try:
+                self.db.query(GroceryRecallNotice).filter(
+                    GroceryRecallNotice.id == notice_id,
+                    GroceryRecallNotice.view_count < count,
+                ).update(
+                    {GroceryRecallNotice.view_count: count},
+                    synchronize_session=False,
+                )
+                self.db.commit()
+            except Exception:
+                self.db.rollback()
+                raise
+
+            log.info(
+                "Synced views to database: notice=%s count=%s",
+                notice_id,
+                count,
+            )
+
+        return count
 
 # use to create or migrate any missing tables
 Base.metadata.create_all(bind=engine)
@@ -365,7 +433,12 @@ def delete_related_entity(
     associated_record = (
         db.query(Record).filter(Record.related_entity_id == entity_id).first()
     )
-    if associated_record:
+    associated_notice = (
+        db.query(GroceryRecallNotice)
+        .filter(GroceryRecallNotice.related_entity_id == entity_id)
+        .first()
+    )
+    if associated_record or associated_notice:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
@@ -402,52 +475,95 @@ def process_request(request, notices):
     correlation_id = request.get("correlation_id")
 
     def failure(message):
-        return {"correlation_id": correlation_id, "success": False, "error": message}
+        return {
+            "correlation_id": correlation_id,
+            "success": False,
+            "error": message,
+        }
 
     if not isinstance(correlation_id, str) or not correlation_id.strip():
         return failure("Missing or invalid correlation_id")
-    if not isinstance(request.get("reply_to"), str) or not request["reply_to"].strip():
+
+    if (
+        not isinstance(request.get("reply_to"), str)
+        or not request["reply_to"].strip()
+    ):
         return failure("Missing or invalid reply_to")
+
     operation = request.get("operation")
-    if operation not in ("CREATE_GROCERY_RECALL_NOTICE", "GET_GROCERY_RECALL_NOTICE"):
+    if operation not in (
+        "CREATE_GROCERY_RECALL_NOTICE",
+        "GET_GROCERY_RECALL_NOTICE",
+    ):
         return failure("Unknown operation")
+
     data = request.get("data")
     if not isinstance(data, dict):
         return failure("data must be an object")
 
-    if operation == "CREATE_GROCERY_RECALL_NOTICE":
+    with SessionLocal() as db:
+        if operation == "CREATE_GROCERY_RECALL_NOTICE":
+            try:
+                item = GroceryRecallNoticeCreate.model_validate(data)
+            except ValidationError as exc:
+                return failure(str(exc))
+
+            if db.get(RelatedEntity, item.related_entity_id) is None:
+                return failure("Related entity not found")
+
+            existing = db.query(GroceryRecallNotice).filter(
+                GroceryRecallNotice.unique_code == item.unique_code
+            ).first()
+
+            if existing:
+                return failure(
+                    "Grocery recall notice with this unique_code already exists"
+                )
+
+            notice_id = str(uuid4())
+            notice = GroceryRecallNotice(
+                id=notice_id,
+                **item.model_dump(),
+            )
+            db.add(notice)
+            db.commit()
+
+            return {
+                "correlation_id": correlation_id,
+                "success": True,
+                "grocery_recall_notice_id": notice_id,
+                "message": "Grocery recall notice created",
+            }
+
+        notice_id = data.get("grocery_recall_notice_id")
+        if not isinstance(notice_id, str):
+            return failure("Missing or invalid grocery_recall_notice_id")
+
         try:
-            item = GroceryRecallNoticeCreate.model_validate(data)
-        except ValidationError as exc:
-            return failure(str(exc))
-        if any(n["unique_code"] == item.unique_code for n in notices.values()):
-            return failure("Grocery recall notice with this unique_code already exists")
-        notice_id = str(uuid4())
-        notices[notice_id] = {
-            "grocery_recall_notice_id": notice_id,
-            **item.model_dump(),
-        }
+            notice_id = str(UUID(notice_id))
+        except ValueError:
+            return failure("grocery_recall_notice_id must be a UUID")
+
+        notice = db.get(GroceryRecallNotice, notice_id)
+        if notice is None:
+            return failure("Grocery recall notice not found")
+
+        cache = GroceryRecallNoticeCache(db, redis_client, REDIS_PREFIX)
+        count = cache.increment_grocery_recall_notice_views(notice_id)
+
         return {
             "correlation_id": correlation_id,
             "success": True,
-            "grocery_recall_notice_id": notice_id,
-            "message": "Grocery recall notice created",
+            "grocery_recall_notice": {
+                "grocery_recall_notice_id": notice.id,
+                "name": notice.name,
+                "description": notice.description,
+                "unique_code": notice.unique_code,
+                "quantity": notice.quantity,
+                "related_entity_id": notice.related_entity_id,
+                "view_count": count,
+            },
         }
-
-    notice_id = data.get("grocery_recall_notice_id")
-    if not isinstance(notice_id, str):
-        return failure("Missing or invalid grocery_recall_notice_id")
-    try:
-        UUID(notice_id)
-    except ValueError:
-        return failure("grocery_recall_notice_id must be a UUID")
-    if notice_id not in notices:
-        return failure("Grocery recall notice not found")
-    return {
-        "correlation_id": correlation_id,
-        "success": True,
-        "grocery_recall_notice": notices[notice_id],
-    }
 
 
 def run_worker():
@@ -598,18 +714,31 @@ def api_request(operation, data):
     return response
 
 
-# NEW: Standalone application; original file only exported a router.
-# If integrating with an existing app, include this router there instead.
 app = FastAPI(title="Grocery Supply and Recall Notices")
 app.include_router(router)
+
+def test_counter(notice_id: str):
+    with SessionLocal() as db:
+        cache = GroceryRecallNoticeCache(db, redis_client, REDIS_PREFIX)
+
+        print("=== Testing Counter ===")
+        for access in range(1, 26):
+            count = cache.increment_grocery_recall_notice_views(notice_id)
+            print(f"Access #{access}: Total = {count}")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["worker", "demo"])
+    parser.add_argument("mode", choices=["worker", "demo", "counter"])
+    parser.add_argument("--notice-id")
     args = parser.parse_args()
+
     if args.mode == "worker":
         run_worker()
+    elif args.mode == "counter":
+        if args.notice_id is None:
+            parser.error("--notice-id is required for counter mode")
+        test_counter(args.notice_id)
     else:
         from homework_demo import run_demo
 
