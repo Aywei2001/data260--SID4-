@@ -1,0 +1,211 @@
+{
+  "homework_number": 9,
+  "SID4": "1339",
+  "tag": "hw9",
+  "commit_hash": "51a8846475f4341e9db3f834335cb85eee3c78b3",
+  "SEED": 1339,
+  "VERIFY_SEED": 261339,
+  "generated_at_utc": "2026-11-12T23:47:55.766908+00:00",
+  "configuration": {
+    "model": "llama3.2",
+    "temperature": 0.0,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "prefix": "s1339",
+    "python": "3.12.0",
+    "docker_images": {
+      "kafka": "apache/kafka:4.1.2",
+      "redis": "redis:8"
+    },
+    "seed_scope": "Python seeded; Ollama seed is unavailable through the adapter",
+    "scope": "Smoke checks; full sweep and held-out experiments are separate"
+  },
+  "checks": [
+    {
+      "name": "tagged_source_and_inputs",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "commit": "51a8846475f4341e9db3f834335cb85eee3c78b3",
+        "required_files": 24
+      }
+    },
+    {
+      "name": "tagged_datasets",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "threshold_cases": 40,
+        "thresholds": [
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95
+        ]
+      }
+    },
+    {
+      "name": "isolated_kafka_and_redis",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "topics": [
+          "s1339_dead_letter",
+          "s1339_drafts",
+          "s1339_entity_requests",
+          "s1339_entity_responses",
+          "s1339_final",
+          "s1339_inbox",
+          "s1339_tasks"
+        ],
+        "images": {
+          "kafka": "apache/kafka:4.1.2",
+          "redis": "redis:8"
+        }
+      }
+    },
+    {
+      "name": "local_model_available",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "model": "llama3.2",
+        "endpoint": "http://localhost:11434"
+      }
+    },
+    {
+      "name": "part1_kafka_round_trip_and_counter",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "kafka_round_trip": true,
+        "redis_count": 11,
+        "database_count": 10
+      }
+    },
+    {
+      "name": "part2_http_cache_miss_and_hit",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "hit_rate_percent": 50.0,
+        "miss_ms": 50096.77360000205,
+        "hit_ms": 25.294699997175485
+      }
+    },
+    {
+      "name": "part3_threshold_sample",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "sample_case": "similar_01",
+        "rows": [
+          {
+            "threshold": 0.75,
+            "score": 0.9637342691422,
+            "false_hits": 1,
+            "cost_units": 100
+          },
+          {
+            "threshold": 0.8,
+            "score": 0.9637342691422,
+            "false_hits": 1,
+            "cost_units": 100
+          },
+          {
+            "threshold": 0.85,
+            "score": 0.9637342691422,
+            "false_hits": 1,
+            "cost_units": 100
+          },
+          {
+            "threshold": 0.9,
+            "score": 0.9637342691422,
+            "false_hits": 1,
+            "cost_units": 100
+          },
+          {
+            "threshold": 0.95,
+            "score": 0.9637342691422,
+            "false_hits": 1,
+            "cost_units": 100
+          }
+        ]
+      }
+    },
+    {
+      "name": "part3_stale_answer_invalidation",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "steps": [
+          {
+            "label": "1_initial_cache_miss",
+            "quantity": 120,
+            "version": 1,
+            "cached": false
+          },
+          {
+            "label": "2_stale_cache_hit",
+            "quantity": 75,
+            "version": 1,
+            "cached": true
+          },
+          {
+            "label": "3_versioned_cache_miss",
+            "quantity": 75,
+            "version": 2,
+            "cached": false
+          },
+          {
+            "label": "4_updated_cache_hit",
+            "quantity": 75,
+            "version": 2,
+            "cached": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "part4_repair_lesson_reuse_and_variant_paths",
+      "ran": true,
+      "passed": true,
+      "detail": {
+        "repair_attempts": 2,
+        "lesson_reused": true,
+        "validation_sample": {
+          "case_id": "validation_07",
+          "before_initial_pass": true,
+          "after_initial_pass": false,
+          "before_final_pass": true,
+          "after_final_pass": true
+        },
+        "variants": {
+          "Baseline": {
+            "attempts": 1,
+            "final_pass": true
+          },
+          "Evaluator Repair": {
+            "attempts": 1,
+            "final_pass": true
+          },
+          "Lesson Memory": {
+            "attempts": 1,
+            "final_pass": true
+          },
+          "Validated Improvement": {
+            "attempts": 1,
+            "final_pass": true
+          }
+        }
+      }
+    },
+    {
+      "name": "smoke_test_runner",
+      "ran": true,
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true
+}
