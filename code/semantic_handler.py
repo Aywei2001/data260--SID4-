@@ -4,7 +4,6 @@ from typing import Awaitable, Callable
 
 from semantic_cache import SemanticCache
 
-
 log = logging.getLogger("semantic_cache")
 
 
@@ -78,10 +77,12 @@ class SemanticQuestionHandler:
             },
         }
 
-        self.measurements.append({
-            "is_cached": response["is_cached"],
-            "latency_ms": latency_ms,
-        })
+        self.measurements.append(
+            {
+                "is_cached": response["is_cached"],
+                "latency_ms": latency_ms,
+            }
+        )
 
         log.info(
             "Response: is_cached=%s latency_ms=%.2f",
@@ -92,15 +93,9 @@ class SemanticQuestionHandler:
         return response
 
     def report(self) -> dict:
-        hits = [
-            item["latency_ms"]
-            for item in self.measurements
-            if item["is_cached"]
-        ]
+        hits = [item["latency_ms"] for item in self.measurements if item["is_cached"]]
         misses = [
-            item["latency_ms"]
-            for item in self.measurements
-            if not item["is_cached"]
+            item["latency_ms"] for item in self.measurements if not item["is_cached"]
         ]
 
         total = len(self.measurements)
@@ -109,12 +104,8 @@ class SemanticQuestionHandler:
             "total_queries": total,
             "cache_hits": len(hits),
             "cache_misses": len(misses),
-            "cache_hit_rate_percent": (
-                100 * len(hits) / total if total else 0.0
-            ),
-            "average_cached_latency_ms": (
-                sum(hits) / len(hits) if hits else None
-            ),
+            "cache_hit_rate_percent": (100 * len(hits) / total if total else 0.0),
+            "average_cached_latency_ms": (sum(hits) / len(hits) if hits else None),
             "average_non_cached_latency_ms": (
                 sum(misses) / len(misses) if misses else None
             ),

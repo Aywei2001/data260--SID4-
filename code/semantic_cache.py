@@ -26,15 +26,13 @@ class SemanticCache:
         self.key_prefix = f"{prefix}:semantic:"
         self.index_name = f"{prefix}:semantic_idx"
 
-        self.data_version = os.environ.get(
-            "SEMANTIC_DATA_VERSION", "v1"
-        )
+        self.data_version = os.environ.get("SEMANTIC_DATA_VERSION", "v1")
         self.threshold = 0.85
 
         self.model_name = "sentence-transformers/all-MiniLM-L6-v2"
         self.model = SentenceTransformer(self.model_name)
 
-        #separate entries by data version and embedding model.
+        # separate entries by data version and embedding model.
         self.scope = hashlib.sha256(
             f"{self.data_version}|{self.model_name}".encode("utf-8")
         ).hexdigest()
@@ -76,10 +74,7 @@ class SemanticCache:
 
     def lookup(self, embedding: bytes) -> dict:
         query = (
-            Query(
-                f"(@scope:{{{self.scope}}})"
-                "=>[KNN 1 @embedding $vector AS distance]"
-            )
+            Query(f"(@scope:{{{self.scope}}})=>[KNN 1 @embedding $vector AS distance]")
             .sort_by("distance")
             .return_fields("query", "answer", "distance")
             .paging(0, 1)

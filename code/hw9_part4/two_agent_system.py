@@ -9,13 +9,12 @@ from uuid import uuid4
 REPOSITORY = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPOSITORY))
 
-from src.model_client import ModelAdapter
-
 from lesson_store import (
     observe_failure,
-    relevant_lessons,
     record_lesson_use,
+    relevant_lessons,
 )
+from src.model_client import ModelAdapter
 
 ROOT = Path(__file__).resolve().parent
 REPORTS = ROOT / "reports"
@@ -76,40 +75,34 @@ def load_json(path):
 
 
 def retrieve_facts(question, reference):
-    requested_ids = set(
-        re.findall(r"\bP4-R\d+\b", question.upper())
-    )
+    requested_ids = set(re.findall(r"\bP4-R\d+\b", question.upper()))
 
     if not requested_ids:
         raise ValueError("The question must identify a P4-R notice")
 
-    records = {
-        record["notice_id"]: record
-        for record in reference["records"]
-    }
+    records = {record["notice_id"]: record for record in reference["records"]}
 
     missing = requested_ids - records.keys()
     if missing:
         raise ValueError(f"Unknown reference notice IDs: {sorted(missing)}")
 
-    return [
-        records[notice_id]
-        for notice_id in sorted(requested_ids)
-    ]
+    return [records[notice_id] for notice_id in sorted(requested_ids)]
 
 
 def invoke_text(adapter, system_prompt, payload):
-    #each call has a fresh message history
-    message, usage = adapter.complete_raw([
-        {
-            "role": "system",
-            "content": system_prompt,
-        },
-        {
-            "role": "user",
-            "content": json.dumps(payload, ensure_ascii=False),
-        },
-    ])
+    # each call has a fresh message history
+    message, usage = adapter.complete_raw(
+        [
+            {
+                "role": "system",
+                "content": system_prompt,
+            },
+            {
+                "role": "user",
+                "content": json.dumps(payload, ensure_ascii=False),
+            },
+        ]
+    )
 
     content = message.content
 
@@ -127,10 +120,7 @@ def generate_answer(
     feedback=None,
 ):
     lessons = relevant_lessons(question)
-    lesson_ids = [
-        lesson["lesson_id"]
-        for lesson in lessons
-    ]
+    lesson_ids = [lesson["lesson_id"] for lesson in lessons]
 
     payload = {
         "question": question,
@@ -157,10 +147,11 @@ def generate_answer(
         payload,
     )
 
-    #count successful model calls that were supplied these lessons.
+    # count successful model calls that were supplied these lessons.
     record_lesson_use(lesson_ids)
 
     return answer, usage, lesson_ids
+
 
 def evaluate_answer(adapter, question, answer, facts):
     raw, usage = invoke_text(
@@ -173,7 +164,7 @@ def evaluate_answer(adapter, question, answer, facts):
         },
     )
 
-    #accept a whole fenced JSON response, but reject extra prose.
+    # accept a whole fenced JSON response, but reject extra prose.
     cleaned = raw.strip()
     if cleaned.startswith("```") and cleaned.endswith("```"):
         cleaned = re.sub(
@@ -188,9 +179,7 @@ def evaluate_answer(adapter, question, answer, facts):
     try:
         evaluation = json.loads(cleaned)
     except json.JSONDecodeError as exc:
-        raise ValueError(
-            f"Evaluator returned invalid JSON: {raw}"
-        ) from exc
+        raise ValueError(f"Evaluator returned invalid JSON: {raw}") from exc
 
     if not isinstance(evaluation, dict):
         raise ValueError("Evaluator output must be a JSON object")
@@ -217,7 +206,7 @@ def run_case(case, reference, controlled_failure=False):
     question = case["question"]
     facts = retrieve_facts(question, reference)
 
-    #separate agent instances, prompts, and message histories.
+    # separate agent instances, prompts, and message histories.
     answering_agent = ModelAdapter()
     evaluator_agent = ModelAdapter()
 
@@ -229,7 +218,7 @@ def run_case(case, reference, controlled_failure=False):
         injected = controlled_failure and attempt_number == 1
 
         if injected:
-            #development only fault injection for train_01.
+            # development only fault injection for train_01.
             answer = "Notice P4-R001 affects 75 units."
             answering_usage = None
             lesson_ids = []
@@ -272,10 +261,16 @@ def run_case(case, reference, controlled_failure=False):
         }
         attempts.append(attempt)
 
-        print(json.dumps({
-            "case_id": case["id"],
-            **attempt,
-        }, indent=2), flush=True)
+        print(
+            json.dumps(
+                {
+                    "case_id": case["id"],
+                    **attempt,
+                },
+                indent=2,
+            ),
+            flush=True,
+        )
 
         if evaluation["result"] == "PASS":
             break
@@ -312,22 +307,17 @@ def main():
     training = load_json(ROOT / "training_data.json")
 
     if args.controlled_failure and args.case_id != "train_01":
-        parser.error(
-            "Use --controlled-failure only with --case train_01"
-        )
+        parser.error("Use --controlled-failure only with --case train_01")
 
     selected = [
-        case for case in training
-        if args.case_id is None or case["id"] == args.case_id
+        case for case in training if args.case_id is None or case["id"] == args.case_id
     ]
 
     if not selected:
         parser.error("No matching training case")
 
     if args.controlled_failure:
-        expected_question = (
-            "How many units are affected by notice P4-R001?"
-        )
+        expected_question = "How many units are affected by notice P4-R001?"
         facts = retrieve_facts(selected[0]["question"], reference)
 
         if (

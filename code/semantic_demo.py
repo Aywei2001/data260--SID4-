@@ -11,9 +11,7 @@ async def run_pipeline(question: str) -> str:
     result = await asyncio.to_thread(ask_pipeline, question)
 
     if result.get("status") != "approved":
-        raise RuntimeError(
-            f"Pipeline did not produce an approved answer: {result}"
-        )
+        raise RuntimeError(f"Pipeline did not produce an approved answer: {result}")
 
     answer = result.get("answer")
     if not isinstance(answer, str) or not answer.strip():
@@ -32,13 +30,11 @@ async def main():
     questions = [
         (
             "new",
-            "What should a grocery store do after receiving "
-            "a supplier recall notice?",
+            "What should a grocery store do after receiving a supplier recall notice?",
         ),
         (
             "exact_duplicate",
-            "What should a grocery store do after receiving "
-            "a supplier recall notice?",
+            "What should a grocery store do after receiving a supplier recall notice?",
         ),
         (
             "paraphrase",

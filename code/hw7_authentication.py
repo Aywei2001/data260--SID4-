@@ -4,10 +4,11 @@ import json
 import logging
 import os
 import time
-import redis
 from enum import Enum
 from typing import List
 from uuid import UUID, uuid4
+
+import redis
 from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
@@ -117,6 +118,7 @@ class Record(Base):
 
     related_entity = relationship("RelatedEntity", back_populates="records")
 
+
 class GroceryRecallNotice(Base):
     __tablename__ = "grocery_recall_notices"
 
@@ -131,6 +133,7 @@ class GroceryRecallNotice(Base):
         nullable=False,
     )
     view_count = Column(Integer, default=0, nullable=False)
+
 
 class GroceryRecallNoticeCache:
     def __init__(self, db: Session, redis_client, prefix: str):
@@ -175,6 +178,7 @@ class GroceryRecallNoticeCache:
             )
 
         return count
+
 
 # use to create or migrate any missing tables
 Base.metadata.create_all(bind=engine)
@@ -484,10 +488,7 @@ def process_request(request, notices):
     if not isinstance(correlation_id, str) or not correlation_id.strip():
         return failure("Missing or invalid correlation_id")
 
-    if (
-        not isinstance(request.get("reply_to"), str)
-        or not request["reply_to"].strip()
-    ):
+    if not isinstance(request.get("reply_to"), str) or not request["reply_to"].strip():
         return failure("Missing or invalid reply_to")
 
     operation = request.get("operation")
@@ -511,9 +512,11 @@ def process_request(request, notices):
             if db.get(RelatedEntity, item.related_entity_id) is None:
                 return failure("Related entity not found")
 
-            existing = db.query(GroceryRecallNotice).filter(
-                GroceryRecallNotice.unique_code == item.unique_code
-            ).first()
+            existing = (
+                db.query(GroceryRecallNotice)
+                .filter(GroceryRecallNotice.unique_code == item.unique_code)
+                .first()
+            )
 
             if existing:
                 return failure(
@@ -716,6 +719,7 @@ def api_request(operation, data):
 
 app = FastAPI(title="Grocery Supply and Recall Notices")
 app.include_router(router)
+
 
 def test_counter(notice_id: str):
     with SessionLocal() as db:
