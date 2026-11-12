@@ -1,0 +1,26 @@
+[
+  {
+    "id": "test_01",
+    "question": "What are the affected quantity and hold location for P4-R001?"
+  },
+  {
+    "id": "test_02",
+    "question": "Identify the product and current status recorded for P4-R002."
+  },
+  {
+    "id": "test_03",
+    "question": "Which lot and how many units are affected by P4-R003?"
+  },
+  {
+    "id": "test_04",
+    "question": "Which hold locations are assigned to P4-R001 and P4-R002?"
+  },
+  {
+    "id": "test_05",
+    "question": "What supplier telephone number is recorded for P4-R001?"
+  },
+  {
+    "id": "test_06",
+    "question": "What quantity and expiration date are recorded for P4-R002?"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "train_01",
+    "question": "How many units are affected by notice P4-R001?"
+  },
+  {
+    "id": "train_02",
+    "question": "Which lot and product are identified in notice P4-R002?"
+  },
+  {
+    "id": "train_03",
+    "question": "What is the status and hold location for notice P4-R003?"
+  },
+  {
+  "id": "train_04",
+  "question": "What is the affected unit count for notice P4-R002?"
+  }
+]

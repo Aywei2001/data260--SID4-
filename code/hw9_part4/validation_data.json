@@ -1,0 +1,34 @@
+[
+  {
+    "id": "validation_01",
+    "question": "According to notice P4-R003, how many units are affected?"
+  },
+  {
+    "id": "validation_02",
+    "question": "What affected quantity is recorded for P4-R001?"
+  },
+  {
+    "id": "validation_03",
+    "question": "State the affected unit count for P4-R002 and identify the notice."
+  },
+  {
+    "id": "validation_04",
+    "question": "What product is named in notice P4-R003?"
+  },
+  {
+    "id": "validation_05",
+    "question": "Which hold location is assigned to P4-R002?"
+  },
+  {
+    "id": "validation_06",
+    "question": "What is the status of notice P4-R001?"
+  },
+  {
+    "id": "validation_07",
+    "question": "What affected quantity and retail price are recorded for P4-R003?"
+  },
+  {
+    "id": "validation_08",
+    "question": "What customer-service telephone number is listed for P4-R002?"
+  }
+]

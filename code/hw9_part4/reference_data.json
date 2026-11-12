@@ -1,0 +1,30 @@
+{
+  "dataset_version": "part4-v1",
+  "fictional": true,
+  "records": [
+    {
+      "notice_id": "P4-R001",
+      "product": "Test Orchard Apple Juice 1 L",
+      "affected_lot": "LOT-A",
+      "affected_quantity": 120,
+      "status": "active",
+      "hold_location": "HOLD-A"
+    },
+    {
+      "notice_id": "P4-R002",
+      "product": "Test Meadow Oat Drink 1 L",
+      "affected_lot": "LOT-B",
+      "affected_quantity": 75,
+      "status": "closed",
+      "hold_location": "HOLD-B"
+    },
+    {
+      "notice_id": "P4-R003",
+      "product": "Test Valley Tomato Soup 400 g",
+      "affected_lot": "LOT-C",
+      "affected_quantity": 48,
+      "status": "active",
+      "hold_location": "HOLD-C"
+    }
+  ]
+}

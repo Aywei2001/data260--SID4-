@@ -1,0 +1,15 @@
+[
+  {
+    "lesson_id": "lesson_quantity_001",
+    "failure_pattern": "An answer states an affected quantity that does not match the requested notice's reference record.",
+    "correction": "Match the requested notice ID exactly. Read its affected_quantity directly from the supplied reference record before answering. Do not copy a quantity from another notice or a previous answer.",
+    "created_at": "2026-11-09T19:45:58.170395+00:00",
+    "use_count": 2,
+    "applies_to": "affected_quantity",
+    "source_failure_ids": [
+      "cc13cb4d29af416daa8a100921ca90ee",
+      "cfed6ae661994560bcd9b118cd414022"
+    ],
+    "development_evidence": "controlled failures"
+  }
+]
