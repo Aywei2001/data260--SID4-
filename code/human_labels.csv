@@ -1,0 +1,21 @@
+case_id,human_score,reason
+case_01,4,Good response with some key details missing or repetition
+case_02,4,Good response with some key details missing or repetition
+case_03,5,Very good and accurate response
+case_04,3,Okay response that is missing information and sometimes hard to understand
+case_05,5,Very good and accurate response
+case_06,5,Very good and accurate response
+case_07,5,Very good and accurate response
+case_08,3,Okay response that is missing information and sometimes hard to understand
+case_09,4,Good response with some key details missing or repetition
+case_10,3,Okay response that is missing information and sometimes hard to understand
+case_11,3,Okay response that is missing information and sometimes hard to understand
+case_12,5,Very good and accurate response
+case_13,4,
+case_14,5,Very good and accurate response
+case_15,5,Very good and accurate response
+case_16,3,Okay response that is missing information and sometimes hard to understand
+case_17,5,Very good and accurate response
+case_18,4,Good response with some key details missing or repetition
+case_19,4,Good response with some key details missing or repetition
+case_20,5,Very good and accurate response
