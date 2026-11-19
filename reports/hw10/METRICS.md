@@ -1,6 +1,8 @@
-| Stage | p50 | (ms) | p95 (ms) | % of cache-miss end-to-end |
-|---:|---:|---:|---:|---:|
-| Cache | lookup | 8.42 | 19.44 | 0.0045% |
+From Part 4.3:
+
+| Stage | p50 (ms) | p95 (ms) | % of cache-miss end-to-end |
+|---|---:|---:|---:|
+| Cache lookup | 8.42 | 19.44 | 0.0045% |
 | Planner | 6.20 | 13.05 | 0.0032% |
 | Writer | 72,379.91 | 79,781.29 | 32.4097% |
 | Reviewer | 9.02 | 15.73 | 0.0044% |
