@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-11-09T17:29:08.452816+00:00",
+  "reference_version": "part4-v1",
+  "input_dataset": "training_data.json",
+  "maximum_answer_attempts": 2,
+  "controlled_failure": true,
+  "results": [
+    {
+      "case_id": "train_01",
+      "question": "How many units are affected by notice P4-R001?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R001",
+          "product": "Test Orchard Apple Juice 1 L",
+          "affected_lot": "LOT-A",
+          "affected_quantity": 120,
+          "status": "active",
+          "hold_location": "HOLD-A"
+        }
+      ],
+      "controlled_failure": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer_source": "controlled_injection",
+          "answer": "Notice P4-R001 affects 75 units.",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer does not match the reference value for the affected quantity.",
+            "feedback": "Please provide the correct affected quantity, which is 120 units."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer does not match the reference value for the affected quantity.\",\n  \"feedback\": \"Please provide the correct affected quantity, which is 120 units.\"\n}",
+          "answering_usage": null,
+          "evaluator_usage": {
+            "input_token_count": 304,
+            "output_token_count": 49,
+            "total_token_count": 353
+          }
+        },
+        {
+          "attempt": 2,
+          "answer_source": "answering_agent",
+          "answer": "120 units.",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly states the number of units affected by notice P4-R001.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\"result\": \"PASS\", \"explanation\": \"The candidate answer correctly states the number of units affected by notice P4-R001.\", \"feedback\": \"\"}",
+          "answering_usage": {
+            "input_token_count": 239,
+            "output_token_count": 4,
+            "total_token_count": 243
+          },
+          "evaluator_usage": {
+            "input_token_count": 297,
+            "output_token_count": 34,
+            "total_token_count": 331
+          }
+        }
+      ],
+      "attempt_count": 2,
+      "final_answer": "120 units.",
+      "final_evaluation": {
+        "result": "PASS",
+        "explanation": "The candidate answer correctly states the number of units affected by notice P4-R001.",
+        "feedback": ""
+      },
+      "stop_reason": "passed"
+    }
+  ],
+  "complete": true
+}

@@ -1,0 +1,83 @@
+{
+  "source_report": "reports\\threshold_sweep_71f6b06c94d24b94961190fbebf6f5c8.json",
+  "dataset_sha256": "9d4dfad40e3c575fdc2edce09b36244d836e86690d45074a803a7479c43ce42d",
+  "cost_model": {
+    "units": "hypothetical relative cost units",
+    "cache_miss_cost": 1,
+    "incorrect_hit_cost": 100,
+    "correct_hit_incremental_cost": 0,
+    "formula": "misses * 1 + incorrect_hits * 100",
+    "limitations": "Not measured dollars; common lookup overhead omitted; does not separately price inference-answer errors."
+  },
+  "rows": [
+    {
+      "threshold": 0.75,
+      "queries": 40,
+      "hits": 21,
+      "misses": 19,
+      "false_hits": 10,
+      "wrong_seed_hits": 0,
+      "incorrect_hits": 10,
+      "hit_rate_percent": 52.5,
+      "false_hit_rate_percent": 50.0,
+      "mean_latency_ms": 5301.868777500204,
+      "total_cost": 1019
+    },
+    {
+      "threshold": 0.8,
+      "queries": 40,
+      "hits": 20,
+      "misses": 20,
+      "false_hits": 10,
+      "wrong_seed_hits": 0,
+      "incorrect_hits": 10,
+      "hit_rate_percent": 50.0,
+      "false_hit_rate_percent": 50.0,
+      "mean_latency_ms": 4612.976612500279,
+      "total_cost": 1020
+    },
+    {
+      "threshold": 0.85,
+      "queries": 40,
+      "hits": 20,
+      "misses": 20,
+      "false_hits": 10,
+      "wrong_seed_hits": 0,
+      "incorrect_hits": 10,
+      "hit_rate_percent": 50.0,
+      "false_hit_rate_percent": 50.0,
+      "mean_latency_ms": 3761.1690874993656,
+      "total_cost": 1020
+    },
+    {
+      "threshold": 0.9,
+      "queries": 40,
+      "hits": 20,
+      "misses": 20,
+      "false_hits": 10,
+      "wrong_seed_hits": 0,
+      "incorrect_hits": 10,
+      "hit_rate_percent": 50.0,
+      "false_hit_rate_percent": 50.0,
+      "mean_latency_ms": 3593.1777474979754,
+      "total_cost": 1020
+    },
+    {
+      "threshold": 0.95,
+      "queries": 40,
+      "hits": 20,
+      "misses": 20,
+      "false_hits": 10,
+      "wrong_seed_hits": 0,
+      "incorrect_hits": 10,
+      "hit_rate_percent": 50.0,
+      "false_hit_rate_percent": 50.0,
+      "mean_latency_ms": 3694.653592499162,
+      "total_cost": 1020
+    }
+  ],
+  "minimum_cost": 1019,
+  "minimum_cost_thresholds": [
+    0.75
+  ]
+}

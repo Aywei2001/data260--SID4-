@@ -1,0 +1,8 @@
+{
+  "database_table": "s1339_rel",
+  "record_id": "STALE001",
+  "question": "How many units are affected by notice STALE001?",
+  "steps": [],
+  "complete": false,
+  "error": "No final response for correlation_id=db179d7e-5c3d-4520-b139-01de22005b0b"
+}

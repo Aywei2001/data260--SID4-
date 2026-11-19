@@ -1,0 +1,5 @@
+variant,correct_answers,incorrect_answers,average_attempts,average_latency_ms
+Baseline,3,3,1.0,16462.792366655776
+Evaluator Repair,4,2,1.5,29452.466549996945
+Lesson Memory,5,1,1.5,31890.737366663718
+Validated Improvement,4,2,1.5,31817.47753333184

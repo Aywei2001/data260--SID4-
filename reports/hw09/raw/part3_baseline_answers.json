@@ -1,0 +1,86 @@
+{
+  "dataset_sha256": "9d4dfad40e3c575fdc2edce09b36244d836e86690d45074a803a7479c43ce42d",
+  "created_at": "2026-11-09T06:09:03.208665+00:00",
+  "answers": [
+    {
+      "id": "seed_01",
+      "query": "Which lot is affected by notice R001?",
+      "answer": "Notice R001 affects the \"Test Orchard Apple Juice 1 L\" product with lot \"LOT-A\".",
+      "record_id": "R001",
+      "field": "affected_lot",
+      "reference_answer": "Notice R001: affected_lot = LOT-A."
+    },
+    {
+      "id": "seed_02",
+      "query": "Which product is listed in notice R001?",
+      "answer": "The product listed in notice R001 is \"Test Orchard Apple Juice 1 L\".",
+      "record_id": "R001",
+      "field": "product",
+      "reference_answer": "Notice R001: product = Test Orchard Apple Juice 1 L."
+    },
+    {
+      "id": "seed_03",
+      "query": "Which supplier is named in notice R001?",
+      "answer": "Notice R001 names Test Orchard Foods as the supplier.",
+      "record_id": "R001",
+      "field": "supplier",
+      "reference_answer": "Notice R001: supplier = Test Orchard Foods."
+    },
+    {
+      "id": "seed_04",
+      "query": "How many units are affected by notice R001?",
+      "answer": "Notice R001 affects 120 units of Test Orchard Apple Juice 1 L.",
+      "record_id": "R001",
+      "field": "affected_quantity",
+      "reference_answer": "Notice R001: affected_quantity = 120."
+    },
+    {
+      "id": "seed_05",
+      "query": "What is the status of notice R001?",
+      "answer": "The status of notice R001 is \"active\".",
+      "record_id": "R001",
+      "field": "status",
+      "reference_answer": "Notice R001: status = active."
+    },
+    {
+      "id": "seed_06",
+      "query": "What hold location is assigned to notice R001?",
+      "answer": "The hold location assigned to notice R001 is HOLD-A.",
+      "record_id": "R001",
+      "field": "hold_location",
+      "reference_answer": "Notice R001: hold_location = HOLD-A."
+    },
+    {
+      "id": "seed_07",
+      "query": "What is the notice date for R001?",
+      "answer": "The notice date for R001 is 2026-10-01.",
+      "record_id": "R001",
+      "field": "notice_date",
+      "reference_answer": "Notice R001: notice_date = 2026-10-01."
+    },
+    {
+      "id": "seed_08",
+      "query": "What disposition instruction is recorded for notice R001?",
+      "answer": "For notice R001, the disposition instruction is: \"Hold for supplier pickup; do not discard.\"",
+      "record_id": "R001",
+      "field": "disposition",
+      "reference_answer": "Notice R001: disposition = Hold for supplier pickup; do not discard.."
+    },
+    {
+      "id": "seed_09",
+      "query": "Who is the contact for notice R001?",
+      "answer": "The contact for notice R001 is Recall Desk A.",
+      "record_id": "R001",
+      "field": "contact",
+      "reference_answer": "Notice R001: contact = Recall Desk A."
+    },
+    {
+      "id": "seed_10",
+      "query": "Which store received products covered by notice R001?",
+      "answer": "Store North received products covered by notice R001.",
+      "record_id": "R001",
+      "field": "distribution",
+      "reference_answer": "Notice R001: distribution = Store North."
+    }
+  ]
+}

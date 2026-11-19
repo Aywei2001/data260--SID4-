@@ -1,0 +1,741 @@
+{
+  "created_at": "2026-11-09T19:54:12.560111+00:00",
+  "validation_sha256": "ae680e3fda44b8ada4a2907a9eafbc7d9b1836bbe6cf729df0ccfc724be9b0d2",
+  "reference_sha256": "767d8135d47ab372b28449b9e304a3671f8c3320e1448579e3fbbd36807fb544",
+  "lessons_sha256": "e70da48c1efd8a4af324d32838faf4012079e7db0e4db4f76b29bbf42e2ee04e",
+  "candidate_lessons": [
+    {
+      "lesson_id": "lesson_quantity_001",
+      "failure_pattern": "An answer states an affected quantity that does not match the requested notice's reference record.",
+      "correction": "Match the requested notice ID exactly. Read its affected_quantity directly from the supplied reference record before answering. Do not copy a quantity from another notice or a previous answer.",
+      "created_at": "2026-11-09T19:45:58.170395+00:00",
+      "use_count": 2,
+      "applies_to": "affected_quantity",
+      "source_failure_ids": [
+        "cc13cb4d29af416daa8a100921ca90ee",
+        "cfed6ae661994560bcd9b118cd414022"
+      ],
+      "development_evidence": "controlled failures"
+    }
+  ],
+  "maximum_answer_attempts": 2,
+  "fault_injection": false,
+  "lesson_learning_enabled": false,
+  "results": [
+    {
+      "id": "validation_01",
+      "question": "According to notice P4-R003, how many units are affected?",
+      "execution_order": [
+        "before",
+        "after"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "48 units.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the number of units affected according to the reference fact.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the number of units affected according to the reference fact.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 244,
+              "output_token_count": 4,
+              "total_token_count": 248
+            },
+            "evaluator_usage": {
+              "input_token_count": 299,
+              "output_token_count": 37,
+              "total_token_count": 336
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "48 units.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the number of units affected according to the reference fact.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the number of units affected according to the reference fact.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [
+              "lesson_quantity_001"
+            ],
+            "answering_usage": {
+              "input_token_count": 314,
+              "output_token_count": 4,
+              "total_token_count": 318
+            },
+            "evaluator_usage": {
+              "input_token_count": 299,
+              "output_token_count": 37,
+              "total_token_count": 336
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_02",
+      "question": "What affected quantity is recorded for P4-R001?",
+      "execution_order": [
+        "after",
+        "before"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R001",
+            "product": "Test Orchard Apple Juice 1 L",
+            "affected_lot": "LOT-A",
+            "affected_quantity": 120,
+            "status": "active",
+            "hold_location": "HOLD-A"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "120",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly provided the affected quantity for the specified notice.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly provided the affected quantity for the specified notice.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 241,
+              "output_token_count": 2,
+              "total_token_count": 243
+            },
+            "evaluator_usage": {
+              "input_token_count": 294,
+              "output_token_count": 34,
+              "total_token_count": 328
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R001",
+            "product": "Test Orchard Apple Juice 1 L",
+            "affected_lot": "LOT-A",
+            "affected_quantity": 120,
+            "status": "active",
+            "hold_location": "HOLD-A"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "120",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the affected quantity for the specified notice.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\"result\": \"PASS\", \"explanation\": \"The candidate answer correctly states the affected quantity for the specified notice.\", \"feedback\": \"\"}",
+            "loaded_lesson_ids": [
+              "lesson_quantity_001"
+            ],
+            "answering_usage": {
+              "input_token_count": 311,
+              "output_token_count": 2,
+              "total_token_count": 313
+            },
+            "evaluator_usage": {
+              "input_token_count": 294,
+              "output_token_count": 30,
+              "total_token_count": 324
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_03",
+      "question": "State the affected unit count for P4-R002 and identify the notice.",
+      "execution_order": [
+        "before",
+        "after"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "Affected unit count for P4-R002: 75.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the affected unit count for P4-R002 as 75 and identifies the notice as P4-R002.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the affected unit count for P4-R002 as 75 and identifies the notice as P4-R002.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 246,
+              "output_token_count": 13,
+              "total_token_count": 259
+            },
+            "evaluator_usage": {
+              "input_token_count": 310,
+              "output_token_count": 48,
+              "total_token_count": 358
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The affected unit count for P4-R002 is 75. The notice is P4-R002.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the affected unit count and the notice ID, and provides equivalent wording.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the affected unit count and the notice ID, and provides equivalent wording.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [
+              "lesson_quantity_001"
+            ],
+            "answering_usage": {
+              "input_token_count": 316,
+              "output_token_count": 22,
+              "total_token_count": 338
+            },
+            "evaluator_usage": {
+              "input_token_count": 319,
+              "output_token_count": 40,
+              "total_token_count": 359
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_04",
+      "question": "What product is named in notice P4-R003?",
+      "execution_order": [
+        "after",
+        "before"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "Test Valley Tomato Soup 400 g",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly identifies the product named in notice P4-R003.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly identifies the product named in notice P4-R003.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 241,
+              "output_token_count": 8,
+              "total_token_count": 249
+            },
+            "evaluator_usage": {
+              "input_token_count": 300,
+              "output_token_count": 36,
+              "total_token_count": 336
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "Test Valley Tomato Soup 400 g",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly identifies the product named in notice P4-R003.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\"result\": \"PASS\", \"explanation\": \"The candidate answer correctly identifies the product named in notice P4-R003.\", \"feedback\": \"\"}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 241,
+              "output_token_count": 8,
+              "total_token_count": 249
+            },
+            "evaluator_usage": {
+              "input_token_count": 300,
+              "output_token_count": 32,
+              "total_token_count": 332
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_05",
+      "question": "Which hold location is assigned to P4-R002?",
+      "execution_order": [
+        "before",
+        "after"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "HOLD-B",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly identifies the hold location assigned to P4-R002.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\"result\": \"PASS\", \"explanation\": \"The candidate answer correctly identifies the hold location assigned to P4-R002.\", \"feedback\": \"\"}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 242,
+              "output_token_count": 4,
+              "total_token_count": 246
+            },
+            "evaluator_usage": {
+              "input_token_count": 297,
+              "output_token_count": 32,
+              "total_token_count": 329
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "HOLD-B",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly identifies the hold location assigned to P4-R002 as HOLD-B.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\"result\": \"PASS\", \"explanation\": \"The candidate answer correctly identifies the hold location assigned to P4-R002 as HOLD-B.\", \"feedback\": \"\"}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 242,
+              "output_token_count": 4,
+              "total_token_count": 246
+            },
+            "evaluator_usage": {
+              "input_token_count": 297,
+              "output_token_count": 35,
+              "total_token_count": 332
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_06",
+      "question": "What is the status of notice P4-R001?",
+      "execution_order": [
+        "after",
+        "before"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R001",
+            "product": "Test Orchard Apple Juice 1 L",
+            "affected_lot": "LOT-A",
+            "affected_quantity": 120,
+            "status": "active",
+            "hold_location": "HOLD-A"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The status of notice P4-R001 is active.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the status of notice P4-R001 as active.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the status of notice P4-R001 as active.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 241,
+              "output_token_count": 12,
+              "total_token_count": 253
+            },
+            "evaluator_usage": {
+              "input_token_count": 304,
+              "output_token_count": 37,
+              "total_token_count": 341
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R001",
+            "product": "Test Orchard Apple Juice 1 L",
+            "affected_lot": "LOT-A",
+            "affected_quantity": 120,
+            "status": "active",
+            "hold_location": "HOLD-A"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The status of notice P4-R001 is active.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the status of notice P4-R001 as active.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the status of notice P4-R001 as active.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 241,
+              "output_token_count": 12,
+              "total_token_count": 253
+            },
+            "evaluator_usage": {
+              "input_token_count": 304,
+              "output_token_count": 37,
+              "total_token_count": 341
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    },
+    {
+      "id": "validation_07",
+      "question": "What affected quantity and retail price are recorded for P4-R003?",
+      "execution_order": [
+        "before",
+        "after"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "affected_quantity: 48, retail_price: not specified",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states the affected quantity, and although the retail price is not specified, it is not necessary to include it in the answer.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the affected quantity, and although the retail price is not specified, it is not necessary to include it in the answer.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 244,
+              "output_token_count": 12,
+              "total_token_count": 256
+            },
+            "evaluator_usage": {
+              "input_token_count": 307,
+              "output_token_count": 50,
+              "total_token_count": 357
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R003",
+            "product": "Test Valley Tomato Soup 400 g",
+            "affected_lot": "LOT-C",
+            "affected_quantity": 48,
+            "status": "active",
+            "hold_location": "HOLD-C"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "affected_quantity: 48",
+            "evaluation": {
+              "result": "REVISE",
+              "explanation": "The candidate answer is missing information about the retail price.",
+              "feedback": "Please provide both affected_quantity and retail_price for P4-R003."
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing information about the retail price.\",\n  \"feedback\": \"Please provide both affected_quantity and retail_price for P4-R003.\"\n}",
+            "loaded_lesson_ids": [
+              "lesson_quantity_001"
+            ],
+            "answering_usage": {
+              "input_token_count": 314,
+              "output_token_count": 6,
+              "total_token_count": 320
+            },
+            "evaluator_usage": {
+              "input_token_count": 301,
+              "output_token_count": 47,
+              "total_token_count": 348
+            }
+          },
+          {
+            "attempt": 2,
+            "answer": "affected_quantity: 48, retail_price: not specified",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly identified the affected quantity and provided a clear answer for the retail price.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly identified the affected quantity and provided a clear answer for the retail price.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [
+              "lesson_quantity_001"
+            ],
+            "answering_usage": {
+              "input_token_count": 345,
+              "output_token_count": 12,
+              "total_token_count": 357
+            },
+            "evaluator_usage": {
+              "input_token_count": 307,
+              "output_token_count": 39,
+              "total_token_count": 346
+            }
+          }
+        ],
+        "initial_pass": false,
+        "final_pass": true
+      },
+      "initial_regression": true,
+      "final_regression": false
+    },
+    {
+      "id": "validation_08",
+      "question": "What customer-service telephone number is listed for P4-R002?",
+      "execution_order": [
+        "after",
+        "before"
+      ],
+      "before": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "There is no information listed for the customer-service telephone number for P4-R002.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states that there is no information listed for the customer-service telephone number for P4-R002.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states that there is no information listed for the customer-service telephone number for P4-R002.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 244,
+              "output_token_count": 18,
+              "total_token_count": 262
+            },
+            "evaluator_usage": {
+              "input_token_count": 313,
+              "output_token_count": 44,
+              "total_token_count": 357
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "after": {
+        "reference_facts": [
+          {
+            "notice_id": "P4-R002",
+            "product": "Test Meadow Oat Drink 1 L",
+            "affected_lot": "LOT-B",
+            "affected_quantity": 75,
+            "status": "closed",
+            "hold_location": "HOLD-B"
+          }
+        ],
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "There is no information listed for the customer-service telephone number for P4-R002.",
+            "evaluation": {
+              "result": "PASS",
+              "explanation": "The candidate answer correctly states that there is no information listed for the customer-service telephone number for P4-R002.",
+              "feedback": ""
+            },
+            "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states that there is no information listed for the customer-service telephone number for P4-R002.\",\n  \"feedback\": \"\"\n}",
+            "loaded_lesson_ids": [],
+            "answering_usage": {
+              "input_token_count": 244,
+              "output_token_count": 18,
+              "total_token_count": 262
+            },
+            "evaluator_usage": {
+              "input_token_count": 313,
+              "output_token_count": 44,
+              "total_token_count": 357
+            }
+          }
+        ],
+        "initial_pass": true,
+        "final_pass": true
+      },
+      "initial_regression": false,
+      "final_regression": false
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "cases": 8,
+    "before_initial_passes": 8,
+    "after_initial_passes": 7,
+    "before_final_passes": 8,
+    "after_final_passes": 8,
+    "initial_regressions": 1,
+    "final_regressions": 0,
+    "candidate_passes_automated_nonregression_check": false,
+    "manual_answer_review_required": true
+  }
+}

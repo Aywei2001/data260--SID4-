@@ -1,0 +1,335 @@
+{
+  "created_at": "2026-11-09T20:07:57.519752+00:00",
+  "configuration_hashes": {
+    "test_data": "04b4cf8286c873964a1d0b9c99a65963641642f8797506e08b6260730d970185",
+    "reference_data": "767d8135d47ab372b28449b9e304a3671f8c3320e1448579e3fbbd36807fb544",
+    "lessons": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "agent_code": "555fade028e46829eec474ee7d81df4ec15bba2c378ef85c2c1e4fc20b966bcf",
+    "evaluation_code": "08563e12f5ad37e0a1cd334a508ea5858543daa3ff0cad03b7e1a14410da3584",
+    "lesson_code": "65ba1a7a0b20f83ce8b56df817364640b2a341c5ede6305db0f8030cc0208e60",
+    "model_adapter": "257d0916dbe272465ac68d804b627b796a54b9686321e369cf4d277133b3a8a5"
+  },
+  "reference_version": "part4-v1",
+  "selected_lesson_ids": [],
+  "lesson_learning_enabled": false,
+  "controlled_failure": false,
+  "maximum_answer_attempts": 2,
+  "results": [
+    {
+      "id": "test_01",
+      "question": "What are the affected quantity and hold location for P4-R001?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R001",
+          "product": "Test Orchard Apple Juice 1 L",
+          "affected_lot": "LOT-A",
+          "affected_quantity": 120,
+          "status": "active",
+          "hold_location": "HOLD-A"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "{\"affected_quantity\": 120, \"hold_location\": \"HOLD-A\"}",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly provides the affected quantity and hold location for P4-R001.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly provides the affected quantity and hold location for P4-R001.\",\n  \"feedback\": \"\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 244,
+            "output_token_count": 17,
+            "total_token_count": 261
+          },
+          "evaluator_usage": {
+            "input_token_count": 312,
+            "output_token_count": 38,
+            "total_token_count": 350
+          }
+        }
+      ],
+      "initial_pass": true,
+      "final_pass": true
+    },
+    {
+      "id": "test_02",
+      "question": "Identify the product and current status recorded for P4-R002.",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R002",
+          "product": "Test Meadow Oat Drink 1 L",
+          "affected_lot": "LOT-B",
+          "affected_quantity": 75,
+          "status": "closed",
+          "hold_location": "HOLD-B"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "\"Test Meadow Oat Drink 1 L\", \"closed\"",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer is missing information about the affected lot, affected quantity, and hold location.",
+            "feedback": "Please provide the complete information as per the reference facts, e.g., \"Test Meadow Oat Drink 1 L\", \"LOT-B\", 75, and \"closed\" and \"HOLD-B\" respectively."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing information about the affected lot, affected quantity, and hold location.\",\n  \"feedback\": \"Please provide the complete information as per the reference facts, e.g., \\\"Test Meadow Oat Drink 1 L\\\", \\\"LOT-B\\\", 75, and \\\"closed\\\" and \\\"HOLD-B\\\" respectively.\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 245,
+            "output_token_count": 14,
+            "total_token_count": 259
+          },
+          "evaluator_usage": {
+            "input_token_count": 309,
+            "output_token_count": 83,
+            "total_token_count": 392
+          }
+        },
+        {
+          "attempt": 2,
+          "answer": "\"Test Meadow Oat Drink 1 L\", \"LOT-B\", 75, \"closed\", \"HOLD-B\"",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly identifies the product and current status recorded for P4-R002.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly identifies the product and current status recorded for P4-R002.\",\n  \"feedback\": \"\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 311,
+            "output_token_count": 26,
+            "total_token_count": 337
+          },
+          "evaluator_usage": {
+            "input_token_count": 321,
+            "output_token_count": 38,
+            "total_token_count": 359
+          }
+        }
+      ],
+      "initial_pass": false,
+      "final_pass": true
+    },
+    {
+      "id": "test_03",
+      "question": "Which lot and how many units are affected by P4-R003?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R003",
+          "product": "Test Valley Tomato Soup 400 g",
+          "affected_lot": "LOT-C",
+          "affected_quantity": 48,
+          "status": "active",
+          "hold_location": "HOLD-C"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "{\"affected_lot\": \"LOT-C\", \"affected_quantity\": \"48\"}",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly identifies the affected lot and quantity of the product.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly identifies the affected lot and quantity of the product.\",\n  \"feedback\": \"\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 244,
+            "output_token_count": 16,
+            "total_token_count": 260
+          },
+          "evaluator_usage": {
+            "input_token_count": 311,
+            "output_token_count": 35,
+            "total_token_count": 346
+          }
+        }
+      ],
+      "initial_pass": true,
+      "final_pass": true
+    },
+    {
+      "id": "test_04",
+      "question": "Which hold locations are assigned to P4-R001 and P4-R002?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R001",
+          "product": "Test Orchard Apple Juice 1 L",
+          "affected_lot": "LOT-A",
+          "affected_quantity": 120,
+          "status": "active",
+          "hold_location": "HOLD-A"
+        },
+        {
+          "notice_id": "P4-R002",
+          "product": "Test Meadow Oat Drink 1 L",
+          "affected_lot": "LOT-B",
+          "affected_quantity": 75,
+          "status": "closed",
+          "hold_location": "HOLD-B"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "\"HOLD-A\"",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer is missing information about the second hold location assigned to P4-R002.",
+            "feedback": "Please provide the hold location for P4-R002 as well."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing information about the second hold location assigned to P4-R002.\",\n  \"feedback\": \"Please provide the hold location for P4-R002 as well.\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 299,
+            "output_token_count": 5,
+            "total_token_count": 304
+          },
+          "evaluator_usage": {
+            "input_token_count": 355,
+            "output_token_count": 53,
+            "total_token_count": 408
+          }
+        },
+        {
+          "attempt": 2,
+          "answer": "{\"question\": \"Which hold locations are assigned to P4-R001 and P4-R002?\", \"reference_facts\": [{\"notice_id\": \"P4-R001\", \"product\": \"Test Orchard Apple Juice 1 L\", \"affected_lot\": \"LOT-A\", \"affected_quantity\": 120, \"status\": \"active\", \"hold_location\": \"HOLD-A\"}, {\"notice_id\": \"P4-R002\", \"product\": \"Test Meadow Oat Drink 1 L\", \"affected_lot\": \"LOT-B\", \"affected_quantity\": 75, \"status\": \"closed\", \"hold_location\": \"HOLD-B\"}], \"reusable_lessons\": [], \"previous_answer\": \"\\\"HOLD-A\\\"\", \"evaluator_feedback\": \"Please provide the hold location for P4-R002 as well.\"}",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer is missing the hold location for P4-R002.",
+            "feedback": "Please provide the hold location for P4-R002 as well."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing the hold location for P4-R002.\",\n  \"feedback\": \"Please provide the hold location for P4-R002 as well.\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 327,
+            "output_token_count": 168,
+            "total_token_count": 495
+          },
+          "evaluator_usage": {
+            "input_token_count": 525,
+            "output_token_count": 49,
+            "total_token_count": 574
+          }
+        }
+      ],
+      "initial_pass": false,
+      "final_pass": false
+    },
+    {
+      "id": "test_05",
+      "question": "What supplier telephone number is recorded for P4-R001?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R001",
+          "product": "Test Orchard Apple Juice 1 L",
+          "affected_lot": "LOT-A",
+          "affected_quantity": 120,
+          "status": "active",
+          "hold_location": "HOLD-A"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "There is no information about a supplier telephone number in the reference facts.",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly identifies the absence of information about a supplier telephone number in the reference facts.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly identifies the absence of information about a supplier telephone number in the reference facts.\",\n  \"feedback\": \"\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 242,
+            "output_token_count": 15,
+            "total_token_count": 257
+          },
+          "evaluator_usage": {
+            "input_token_count": 308,
+            "output_token_count": 40,
+            "total_token_count": 348
+          }
+        }
+      ],
+      "initial_pass": true,
+      "final_pass": true
+    },
+    {
+      "id": "test_06",
+      "question": "What quantity and expiration date are recorded for P4-R002?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R002",
+          "product": "Test Meadow Oat Drink 1 L",
+          "affected_lot": "LOT-B",
+          "affected_quantity": 75,
+          "status": "closed",
+          "hold_location": "HOLD-B"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "{\"affected_quantity\": 75, \"affected_lot\": \"LOT-B\", \"expiration_date\": null}",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer is missing the required information about the expiration date.",
+            "feedback": "Please provide the expiration date as recorded for P4-R002."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing the required information about the expiration date.\",\n  \"feedback\": \"Please provide the expiration date as recorded for P4-R002.\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 244,
+            "output_token_count": 22,
+            "total_token_count": 266
+          },
+          "evaluator_usage": {
+            "input_token_count": 316,
+            "output_token_count": 48,
+            "total_token_count": 364
+          }
+        },
+        {
+          "attempt": 2,
+          "answer": "{\"affected_quantity\": 75, \"affected_lot\": \"LOT-B\", \"expiration_date\": \"2023-03-15\"}",
+          "evaluation": {
+            "result": "REVISE",
+            "explanation": "The candidate answer is missing the notice_id and includes an unsupported expiration_date claim.",
+            "feedback": "Include the notice_id in the answer and only include supported reference values."
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"REVISE\",\n  \"explanation\": \"The candidate answer is missing the notice_id and includes an unsupported expiration_date claim.\",\n  \"feedback\": \"Include the notice_id in the answer and only include supported reference values.\"\n}",
+          "loaded_lesson_ids": [],
+          "answering_usage": {
+            "input_token_count": 288,
+            "output_token_count": 28,
+            "total_token_count": 316
+          },
+          "evaluator_usage": {
+            "input_token_count": 323,
+            "output_token_count": 52,
+            "total_token_count": 375
+          }
+        }
+      ],
+      "initial_pass": false,
+      "final_pass": false
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "cases": 6,
+    "initial_passes": 3,
+    "initial_pass_rate_percent": 50.0,
+    "final_passes": 4,
+    "final_pass_rate_percent": 66.66666666666667,
+    "cases_requiring_revision": 3,
+    "configuration_unchanged": true,
+    "manual_factual_review_required": true
+  }
+}

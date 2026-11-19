@@ -1,0 +1,96 @@
+{
+  "database_table": "s1339_rel",
+  "record_id": "STALE001",
+  "question": "How many units are affected by notice STALE001?",
+  "steps": [
+    {
+      "label": "1_initial_cache_miss",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 120,
+        "data_version": 1
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "The notice STALE001 affects 120 units.",
+        "is_cached": false,
+        "similarity_score": null,
+        "latency_ms": 5063.7428000045475,
+        "data_version": "stale-demo-9a0d32de6fab4b48aa3eacd7e6f1542f-v1",
+        "timings_ms": {
+          "embedding": 119.95620001107454,
+          "lookup": 11.923600017325953,
+          "agent": 4921.899200009648,
+          "store": 9.72229999024421
+        }
+      }
+    },
+    {
+      "label": "2_stale_cache_hit",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 75,
+        "data_version": 1
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "The notice STALE001 affects 120 units.",
+        "is_cached": true,
+        "similarity_score": 1.0,
+        "latency_ms": 57.85370001103729,
+        "data_version": "stale-demo-9a0d32de6fab4b48aa3eacd7e6f1542f-v1",
+        "timings_ms": {
+          "embedding": 32.79259998816997,
+          "lookup": 24.49509999132715,
+          "agent": 0.0,
+          "store": 0.0
+        }
+      }
+    },
+    {
+      "label": "3_versioned_cache_miss",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 75,
+        "data_version": 2
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "75 units are affected by notice STALE001.",
+        "is_cached": false,
+        "similarity_score": null,
+        "latency_ms": 5099.544299999252,
+        "data_version": "stale-demo-9a0d32de6fab4b48aa3eacd7e6f1542f-v2",
+        "timings_ms": {
+          "embedding": 19.584800000302494,
+          "lookup": 13.483499991707504,
+          "agent": 5061.782100005075,
+          "store": 4.394599993247539
+        }
+      }
+    },
+    {
+      "label": "4_updated_cache_hit",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 75,
+        "data_version": 2
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "75 units are affected by notice STALE001.",
+        "is_cached": true,
+        "similarity_score": 1.0,
+        "latency_ms": 51.28919999697246,
+        "data_version": "stale-demo-9a0d32de6fab4b48aa3eacd7e6f1542f-v2",
+        "timings_ms": {
+          "embedding": 31.85729999677278,
+          "lookup": 19.063499988988042,
+          "agent": 0.0,
+          "store": 0.0
+        }
+      }
+    }
+  ],
+  "complete": true
+}

@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-11-09T17:27:18.915746+00:00",
+  "reference_version": "part4-v1",
+  "input_dataset": "training_data.json",
+  "maximum_answer_attempts": 2,
+  "controlled_failure": false,
+  "results": [
+    {
+      "case_id": "train_01",
+      "question": "How many units are affected by notice P4-R001?",
+      "reference_facts": [
+        {
+          "notice_id": "P4-R001",
+          "product": "Test Orchard Apple Juice 1 L",
+          "affected_lot": "LOT-A",
+          "affected_quantity": 120,
+          "status": "active",
+          "hold_location": "HOLD-A"
+        }
+      ],
+      "controlled_failure": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer_source": "answering_agent",
+          "answer": "120 units.",
+          "evaluation": {
+            "result": "PASS",
+            "explanation": "The candidate answer correctly states the number of units affected by notice P4-R001.",
+            "feedback": ""
+          },
+          "raw_evaluator_response": "{\n  \"result\": \"PASS\",\n  \"explanation\": \"The candidate answer correctly states the number of units affected by notice P4-R001.\",\n  \"feedback\": \"\"\n}",
+          "answering_usage": {
+            "input_token_count": 204,
+            "output_token_count": 4,
+            "total_token_count": 208
+          },
+          "evaluator_usage": {
+            "input_token_count": 297,
+            "output_token_count": 38,
+            "total_token_count": 335
+          }
+        }
+      ],
+      "attempt_count": 1,
+      "final_answer": "120 units.",
+      "final_evaluation": {
+        "result": "PASS",
+        "explanation": "The candidate answer correctly states the number of units affected by notice P4-R001.",
+        "feedback": ""
+      },
+      "stop_reason": "passed"
+    }
+  ],
+  "complete": true
+}

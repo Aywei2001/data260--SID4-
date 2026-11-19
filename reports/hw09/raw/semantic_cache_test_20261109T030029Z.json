@@ -1,0 +1,209 @@
+{
+  "generated_at": "2026-11-09T03:00:29.348592+00:00",
+  "data_version": "pipeline-model-v2",
+  "similarity_threshold": 0.85,
+  "attempted_queries": 12,
+  "failed_queries": 0,
+  "metrics_for_successful_queries": {
+    "total_queries": 12,
+    "cache_hits": 7,
+    "cache_misses": 5,
+    "cache_hit_rate_percent": 58.333333333333336,
+    "average_cached_latency_ms": 56.84661428469034,
+    "average_non_cached_latency_ms": 57063.03323999746
+  },
+  "results": [
+    {
+      "number": 1,
+      "category": "new",
+      "question": "What should a grocery store do after receiving a supplier recall notice?",
+      "answer": "After receiving a supplier recall notice, a grocery store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are being recalled. This information will help the store to isolate the affected inventory and prevent further sales.\n\n2. **Describe inventory isolation and sale blocking**: Immediately isolate the affected product and lot numbers by:\n\t* Removing the products from shelves and display areas.\n\t* Blocking sales of the affected products in the store's point-of-sale system.\n\t* Notifying the store's management and quality control team to ensure that the products are not sold to customers.\n\n3. **Describe notification, disposition, and documentation**: Notify the supplier, regulatory agencies (if required), and other relevant stakeholders about the recall. The store should also:\n\t* Dispose of the affected products in a responsible manner, such as donating them to a food bank or recycling them.\n\t* Document all actions taken in response to the recall, including:\n\t\t+ The date and time the recall notice was received.\n\t\t+ The steps taken to isolate and block sales of the affected products.\n\t\t+ The date and time the affected products were disposed of.\n\t\t+ Any other relevant details.",
+      "is_cached": false,
+      "similarity_score": null,
+      "latency_ms": 55942.99529999262,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 116.12890000105835,
+        "lookup": 14.158699996187352,
+        "agent": 55764.005100005306,
+        "store": 48.41790000500623
+      }
+    },
+    {
+      "number": 2,
+      "category": "exact_duplicate",
+      "question": "What should a grocery store do after receiving a supplier recall notice?",
+      "answer": "After receiving a supplier recall notice, a grocery store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are being recalled. This information will help the store to isolate the affected inventory and prevent further sales.\n\n2. **Describe inventory isolation and sale blocking**: Immediately isolate the affected product and lot numbers by:\n\t* Removing the products from shelves and display areas.\n\t* Blocking sales of the affected products in the store's point-of-sale system.\n\t* Notifying the store's management and quality control team to ensure that the products are not sold to customers.\n\n3. **Describe notification, disposition, and documentation**: Notify the supplier, regulatory agencies (if required), and other relevant stakeholders about the recall. The store should also:\n\t* Dispose of the affected products in a responsible manner, such as donating them to a food bank or recycling them.\n\t* Document all actions taken in response to the recall, including:\n\t\t+ The date and time the recall notice was received.\n\t\t+ The steps taken to isolate and block sales of the affected products.\n\t\t+ The date and time the affected products were disposed of.\n\t\t+ Any other relevant details.",
+      "is_cached": true,
+      "similarity_score": 1.0,
+      "latency_ms": 67.85870000021532,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 34.6306999999797,
+        "lookup": 32.43420000944752,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 3,
+      "category": "paraphrase",
+      "question": "What actions should a grocery retailer take when a supplier sends a recall notice?",
+      "answer": "After receiving a supplier recall notice, a grocery store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are being recalled. This information will help the store to isolate the affected inventory and prevent further sales.\n\n2. **Describe inventory isolation and sale blocking**: Immediately isolate the affected product and lot numbers by:\n\t* Removing the products from shelves and display areas.\n\t* Blocking sales of the affected products in the store's point-of-sale system.\n\t* Notifying the store's management and quality control team to ensure that the products are not sold to customers.\n\n3. **Describe notification, disposition, and documentation**: Notify the supplier, regulatory agencies (if required), and other relevant stakeholders about the recall. The store should also:\n\t* Dispose of the affected products in a responsible manner, such as donating them to a food bank or recycling them.\n\t* Document all actions taken in response to the recall, including:\n\t\t+ The date and time the recall notice was received.\n\t\t+ The steps taken to isolate and block sales of the affected products.\n\t\t+ The date and time the affected products were disposed of.\n\t\t+ Any other relevant details.",
+      "is_cached": true,
+      "similarity_score": 0.9472241401672,
+      "latency_ms": 50.169499998446554,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 34.22619999037124,
+        "lookup": 15.492500009713694,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 4,
+      "category": "new",
+      "question": "How should a grocery store handle a recall when the affected lot codes cannot be read?",
+      "answer": "To handle a recall when the affected lot codes cannot be read, a grocery store should follow these steps:\n\n**Identify the product and affected lot:**\nAlthough the lot codes cannot be read, the store should still identify the product and affected lot based on other information provided in the recall notice, such as product name, batch number, or production date. This information may be available on the product packaging, labels, or in inventory management systems.\n\n**Inventory isolation and sale blocking:**\nThe store should isolate the affected product by removing it from shelves and storage areas, and blocking sales of the product until the recall is completed. This can be done by:\n\n* Removing the product from display and shelving\n* Placing a \"Recall\" or \"Do Not Sell\" sign on the product\n* Notifying cashiers and sales staff not to sell the product\n* Blocking sales of the product through the point-of-sale system\n\n**Notification, disposition, and documentation:**\nThe store should notify the following parties:\n\n* Suppliers or manufacturers of the affected product\n* Regulatory agencies, such as the FDA or state health departments\n* Customers who have purchased the affected product\n* Employees who handled the affected product\n\nThe store should also dispose of the affected product in a responsible manner, such as:\n\n* Returning it to the supplier or manufacturer\n* Donating it to a charity or non-profit organization\n* Properly disposing of it through a hazardous waste program\n\nFinally, the store should document all actions taken in response to the recall, including:\n\n* The date and time the recall was initiated\n* The steps taken to isolate and block sales of the product\n* The notification sent to suppliers, regulatory agencies, customers, and employees\n* The disposition of the affected product\n* Any other relevant details\n\nBy following these steps, the grocery store can effectively handle a recall when the affected lot codes cannot be read.",
+      "is_cached": false,
+      "similarity_score": 0.687899172306,
+      "latency_ms": 74578.70349999575,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 41.750399992452,
+        "lookup": 9.665199992014095,
+        "agent": 74516.51259999198,
+        "store": 10.218499999609776
+      }
+    },
+    {
+      "number": 5,
+      "category": "exact_duplicate",
+      "question": "How should a grocery store handle a recall when the affected lot codes cannot be read?",
+      "answer": "To handle a recall when the affected lot codes cannot be read, a grocery store should follow these steps:\n\n**Identify the product and affected lot:**\nAlthough the lot codes cannot be read, the store should still identify the product and affected lot based on other information provided in the recall notice, such as product name, batch number, or production date. This information may be available on the product packaging, labels, or in inventory management systems.\n\n**Inventory isolation and sale blocking:**\nThe store should isolate the affected product by removing it from shelves and storage areas, and blocking sales of the product until the recall is completed. This can be done by:\n\n* Removing the product from display and shelving\n* Placing a \"Recall\" or \"Do Not Sell\" sign on the product\n* Notifying cashiers and sales staff not to sell the product\n* Blocking sales of the product through the point-of-sale system\n\n**Notification, disposition, and documentation:**\nThe store should notify the following parties:\n\n* Suppliers or manufacturers of the affected product\n* Regulatory agencies, such as the FDA or state health departments\n* Customers who have purchased the affected product\n* Employees who handled the affected product\n\nThe store should also dispose of the affected product in a responsible manner, such as:\n\n* Returning it to the supplier or manufacturer\n* Donating it to a charity or non-profit organization\n* Properly disposing of it through a hazardous waste program\n\nFinally, the store should document all actions taken in response to the recall, including:\n\n* The date and time the recall was initiated\n* The steps taken to isolate and block sales of the product\n* The notification sent to suppliers, regulatory agencies, customers, and employees\n* The disposition of the affected product\n* Any other relevant details\n\nBy following these steps, the grocery store can effectively handle a recall when the affected lot codes cannot be read.",
+      "is_cached": true,
+      "similarity_score": 1.0,
+      "latency_ms": 55.94560000463389,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 40.21470001316629,
+        "lookup": 15.132900007301942,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 6,
+      "category": "paraphrase",
+      "question": "What should a grocery retailer do if recalled inventory has illegible lot numbers?",
+      "answer": "If a grocery retailer encounters recalled inventory with illegible lot numbers, they should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the product and affected lot numbers. If the lot numbers are illegible, they may need to contact the manufacturer or recall coordinator for assistance in identifying the specific product and lot.\n2. **Describe inventory isolation and sale blocking**: Isolate the recalled product from other inventory by:\n\t* Moving the product to a separate area or section of the store.\n\t* Blocking sales of the product until the issue is resolved.\n\t* Notifying store staff and management to ensure everyone is aware of the situation.\n3. **Describe notification, disposition, and documentation**: Notify the following parties:\n\t* Store management and staff.\n\t* Manufacturer or recall coordinator.\n\t* Regulatory agencies (if required).\n\t* Responsible individuals, such as the store's quality control manager or inventory supervisor.\n\t* Document actions taken, including:\n\t\t+ A record of the recalled product and its location.\n\t\t+ A description of the actions taken to isolate and block sales.\n\t\t+ A note of the notification sent to relevant parties.\n\t\t+ A copy of the recall notice and any supporting documentation.\n\nBy following these steps, the retailer can ensure a safe and compliant response to the recall, even with illegible lot numbers.",
+      "is_cached": false,
+      "similarity_score": 0.799859106541,
+      "latency_ms": 44475.74779999559,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 36.96050000144169,
+        "lookup": 12.100000007194467,
+        "agent": 44422.08859999664,
+        "store": 4.004999995231628
+      }
+    },
+    {
+      "number": 7,
+      "category": "new",
+      "question": "How should a grocery store handle a recall when some affected products have already been sold?",
+      "answer": "To handle a recall when some affected products have already been sold, a grocery store should follow these steps:\n\n**Identify the product and affected lot from the recall notice.**\n\nThe store should carefully review the recall notice to determine the specific product(s) and affected lot(s) that need to be recalled. This information will be crucial in identifying which products have already been sold and need to be removed from shelves.\n\n**Describe inventory isolation and sale blocking.**\n\nTo prevent further sales of affected products, the store should:\n\n* Isolate the affected products by removing them from shelves and storing them in a designated area, such as a \"recall storage\" or \"hold\" area.\n* Block sales of the affected products by notifying the point-of-sale (POS) system and other sales channels to prevent further sales.\n* Consider temporarily removing the affected products from the store's inventory management system to prevent them from being reordered.\n\n**Describe notification, disposition, and documentation.**\n\nTo ensure compliance with the recall notice and protect the store's reputation, the store should:\n\n* Notify the responsible parties, such as the manufacturer or distributor, of the recall and provide them with the necessary documentation, including:\n\t+ A copy of the recall notice\n\t+ Proof of sale of the affected products\n\t+ Documentation of the store's actions to isolate and block sales of the affected products\n* Dispose of the affected products in a responsible manner, such as by donating them to a food bank or other non-profit organization, or by disposing of them through a designated waste management program.\n* Document all actions taken in response to the recall, including:\n\t+ The date and time of the recall notice\n\t+ The steps taken to isolate and block sales of the affected products\n\t+ The date and time of notification to the responsible parties\n\t+ The date and time of disposal of the affected products\n\nBy following these steps, the grocery store can ensure a prompt and effective response to the recall, protect its customers and reputation, and comply with regulatory requirements.",
+      "is_cached": false,
+      "similarity_score": 0.8336253166200001,
+      "latency_ms": 69193.95580000128,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 33.617399996728636,
+        "lookup": 11.7032999987714,
+        "agent": 69140.24339999014,
+        "store": 7.870100002037361
+      }
+    },
+    {
+      "number": 8,
+      "category": "exact_duplicate",
+      "question": "How should a grocery store handle a recall when some affected products have already been sold?",
+      "answer": "To handle a recall when some affected products have already been sold, a grocery store should follow these steps:\n\n**Identify the product and affected lot from the recall notice.**\n\nThe store should carefully review the recall notice to determine the specific product(s) and affected lot(s) that need to be recalled. This information will be crucial in identifying which products have already been sold and need to be removed from shelves.\n\n**Describe inventory isolation and sale blocking.**\n\nTo prevent further sales of affected products, the store should:\n\n* Isolate the affected products by removing them from shelves and storing them in a designated area, such as a \"recall storage\" or \"hold\" area.\n* Block sales of the affected products by notifying the point-of-sale (POS) system and other sales channels to prevent further sales.\n* Consider temporarily removing the affected products from the store's inventory management system to prevent them from being reordered.\n\n**Describe notification, disposition, and documentation.**\n\nTo ensure compliance with the recall notice and protect the store's reputation, the store should:\n\n* Notify the responsible parties, such as the manufacturer or distributor, of the recall and provide them with the necessary documentation, including:\n\t+ A copy of the recall notice\n\t+ Proof of sale of the affected products\n\t+ Documentation of the store's actions to isolate and block sales of the affected products\n* Dispose of the affected products in a responsible manner, such as by donating them to a food bank or other non-profit organization, or by disposing of them through a designated waste management program.\n* Document all actions taken in response to the recall, including:\n\t+ The date and time of the recall notice\n\t+ The steps taken to isolate and block sales of the affected products\n\t+ The date and time of notification to the responsible parties\n\t+ The date and time of disposal of the affected products\n\nBy following these steps, the grocery store can ensure a prompt and effective response to the recall, protect its customers and reputation, and comply with regulatory requirements.",
+      "is_cached": true,
+      "similarity_score": 1.0,
+      "latency_ms": 76.74479999695905,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 55.9093999909237,
+        "lookup": 20.257700001820922,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 9,
+      "category": "paraphrase",
+      "question": "What should a grocery retailer do when customers have already purchased items covered by a recall?",
+      "answer": "To handle a recall when some affected products have already been sold, a grocery store should follow these steps:\n\n**Identify the product and affected lot from the recall notice.**\n\nThe store should carefully review the recall notice to determine the specific product(s) and affected lot(s) that need to be recalled. This information will be crucial in identifying which products have already been sold and need to be removed from shelves.\n\n**Describe inventory isolation and sale blocking.**\n\nTo prevent further sales of affected products, the store should:\n\n* Isolate the affected products by removing them from shelves and storing them in a designated area, such as a \"recall storage\" or \"hold\" area.\n* Block sales of the affected products by notifying the point-of-sale (POS) system and other sales channels to prevent further sales.\n* Consider temporarily removing the affected products from the store's inventory management system to prevent them from being reordered.\n\n**Describe notification, disposition, and documentation.**\n\nTo ensure compliance with the recall notice and protect the store's reputation, the store should:\n\n* Notify the responsible parties, such as the manufacturer or distributor, of the recall and provide them with the necessary documentation, including:\n\t+ A copy of the recall notice\n\t+ Proof of sale of the affected products\n\t+ Documentation of the store's actions to isolate and block sales of the affected products\n* Dispose of the affected products in a responsible manner, such as by donating them to a food bank or other non-profit organization, or by disposing of them through a designated waste management program.\n* Document all actions taken in response to the recall, including:\n\t+ The date and time of the recall notice\n\t+ The steps taken to isolate and block sales of the affected products\n\t+ The date and time of notification to the responsible parties\n\t+ The date and time of disposal of the affected products\n\nBy following these steps, the grocery store can ensure a prompt and effective response to the recall, protect its customers and reputation, and comply with regulatory requirements.",
+      "is_cached": true,
+      "similarity_score": 0.9096776247025,
+      "latency_ms": 52.5235000095563,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 30.985199991846457,
+        "lookup": 21.086599997943267,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 10,
+      "category": "new",
+      "question": "How should a grocery store respond when its point-of-sale system cannot block recalled items?",
+      "answer": "If a grocery store's point-of-sale system cannot block recalled items, the store should respond by:\n\n1. **Identifying the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are affected. This information will help the store to identify the recalled items in their inventory.\n\n2. **Inventory isolation and sale blocking**: Immediately isolate the recalled products by removing them from sale and storing them in a designated area. This can be done by:\n\t* Removing the recalled products from the shelves and display cases.\n\t* Blocking the sale of the affected products through the point-of-sale system, if possible.\n\t* Using alternative products or substitutes to minimize disruption to customers.\n\t* Informing staff to be vigilant in monitoring the inventory and preventing the sale of recalled products.\n\n3. **Notification, disposition, and documentation**: Notify the responsible parties, including the manufacturer, distributor, and regulatory authorities, of the situation. The store should also:\n\t* Dispose of the recalled products in accordance with the manufacturer's instructions and local regulations.\n\t* Document all actions taken, including the identification of the affected products, isolation and blocking of sales, notification to responsible parties, and disposal of the products.\n\t* Maintain records of the recall, including the date, time, and details of the actions taken.\n\nBy following these steps, the grocery store can minimize the risk of harm to customers and ensure compliance with regulatory requirements.",
+      "is_cached": false,
+      "similarity_score": 0.841036021709,
+      "latency_ms": 41123.76380000205,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 32.49709999363404,
+        "lookup": 19.222700007958338,
+        "agent": 41068.23910000094,
+        "store": 3.2731999963289127
+      }
+    },
+    {
+      "number": 11,
+      "category": "exact_duplicate",
+      "question": "How should a grocery store respond when its point-of-sale system cannot block recalled items?",
+      "answer": "If a grocery store's point-of-sale system cannot block recalled items, the store should respond by:\n\n1. **Identifying the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are affected. This information will help the store to identify the recalled items in their inventory.\n\n2. **Inventory isolation and sale blocking**: Immediately isolate the recalled products by removing them from sale and storing them in a designated area. This can be done by:\n\t* Removing the recalled products from the shelves and display cases.\n\t* Blocking the sale of the affected products through the point-of-sale system, if possible.\n\t* Using alternative products or substitutes to minimize disruption to customers.\n\t* Informing staff to be vigilant in monitoring the inventory and preventing the sale of recalled products.\n\n3. **Notification, disposition, and documentation**: Notify the responsible parties, including the manufacturer, distributor, and regulatory authorities, of the situation. The store should also:\n\t* Dispose of the recalled products in accordance with the manufacturer's instructions and local regulations.\n\t* Document all actions taken, including the identification of the affected products, isolation and blocking of sales, notification to responsible parties, and disposal of the products.\n\t* Maintain records of the recall, including the date, time, and details of the actions taken.\n\nBy following these steps, the grocery store can minimize the risk of harm to customers and ensure compliance with regulatory requirements.",
+      "is_cached": true,
+      "similarity_score": 1.0,
+      "latency_ms": 52.35859999083914,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 35.690300006535836,
+        "lookup": 16.252900008112192,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    },
+    {
+      "number": 12,
+      "category": "paraphrase",
+      "question": "How can a grocery retailer prevent sales of recalled products if its checkout blocking system is unavailable?",
+      "answer": "If a grocery store's point-of-sale system cannot block recalled items, the store should respond by:\n\n1. **Identifying the product and affected lot**: Review the recall notice to determine the specific product and lot numbers that are affected. This information will help the store to identify the recalled items in their inventory.\n\n2. **Inventory isolation and sale blocking**: Immediately isolate the recalled products by removing them from sale and storing them in a designated area. This can be done by:\n\t* Removing the recalled products from the shelves and display cases.\n\t* Blocking the sale of the affected products through the point-of-sale system, if possible.\n\t* Using alternative products or substitutes to minimize disruption to customers.\n\t* Informing staff to be vigilant in monitoring the inventory and preventing the sale of recalled products.\n\n3. **Notification, disposition, and documentation**: Notify the responsible parties, including the manufacturer, distributor, and regulatory authorities, of the situation. The store should also:\n\t* Dispose of the recalled products in accordance with the manufacturer's instructions and local regulations.\n\t* Document all actions taken, including the identification of the affected products, isolation and blocking of sales, notification to responsible parties, and disposal of the products.\n\t* Maintain records of the recall, including the date, time, and details of the actions taken.\n\nBy following these steps, the grocery store can minimize the risk of harm to customers and ensure compliance with regulatory requirements.",
+      "is_cached": true,
+      "similarity_score": 0.883283615112,
+      "latency_ms": 42.325599992182106,
+      "data_version": "pipeline-model-v2",
+      "timings_ms": {
+        "embedding": 30.57950000220444,
+        "lookup": 11.355700000422075,
+        "agent": 0.0,
+        "store": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "database_table": "s1339_rel",
+  "record_id": "STALE001",
+  "question": "How many units are affected by notice STALE001?",
+  "steps": [
+    {
+      "label": "1_initial_cache_miss",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 120,
+        "data_version": 1
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "Notice STALE001 affects 120 units of Test Orchard Apple Juice 1 L.",
+        "is_cached": false,
+        "similarity_score": null,
+        "latency_ms": 6988.6755000043195,
+        "data_version": "stale-demo-c912014a66d04d70a98012d8f576b48a-v1",
+        "timings_ms": {
+          "embedding": 128.85070001357235,
+          "lookup": 19.96320000034757,
+          "agent": 6765.612299990607,
+          "store": 73.89959998545237
+        }
+      }
+    },
+    {
+      "label": "2_stale_cache_hit",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 75,
+        "data_version": 1
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "Notice STALE001 affects 120 units of Test Orchard Apple Juice 1 L.",
+        "is_cached": true,
+        "similarity_score": 1.0,
+        "latency_ms": 96.0635999799706,
+        "data_version": "stale-demo-c912014a66d04d70a98012d8f576b48a-v1",
+        "timings_ms": {
+          "embedding": 43.29290002351627,
+          "lookup": 51.9542999973055,
+          "agent": 0.0,
+          "store": 0.0
+        }
+      }
+    },
+    {
+      "label": "3_versioned_cache_miss",
+      "database_record": {
+        "id": "STALE001",
+        "affected_quantity": 75,
+        "data_version": 2
+      },
+      "response": {
+        "question": "How many units are affected by notice STALE001?",
+        "answer": "Notice STALE001 affects 120 units of Test Orchard Apple Juice 1 L.",
+        "is_cached": false,
+        "similarity_score": null,
+        "latency_ms": 7477.101099997526,
+        "data_version": "stale-demo-c912014a66d04d70a98012d8f576b48a-v2",
+        "timings_ms": {
+          "embedding": 31.868399993982166,
+          "lookup": 16.407000017352402,
+          "agent": 7417.025000002468,
+          "store": 11.380699987057596
+        }
+      }
+    }
+  ],
+  "complete": false,
+  "error": ""
+}
