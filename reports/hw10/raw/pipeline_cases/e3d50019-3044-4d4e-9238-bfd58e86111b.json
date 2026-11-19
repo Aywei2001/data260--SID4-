@@ -1,0 +1,49 @@
+{
+  "trace_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+  "correlation_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+  "question": "What should staff do when potentially affected items were repackaged in-store and the original labels are no longer attached?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 72,
+      "timestamp_ms": 1794792972687,
+      "payload": {
+        "correlation_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+        "question": "What should staff do when potentially affected items were repackaged in-store and the original labels are no longer attached?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 163,
+      "timestamp_ms": 1794793026595,
+      "payload": {
+        "correlation_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+        "question": "What should staff do when potentially affected items were repackaged in-store and the original labels are no longer attached?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "When potentially affected items were repackaged in-store and the original labels are no longer attached, staff should:\n\n1. **Identify the product and affected lot**: Check the recall notice to determine the specific product and affected lot that may have been repackaged. Verify the product and lot number on the repackaged items to ensure they match the recalled items.\n2. **Describe inventory isolation and sale blocking**: Immediately isolate the repackaged items from sale by:\n\t* Removing the items from the sales floor and storing them in a secure, designated area.\n\t* Blocking sales of the affected product and lot through the point-of-sale system or other means to prevent further sales.\n3. **Describe notification, disposition, and documentation**: Notify the following parties:\n\t* Store management and corporate office of the potential recall.\n\t* Suppliers or distributors of the affected product.\n\t* Regulatory agencies, if required by law.\n\t* Document all actions taken, including:\n\t\t+ A description of the repackaged items and the steps taken to isolate and block sales.\n\t\t+ A record of the notification sent to suppliers, distributors, and regulatory agencies.\n\t\t+ A copy of the recall notice and any supporting documentation.\n\nIt is essential to follow the specific recall notice and supplier instructions for holding, returning, or disposing of affected products, and to document all actions taken to ensure compliance with regulatory requirements and company policies."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 163,
+      "timestamp_ms": 1794793026670,
+      "payload": {
+        "correlation_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+        "status": "approved",
+        "answer": "When potentially affected items were repackaged in-store and the original labels are no longer attached, staff should:\n\n1. **Identify the product and affected lot**: Check the recall notice to determine the specific product and affected lot that may have been repackaged. Verify the product and lot number on the repackaged items to ensure they match the recalled items.\n2. **Describe inventory isolation and sale blocking**: Immediately isolate the repackaged items from sale by:\n\t* Removing the items from the sales floor and storing them in a secure, designated area.\n\t* Blocking sales of the affected product and lot through the point-of-sale system or other means to prevent further sales.\n3. **Describe notification, disposition, and documentation**: Notify the following parties:\n\t* Store management and corporate office of the potential recall.\n\t* Suppliers or distributors of the affected product.\n\t* Regulatory agencies, if required by law.\n\t* Document all actions taken, including:\n\t\t+ A description of the repackaged items and the steps taken to isolate and block sales.\n\t\t+ A record of the notification sent to suppliers, distributors, and regulatory agencies.\n\t\t+ A copy of the recall notice and any supporting documentation.\n\nIt is essential to follow the specific recall notice and supplier instructions for holding, returning, or disposing of affected products, and to document all actions taken to ensure compliance with regulatory requirements and company policies."
+      }
+    }
+  }
+}

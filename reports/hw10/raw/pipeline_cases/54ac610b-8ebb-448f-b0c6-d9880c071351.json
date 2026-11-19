@@ -1,0 +1,49 @@
+{
+  "trace_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+  "correlation_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+  "question": "How should a store respond when a revised recall notice adds a second lot to the original scope?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 64,
+      "timestamp_ms": 1794791140178,
+      "payload": {
+        "correlation_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+        "question": "How should a store respond when a revised recall notice adds a second lot to the original scope?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 151,
+      "timestamp_ms": 1794791180818,
+      "payload": {
+        "correlation_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+        "question": "How should a store respond when a revised recall notice adds a second lot to the original scope?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "If a store receives a revised recall notice that adds a second lot to the original scope, the store should respond by:\n\n1. **Identifying the product and affected lot**: Verify the product and lot number(s) included in the revised recall notice to ensure accurate identification of the affected inventory.\n2. **Inventory isolation and sale blocking**: Immediately isolate the affected product and lot(s) from sale by:\n\t* Removing the product from shelves and display areas.\n\t* Blocking sales of the product through the point-of-sale system.\n\t* Notifying the store's management and inventory team to ensure no further sales occur.\n3. **Notification, disposition, and documentation**: Notify the following parties:\n\t* Suppliers or manufacturers: Inform them of the revised recall notice and the additional lot(s) affected.\n\t* Regulatory agencies (if required): Comply with any relevant regulations and notify the agency of the revised recall notice.\n\t* Store management and employees: Ensure all staff are aware of the revised recall notice and the actions being taken.\n\t* Customers: Provide clear instructions on how to return the affected product, if applicable.\n\t* Inventory records: Document the actions taken, including the date of the revised recall notice, the affected product and lot(s), and the steps taken to isolate and block sales.\n\nBy following these steps, the store can ensure a swift and effective response to the revised recall notice, protecting customers and maintaining compliance with regulatory requirements."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 151,
+      "timestamp_ms": 1794791180877,
+      "payload": {
+        "correlation_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+        "status": "approved",
+        "answer": "If a store receives a revised recall notice that adds a second lot to the original scope, the store should respond by:\n\n1. **Identifying the product and affected lot**: Verify the product and lot number(s) included in the revised recall notice to ensure accurate identification of the affected inventory.\n2. **Inventory isolation and sale blocking**: Immediately isolate the affected product and lot(s) from sale by:\n\t* Removing the product from shelves and display areas.\n\t* Blocking sales of the product through the point-of-sale system.\n\t* Notifying the store's management and inventory team to ensure no further sales occur.\n3. **Notification, disposition, and documentation**: Notify the following parties:\n\t* Suppliers or manufacturers: Inform them of the revised recall notice and the additional lot(s) affected.\n\t* Regulatory agencies (if required): Comply with any relevant regulations and notify the agency of the revised recall notice.\n\t* Store management and employees: Ensure all staff are aware of the revised recall notice and the actions being taken.\n\t* Customers: Provide clear instructions on how to return the affected product, if applicable.\n\t* Inventory records: Document the actions taken, including the date of the revised recall notice, the affected product and lot(s), and the steps taken to isolate and block sales.\n\nBy following these steps, the store can ensure a swift and effective response to the revised recall notice, protecting customers and maintaining compliance with regulatory requirements."
+      }
+    }
+  }
+}

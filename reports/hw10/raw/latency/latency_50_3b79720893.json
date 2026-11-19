@@ -1,0 +1,329 @@
+{
+  "target": 50,
+  "question": "What should a grocery store do after receiving a supplier recall notice?",
+  "boundary": "API ingress through evaluation completion",
+  "p95_method": "nearest rank",
+  "rows": [
+    {
+      "trace_id": "4f8df477-2dfe-4c72-8069-aa47bb21e1f3",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 54539.34959997423,
+      "end_to_end_ms": 137922.7123260498,
+      "stage_ms": {
+        "cache_lookup": 4.98410000000149,
+        "planner": 5.171000026166439,
+        "writer": 54097.213799948804,
+        "reviewer": 12.088700023014098,
+        "queue_wait_planner": 5.949974060058594,
+        "queue_wait_writer": 5.653142929077148,
+        "queue_wait_reviewer": 14.484405517578125,
+        "evaluation": 82635.49179997062,
+        "queue_wait_total": 26.087522506713867
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\4f8df477-2dfe-4c72-8069-aa47bb21e1f3.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\4f8df477-2dfe-4c72-8069-aa47bb21e1f3.json"
+    },
+    {
+      "trace_id": "191b9cc4-d8f1-48ed-be4a-c73d7156972f",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 72092.74100000039,
+      "end_to_end_ms": 151886.30175590515,
+      "stage_ms": {
+        "cache_lookup": 9.699899994302541,
+        "planner": 11.59349997760728,
+        "writer": 71562.58239998715,
+        "reviewer": 21.253100014291704,
+        "queue_wait_planner": 13.272285461425781,
+        "queue_wait_writer": 11.950254440307617,
+        "queue_wait_reviewer": 20.548582077026367,
+        "evaluation": 79291.11879999982,
+        "queue_wait_total": 45.771121978759766
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\191b9cc4-d8f1-48ed-be4a-c73d7156972f.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\191b9cc4-d8f1-48ed-be4a-c73d7156972f.json"
+    },
+    {
+      "trace_id": "341c1335-1bf2-4bc8-9de3-074b928b15b7",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 50568.44160001492,
+      "end_to_end_ms": 133595.25203704834,
+      "stage_ms": {
+        "cache_lookup": 7.260299986228347,
+        "planner": 6.324799964204431,
+        "writer": 50155.8953000349,
+        "reviewer": 8.507000049576163,
+        "queue_wait_planner": 6.716012954711914,
+        "queue_wait_writer": 5.701780319213867,
+        "queue_wait_reviewer": 12.701034545898438,
+        "evaluation": 82651.24880004441,
+        "queue_wait_total": 25.11882781982422
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\341c1335-1bf2-4bc8-9de3-074b928b15b7.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\341c1335-1bf2-4bc8-9de3-074b928b15b7.json"
+    },
+    {
+      "trace_id": "6f72b1cb-cc40-4e47-ad4d-41ce09ad742e",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71599.4579999824,
+      "end_to_end_ms": 160724.22051429749,
+      "stage_ms": {
+        "cache_lookup": 15.176500019151717,
+        "planner": 12.530100008007139,
+        "writer": 71028.9158000378,
+        "reviewer": 12.652000004891306,
+        "queue_wait_planner": 10.510921478271484,
+        "queue_wait_writer": 12.443304061889648,
+        "queue_wait_reviewer": 15.08951187133789,
+        "evaluation": 88084.45900003426,
+        "queue_wait_total": 38.04373741149902
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\6f72b1cb-cc40-4e47-ad4d-41ce09ad742e.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\6f72b1cb-cc40-4e47-ad4d-41ce09ad742e.json"
+    },
+    {
+      "trace_id": "ec77fad9-d99f-4497-932f-5ff2a29142c4",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 60740.94129999867,
+      "end_to_end_ms": 143392.58885383606,
+      "stage_ms": {
+        "cache_lookup": 10.41109999641776,
+        "planner": 6.869399978313595,
+        "writer": 60140.434900007676,
+        "reviewer": 16.534199996385723,
+        "queue_wait_planner": 6.195306777954102,
+        "queue_wait_writer": 10.31351089477539,
+        "queue_wait_reviewer": 14.73855972290039,
+        "evaluation": 82138.30420002341,
+        "queue_wait_total": 31.247377395629883
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\ec77fad9-d99f-4497-932f-5ff2a29142c4.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\ec77fad9-d99f-4497-932f-5ff2a29142c4.json"
+    },
+    {
+      "trace_id": "0b752156-0516-4fbe-a0bc-6c65fefc820d",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76044.15819997666,
+      "end_to_end_ms": 163344.35367584229,
+      "stage_ms": {
+        "cache_lookup": 7.24349997472018,
+        "planner": 6.4070000080391765,
+        "writer": 75549.0888999775,
+        "reviewer": 14.926299976650625,
+        "queue_wait_planner": 6.2541961669921875,
+        "queue_wait_writer": 6.923913955688477,
+        "queue_wait_reviewer": 20.87855339050293,
+        "evaluation": 86694.76829998894,
+        "queue_wait_total": 34.056663513183594
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\0b752156-0516-4fbe-a0bc-6c65fefc820d.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\0b752156-0516-4fbe-a0bc-6c65fefc820d.json"
+    },
+    {
+      "trace_id": "5ff9823c-d9cf-4d09-9e19-0c880890c655",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 50749.42930001998,
+      "end_to_end_ms": 126061.69056892395,
+      "stage_ms": {
+        "cache_lookup": 6.9278000155463815,
+        "planner": 5.505299952346832,
+        "writer": 50376.356600027066,
+        "reviewer": 8.116899989545345,
+        "queue_wait_planner": 5.878210067749023,
+        "queue_wait_writer": 5.568027496337891,
+        "queue_wait_reviewer": 9.802103042602539,
+        "evaluation": 74869.29529998451,
+        "queue_wait_total": 21.248340606689453
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\5ff9823c-d9cf-4d09-9e19-0c880890c655.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\5ff9823c-d9cf-4d09-9e19-0c880890c655.json"
+    },
+    {
+      "trace_id": "1d890939-267c-456c-9826-98ae2efcd6a1",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 50425.68399995798,
+      "end_to_end_ms": 140638.0558013916,
+      "stage_ms": {
+        "cache_lookup": 8.560899994336069,
+        "planner": 4.588700016029179,
+        "writer": 50049.495400046,
+        "reviewer": 10.667000024113804,
+        "queue_wait_planner": 5.596399307250977,
+        "queue_wait_writer": 5.723714828491211,
+        "queue_wait_reviewer": 29.487133026123047,
+        "evaluation": 89735.67419999745,
+        "queue_wait_total": 40.807247161865234
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\1d890939-267c-456c-9826-98ae2efcd6a1.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\1d890939-267c-456c-9826-98ae2efcd6a1.json"
+    },
+    {
+      "trace_id": "bb0c7431-63e5-4a4c-b95b-f4eaaba55e16",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71664.17119995458,
+      "end_to_end_ms": 177159.06047821045,
+      "stage_ms": {
+        "cache_lookup": 9.214899968355894,
+        "planner": 7.139099994674325,
+        "writer": 71216.5374000324,
+        "reviewer": 14.191599970217794,
+        "queue_wait_planner": 10.16855239868164,
+        "queue_wait_writer": 7.981300354003906,
+        "queue_wait_reviewer": 12.794017791748047,
+        "evaluation": 104646.89869998256,
+        "queue_wait_total": 30.943870544433594
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\bb0c7431-63e5-4a4c-b95b-f4eaaba55e16.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\bb0c7431-63e5-4a4c-b95b-f4eaaba55e16.json"
+    },
+    {
+      "trace_id": "3b9c7263-ce2f-4caa-9b3d-adefee9892f6",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 68695.2203999972,
+      "end_to_end_ms": 195937.69574165344,
+      "stage_ms": {
+        "cache_lookup": 16.898499976377934,
+        "planner": 8.576299995183945,
+        "writer": 68139.84119996894,
+        "reviewer": 12.488900043535978,
+        "queue_wait_planner": 19.040822982788086,
+        "queue_wait_writer": 9.296894073486328,
+        "queue_wait_reviewer": 46.54836654663086,
+        "evaluation": 126663.86989998864,
+        "queue_wait_total": 74.88608360290527
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\3b9c7263-ce2f-4caa-9b3d-adefee9892f6.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\3b9c7263-ce2f-4caa-9b3d-adefee9892f6.json"
+    },
+    {
+      "trace_id": "93555ed2-e1d3-4cc3-bcd8-b7d092f7fefe",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 68365.78940000618,
+      "end_to_end_ms": 177090.63744544983,
+      "stage_ms": {
+        "cache_lookup": 11.174799990840256,
+        "planner": 8.638600003905594,
+        "writer": 67884.7703000065,
+        "reviewer": 15.780100016854703,
+        "queue_wait_planner": 6.877899169921875,
+        "queue_wait_writer": 9.295225143432617,
+        "queue_wait_reviewer": 31.014442443847656,
+        "evaluation": 108159.70349998679,
+        "queue_wait_total": 47.18756675720215
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\93555ed2-e1d3-4cc3-bcd8-b7d092f7fefe.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\93555ed2-e1d3-4cc3-bcd8-b7d092f7fefe.json"
+    },
+    {
+      "trace_id": "4bdc905e-6c2e-44fd-a129-3f53f91e075e",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 83549.08609995618,
+      "end_to_end_ms": 196284.37757492065,
+      "stage_ms": {
+        "cache_lookup": 17.50960003118962,
+        "planner": 8.963399974163622,
+        "writer": 83077.24180002697,
+        "reviewer": 15.119199990294874,
+        "queue_wait_planner": 11.587858200073242,
+        "queue_wait_writer": 9.058475494384766,
+        "queue_wait_reviewer": 16.192197799682617,
+        "evaluation": 111851.29799996503,
+        "queue_wait_total": 36.838531494140625
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\4bdc905e-6c2e-44fd-a129-3f53f91e075e.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\4bdc905e-6c2e-44fd-a129-3f53f91e075e.json"
+    },
+    {
+      "trace_id": "5f5a5671-6ebf-4f2f-bfc5-a37cbc835f4d",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76811.09259999357,
+      "end_to_end_ms": 172046.29039764404,
+      "stage_ms": {
+        "cache_lookup": 126.13440002314746,
+        "planner": 33.37039996404201,
+        "writer": 74645.64229996176,
+        "reviewer": 19.20149999205023,
+        "queue_wait_planner": 94.2683219909668,
+        "queue_wait_writer": 33.350467681884766,
+        "queue_wait_reviewer": 21.18659019470215,
+        "evaluation": 94571.64660003036,
+        "queue_wait_total": 148.8053798675537
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\5f5a5671-6ebf-4f2f-bfc5-a37cbc835f4d.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\5f5a5671-6ebf-4f2f-bfc5-a37cbc835f4d.json"
+    },
+    {
+      "trace_id": "133b555d-2fbb-45cd-9b9b-35304fb5767a",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76768.89930001926,
+      "end_to_end_ms": 187956.28452301025,
+      "stage_ms": {
+        "cache_lookup": 26.253200019709766,
+        "planner": 11.230900010559708,
+        "writer": 75833.30769999884,
+        "reviewer": 12.924199982080609,
+        "queue_wait_planner": 15.840768814086914,
+        "queue_wait_writer": 10.810136795043945,
+        "queue_wait_reviewer": 20.899057388305664,
+        "evaluation": 110366.38089996995,
+        "queue_wait_total": 47.54996299743652
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\133b555d-2fbb-45cd-9b9b-35304fb5767a.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\133b555d-2fbb-45cd-9b9b-35304fb5767a.json"
+    },
+    {
+      "trace_id": "6bc785b1-24a8-45ef-b453-74ef66311848",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 60251.21879996732,
+      "end_to_end_ms": 173246.55318260193,
+      "stage_ms": {
+        "cache_lookup": 8.804799988865852,
+        "planner": 7.027800020296127,
+        "writer": 59798.70340001071,
+        "reviewer": 20.17179998802021,
+        "queue_wait_planner": 6.140470504760742,
+        "queue_wait_writer": 6.852626800537109,
+        "queue_wait_reviewer": 14.301061630249023,
+        "evaluation": 112317.0880000107,
+        "queue_wait_total": 27.294158935546875
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\6bc785b1-24a8-45ef-b453-74ef66311848.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\6bc785b1-24a8-45ef-b453-74ef66311848.json"
+    },
+    {
+      "trace_id": "f89b1da2-e04c-41b3-885a-e62c654bebf0",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 104263.007200032,
+      "end_to_end_ms": 202460.26420593262,
+      "stage_ms": {
+        "cache_lookup": 39.77959998883307,
+        "planner": 31.052100006490946,
+        "writer": 102821.29950000672,
+        "reviewer": 38.60020003048703,
+        "queue_wait_planner": 40.70258140563965,
+        "queue_wait_writer": 39.49999809265137,
+        "queue_wait_reviewer": 110.69321632385254,
+        "evaluation": 96923.80220000632,
+        "queue_wait_total": 190.89579582214355
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\f89b1da2-e04c-41b3-885a-e62c654bebf0.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\f89b1da2-e04c-41b3-885a-e62c654bebf0.json"
+    }
+  ],
+  "complete": false
+}

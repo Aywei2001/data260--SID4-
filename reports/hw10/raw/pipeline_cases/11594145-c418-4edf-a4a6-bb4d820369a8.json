@@ -1,0 +1,49 @@
+{
+  "trace_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+  "correlation_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+  "question": "What information should a customer-facing recall notice include so shoppers can identify the affected item?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 87,
+      "timestamp_ms": 1794791666609,
+      "payload": {
+        "correlation_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+        "question": "What information should a customer-facing recall notice include so shoppers can identify the affected item?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 159,
+      "timestamp_ms": 1794791681283,
+      "payload": {
+        "correlation_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+        "question": "What information should a customer-facing recall notice include so shoppers can identify the affected item?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "A customer-facing recall notice should include the following information to help shoppers identify the affected item:\n\n* Product name and description\n* Batch or lot number(s) affected by the recall\n* UPC or other identifying code\n* A clear statement indicating that the product is being recalled due to a safety or quality issue\n\nThis information will enable shoppers to identify if they have purchased the affected product and take necessary action."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 159,
+      "timestamp_ms": 1794791681388,
+      "payload": {
+        "correlation_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+        "status": "needs_revision",
+        "answer": "A customer-facing recall notice should include the following information to help shoppers identify the affected item:\n\n* Product name and description\n* Batch or lot number(s) affected by the recall\n* UPC or other identifying code\n* A clear statement indicating that the product is being recalled due to a safety or quality issue\n\nThis information will enable shoppers to identify if they have purchased the affected product and take necessary action."
+      }
+    }
+  }
+}

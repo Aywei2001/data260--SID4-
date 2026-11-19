@@ -1,0 +1,49 @@
+{
+  "trace_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+  "correlation_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+  "question": "What records should a store keep when a supplier collects recalled stock from the hold area?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 74,
+      "timestamp_ms": 1794793048655,
+      "payload": {
+        "correlation_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+        "question": "What records should a store keep when a supplier collects recalled stock from the hold area?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 165,
+      "timestamp_ms": 1794793087734,
+      "payload": {
+        "correlation_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+        "question": "What records should a store keep when a supplier collects recalled stock from the hold area?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "When a supplier collects recalled stock from the hold area, a store should keep the following records:\n\n1. **Product and Affected Lot**: A record of the product and affected lot number from the recall notice, which will be used to identify the specific products being returned.\n2. **Inventory Isolation and Sale Blocking**: A record of the steps taken to isolate the affected products from sale, including:\n\t* Date and time the products were removed from sale\n\t* Description of the isolation process (e.g., tagging, blocking, or removing from shelves)\n3. **Notification, Disposition, and Documentation**: A record of the following:\n\t* Date and time the supplier arrived to collect the recalled products\n\t* Description of the products being returned (including product name, lot number, and quantity)\n\t* Signature of the supplier representative or store personnel\n\t* Witness signature (if applicable)\n\t* Date and time the products were received by the supplier\n\t* A copy of the recall notice and any relevant documentation (e.g., inspection reports, packaging changes)\n\nThese records will help the store demonstrate compliance with the recall notice and supplier instructions, and provide a clear audit trail in case of any future issues or investigations."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 165,
+      "timestamp_ms": 1794793087810,
+      "payload": {
+        "correlation_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+        "status": "needs_revision",
+        "answer": "When a supplier collects recalled stock from the hold area, a store should keep the following records:\n\n1. **Product and Affected Lot**: A record of the product and affected lot number from the recall notice, which will be used to identify the specific products being returned.\n2. **Inventory Isolation and Sale Blocking**: A record of the steps taken to isolate the affected products from sale, including:\n\t* Date and time the products were removed from sale\n\t* Description of the isolation process (e.g., tagging, blocking, or removing from shelves)\n3. **Notification, Disposition, and Documentation**: A record of the following:\n\t* Date and time the supplier arrived to collect the recalled products\n\t* Description of the products being returned (including product name, lot number, and quantity)\n\t* Signature of the supplier representative or store personnel\n\t* Witness signature (if applicable)\n\t* Date and time the products were received by the supplier\n\t* A copy of the recall notice and any relevant documentation (e.g., inspection reports, packaging changes)\n\nThese records will help the store demonstrate compliance with the recall notice and supplier instructions, and provide a clear audit trail in case of any future issues or investigations."
+      }
+    }
+  }
+}

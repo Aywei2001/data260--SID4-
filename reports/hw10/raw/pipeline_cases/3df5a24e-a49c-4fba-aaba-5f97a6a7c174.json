@@ -1,0 +1,49 @@
+{
+  "trace_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+  "correlation_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+  "question": "What should a store do with isolated products while it waits for return or disposal instructions?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 91,
+      "timestamp_ms": 1794793287898,
+      "payload": {
+        "correlation_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+        "question": "What should a store do with isolated products while it waits for return or disposal instructions?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 169,
+      "timestamp_ms": 1794793323191,
+      "payload": {
+        "correlation_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+        "question": "What should a store do with isolated products while it waits for return or disposal instructions?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "According to the plan, while a store waits for return or disposal instructions for isolated products, they should:\n\n1. **Identify the product and affected lot**: Verify the product and lot number to ensure accurate handling and disposal.\n2. **Isolate inventory**: Remove the affected products from sale and store them in a designated area, such as a \"Recall\" or \"Hold\" section, to prevent further sale and to prevent cross-contamination with other products.\n3. **Block sales**: Prevent the sale of the affected products by removing them from shelves, displays, and online inventory, and by notifying sales staff and other relevant personnel.\n4. **Notify responsible people**: Inform the supplier, distributor, or manufacturer of the isolated products, as well as any relevant regulatory authorities, of the recall and the actions being taken.\n5. **Document actions**: Maintain accurate records of the isolation, sale blocking, notification, and any other actions taken in response to the recall, including the date, time, and details of the actions.\n\nBy following these steps, the store can ensure that the affected products are handled in accordance with the recall notice and supplier instructions, and that the recall is carried out in a safe and efficient manner."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 169,
+      "timestamp_ms": 1794793323253,
+      "payload": {
+        "correlation_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+        "status": "approved",
+        "answer": "According to the plan, while a store waits for return or disposal instructions for isolated products, they should:\n\n1. **Identify the product and affected lot**: Verify the product and lot number to ensure accurate handling and disposal.\n2. **Isolate inventory**: Remove the affected products from sale and store them in a designated area, such as a \"Recall\" or \"Hold\" section, to prevent further sale and to prevent cross-contamination with other products.\n3. **Block sales**: Prevent the sale of the affected products by removing them from shelves, displays, and online inventory, and by notifying sales staff and other relevant personnel.\n4. **Notify responsible people**: Inform the supplier, distributor, or manufacturer of the isolated products, as well as any relevant regulatory authorities, of the recall and the actions being taken.\n5. **Document actions**: Maintain accurate records of the isolation, sale blocking, notification, and any other actions taken in response to the recall, including the date, time, and details of the actions.\n\nBy following these steps, the store can ensure that the affected products are handled in accordance with the recall notice and supplier instructions, and that the recall is carried out in a safe and efficient manner."
+      }
+    }
+  }
+}

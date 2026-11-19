@@ -1,0 +1,1047 @@
+{
+  "target": 50,
+  "question": "What should a grocery store do after receiving a supplier recall notice?",
+  "boundary": "API ingress through evaluation completion",
+  "p95_method": "nearest rank",
+  "rows": [
+    {
+      "trace_id": "2c8a6369-7f4a-4ea2-8509-33f78db1123d",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71260.33660001121,
+      "end_to_end_ms": 219706.2587738037,
+      "stage_ms": {
+        "cache_lookup": 14.898699941113591,
+        "planner": 8.804599987342954,
+        "writer": 70889.43189999554,
+        "reviewer": 8.541699964553118,
+        "queue_wait_planner": 7.469415664672852,
+        "queue_wait_writer": 10.337352752685547,
+        "queue_wait_reviewer": 14.275074005126953,
+        "evaluation": 148071.83969998732,
+        "queue_wait_total": 32.08184242248535
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\2c8a6369-7f4a-4ea2-8509-33f78db1123d.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\2c8a6369-7f4a-4ea2-8509-33f78db1123d.json"
+    },
+    {
+      "trace_id": "f375ffab-2c54-4315-bc78-2fbb991a249c",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74693.72840004507,
+      "end_to_end_ms": 221904.61373329163,
+      "stage_ms": {
+        "cache_lookup": 11.782800080254674,
+        "planner": 4.356799996457994,
+        "writer": 74227.15629998129,
+        "reviewer": 16.50509994942695,
+        "queue_wait_planner": 5.654811859130859,
+        "queue_wait_writer": 5.143404006958008,
+        "queue_wait_reviewer": 14.884471893310547,
+        "evaluation": 146707.58789998945,
+        "queue_wait_total": 25.682687759399414
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\f375ffab-2c54-4315-bc78-2fbb991a249c.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\f375ffab-2c54-4315-bc78-2fbb991a249c.json"
+    },
+    {
+      "trace_id": "4af27ca8-d46d-44a3-a45d-a8271d76ebfc",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 70219.19179998804,
+      "end_to_end_ms": 215861.07754707336,
+      "stage_ms": {
+        "cache_lookup": 20.169700030237436,
+        "planner": 20.211299997754395,
+        "writer": 69704.47899994906,
+        "reviewer": 13.57470010407269,
+        "queue_wait_planner": 14.118194580078125,
+        "queue_wait_writer": 22.98736572265625,
+        "queue_wait_reviewer": 18.347501754760742,
+        "evaluation": 145063.96589998621,
+        "queue_wait_total": 55.45306205749512
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\4af27ca8-d46d-44a3-a45d-a8271d76ebfc.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\4af27ca8-d46d-44a3-a45d-a8271d76ebfc.json"
+    },
+    {
+      "trace_id": "8bd8f8f2-5105-4f70-a2bc-f32fccb04ae5",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 66392.94130005874,
+      "end_to_end_ms": 224162.1925830841,
+      "stage_ms": {
+        "cache_lookup": 7.5653999811038375,
+        "planner": 5.055000074207783,
+        "writer": 66051.35610001162,
+        "reviewer": 6.083599990233779,
+        "queue_wait_planner": 7.69495964050293,
+        "queue_wait_writer": 5.553483963012695,
+        "queue_wait_reviewer": 9.15384292602539,
+        "evaluation": 157431.28140002955,
+        "queue_wait_total": 22.402286529541016
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\8bd8f8f2-5105-4f70-a2bc-f32fccb04ae5.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\8bd8f8f2-5105-4f70-a2bc-f32fccb04ae5.json"
+    },
+    {
+      "trace_id": "426399fd-a34d-4d91-91e9-2ef0b1d76d8a",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 72609.69400010072,
+      "end_to_end_ms": 226791.41688346863,
+      "stage_ms": {
+        "cache_lookup": 13.509300071746111,
+        "planner": 7.164600072428584,
+        "writer": 72216.52789996006,
+        "reviewer": 8.091900032013655,
+        "queue_wait_planner": 7.986545562744141,
+        "queue_wait_writer": 7.111549377441406,
+        "queue_wait_reviewer": 10.690927505493164,
+        "evaluation": 153762.83380005043,
+        "queue_wait_total": 25.78902244567871
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\426399fd-a34d-4d91-91e9-2ef0b1d76d8a.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\426399fd-a34d-4d91-91e9-2ef0b1d76d8a.json"
+    },
+    {
+      "trace_id": "77510ac3-2393-4804-b495-10f238585d94",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 75807.8556000255,
+      "end_to_end_ms": 223262.70818710327,
+      "stage_ms": {
+        "cache_lookup": 13.0557999946177,
+        "planner": 6.495399982668459,
+        "writer": 75405.88640002534,
+        "reviewer": 7.998000015504658,
+        "queue_wait_planner": 7.439851760864258,
+        "queue_wait_writer": 7.404327392578125,
+        "queue_wait_reviewer": 13.620138168334961,
+        "evaluation": 147027.97060005832,
+        "queue_wait_total": 28.464317321777344
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\77510ac3-2393-4804-b495-10f238585d94.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\77510ac3-2393-4804-b495-10f238585d94.json"
+    },
+    {
+      "trace_id": "2235813e-f760-451e-a58b-cd15c963e90a",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74906.54609992635,
+      "end_to_end_ms": 230186.93113327026,
+      "stage_ms": {
+        "cache_lookup": 8.757099974900484,
+        "planner": 4.85090003348887,
+        "writer": 74542.13960003108,
+        "reviewer": 8.622800000011921,
+        "queue_wait_planner": 4.350423812866211,
+        "queue_wait_writer": 6.5155029296875,
+        "queue_wait_reviewer": 12.669086456298828,
+        "evaluation": 154807.4084999971,
+        "queue_wait_total": 23.53501319885254
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\2235813e-f760-451e-a58b-cd15c963e90a.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\2235813e-f760-451e-a58b-cd15c963e90a.json"
+    },
+    {
+      "trace_id": "b32d2f73-d9b7-472e-bcf8-24c974f5cdd4",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 67517.66859996133,
+      "end_to_end_ms": 224848.8438129425,
+      "stage_ms": {
+        "cache_lookup": 8.297799970023334,
+        "planner": 4.544800030998886,
+        "writer": 67133.83129995782,
+        "reviewer": 7.658199989236891,
+        "queue_wait_planner": 6.065130233764648,
+        "queue_wait_writer": 6.27899169921875,
+        "queue_wait_reviewer": 11.256217956542969,
+        "evaluation": 156937.08459998015,
+        "queue_wait_total": 23.600339889526367
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\b32d2f73-d9b7-472e-bcf8-24c974f5cdd4.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\b32d2f73-d9b7-472e-bcf8-24c974f5cdd4.json"
+    },
+    {
+      "trace_id": "c62efb78-b111-42b7-8c34-4cfa416251c5",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76838.380399975,
+      "end_to_end_ms": 232801.00631713867,
+      "stage_ms": {
+        "cache_lookup": 19.43740004207939,
+        "planner": 13.050799956545234,
+        "writer": 76245.3984998865,
+        "reviewer": 12.335599982179701,
+        "queue_wait_planner": 11.768102645874023,
+        "queue_wait_writer": 15.28167724609375,
+        "queue_wait_reviewer": 14.530658721923828,
+        "evaluation": 155197.30400003027,
+        "queue_wait_total": 41.5804386138916
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\c62efb78-b111-42b7-8c34-4cfa416251c5.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\c62efb78-b111-42b7-8c34-4cfa416251c5.json"
+    },
+    {
+      "trace_id": "5cc4de73-7995-4720-ae5e-845afb2bf715",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 75260.35280001815,
+      "end_to_end_ms": 226274.64509010315,
+      "stage_ms": {
+        "cache_lookup": 7.69229989964515,
+        "planner": 7.9697000328451395,
+        "writer": 74864.58529997617,
+        "reviewer": 11.10780006274581,
+        "queue_wait_planner": 5.614519119262695,
+        "queue_wait_writer": 7.5702667236328125,
+        "queue_wait_reviewer": 15.581130981445312,
+        "evaluation": 150503.0503999442,
+        "queue_wait_total": 28.76591682434082
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\5cc4de73-7995-4720-ae5e-845afb2bf715.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\5cc4de73-7995-4720-ae5e-845afb2bf715.json"
+    },
+    {
+      "trace_id": "a6a56a74-7b67-4d38-b2fa-5d12dd8a6cf6",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 69606.24670004472,
+      "end_to_end_ms": 219654.94894981384,
+      "stage_ms": {
+        "cache_lookup": 14.747000066563487,
+        "planner": 5.374299944378436,
+        "writer": 69205.21229994483,
+        "reviewer": 7.023399928584695,
+        "queue_wait_planner": 5.59544563293457,
+        "queue_wait_writer": 6.747007369995117,
+        "queue_wait_reviewer": 8.754730224609375,
+        "evaluation": 149523.03170005325,
+        "queue_wait_total": 21.097183227539062
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\a6a56a74-7b67-4d38-b2fa-5d12dd8a6cf6.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\a6a56a74-7b67-4d38-b2fa-5d12dd8a6cf6.json"
+    },
+    {
+      "trace_id": "e521d604-ece8-4abf-a88e-2ee96641618b",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 75273.8217000151,
+      "end_to_end_ms": 233898.18239212036,
+      "stage_ms": {
+        "cache_lookup": 8.13850003760308,
+        "planner": 5.604000063613057,
+        "writer": 74827.0808000816,
+        "reviewer": 6.9148000329732895,
+        "queue_wait_planner": 6.389856338500977,
+        "queue_wait_writer": 7.312774658203125,
+        "queue_wait_reviewer": 10.33163070678711,
+        "evaluation": 157991.11480009742,
+        "queue_wait_total": 24.03426170349121
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\e521d604-ece8-4abf-a88e-2ee96641618b.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\e521d604-ece8-4abf-a88e-2ee96641618b.json"
+    },
+    {
+      "trace_id": "d2f97790-26b7-4433-b714-14056ba0d7a9",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 75208.59449997079,
+      "end_to_end_ms": 232549.67069625854,
+      "stage_ms": {
+        "cache_lookup": 17.362800077535212,
+        "planner": 11.455000028945506,
+        "writer": 74700.56479994673,
+        "reviewer": 9.155900101177394,
+        "queue_wait_planner": 9.186029434204102,
+        "queue_wait_writer": 11.829376220703125,
+        "queue_wait_reviewer": 10.897159576416016,
+        "evaluation": 156915.23229994345,
+        "queue_wait_total": 31.912565231323242
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\d2f97790-26b7-4433-b714-14056ba0d7a9.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\d2f97790-26b7-4433-b714-14056ba0d7a9.json"
+    },
+    {
+      "trace_id": "5886a519-ca74-4fc4-bae5-564087ae33c6",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 72683.08550002985,
+      "end_to_end_ms": 214601.37677192688,
+      "stage_ms": {
+        "cache_lookup": 11.43800001591444,
+        "planner": 6.877999985590577,
+        "writer": 72207.45190000162,
+        "reviewer": 7.190000033006072,
+        "queue_wait_planner": 7.111549377441406,
+        "queue_wait_writer": 8.702278137207031,
+        "queue_wait_reviewer": 8.267402648925781,
+        "evaluation": 141558.5151000414,
+        "queue_wait_total": 24.08123016357422
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\5886a519-ca74-4fc4-bae5-564087ae33c6.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\5886a519-ca74-4fc4-bae5-564087ae33c6.json"
+    },
+    {
+      "trace_id": "975defd2-1bf0-43c1-b767-58c9383fb427",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74448.2127999654,
+      "end_to_end_ms": 216680.93061447144,
+      "stage_ms": {
+        "cache_lookup": 9.130000020377338,
+        "planner": 7.5196000980213284,
+        "writer": 74032.9100000672,
+        "reviewer": 10.997300036251545,
+        "queue_wait_planner": 6.901025772094727,
+        "queue_wait_writer": 7.519960403442383,
+        "queue_wait_reviewer": 10.375261306762695,
+        "evaluation": 141715.82499996293,
+        "queue_wait_total": 24.796247482299805
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\975defd2-1bf0-43c1-b767-58c9383fb427.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\975defd2-1bf0-43c1-b767-58c9383fb427.json"
+    },
+    {
+      "trace_id": "9d34bf4f-8165-4a28-8134-c589f988309e",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71562.17539997306,
+      "end_to_end_ms": 224224.03740882874,
+      "stage_ms": {
+        "cache_lookup": 4.526800010353327,
+        "planner": 6.495199981145561,
+        "writer": 71200.51570003852,
+        "reviewer": 8.75479995738715,
+        "queue_wait_planner": 5.179882049560547,
+        "queue_wait_writer": 6.058931350708008,
+        "queue_wait_reviewer": 13.676166534423828,
+        "evaluation": 152223.33010006696,
+        "queue_wait_total": 24.914979934692383
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\9d34bf4f-8165-4a28-8134-c589f988309e.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\9d34bf4f-8165-4a28-8134-c589f988309e.json"
+    },
+    {
+      "trace_id": "07700b56-838c-4dfb-939b-d7b05e914896",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74885.65379998181,
+      "end_to_end_ms": 222266.14809036255,
+      "stage_ms": {
+        "cache_lookup": 7.786000031046569,
+        "planner": 4.639899940229952,
+        "writer": 74503.71179997455,
+        "reviewer": 8.644500048831105,
+        "queue_wait_planner": 4.772424697875977,
+        "queue_wait_writer": 5.447626113891602,
+        "queue_wait_reviewer": 11.062145233154297,
+        "evaluation": 146942.44909996632,
+        "queue_wait_total": 21.282196044921875
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\07700b56-838c-4dfb-939b-d7b05e914896.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\07700b56-838c-4dfb-939b-d7b05e914896.json"
+    },
+    {
+      "trace_id": "5a97a38a-3fb1-48cf-a691-aafd10659009",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 72300.89089996181,
+      "end_to_end_ms": 228418.40720176697,
+      "stage_ms": {
+        "cache_lookup": 12.14180001989007,
+        "planner": 8.372999960556626,
+        "writer": 71867.92630003765,
+        "reviewer": 9.836799930781126,
+        "queue_wait_planner": 6.776332855224609,
+        "queue_wait_writer": 8.820772171020508,
+        "queue_wait_reviewer": 19.2415714263916,
+        "evaluation": 155580.86029998958,
+        "queue_wait_total": 34.83867645263672
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\5a97a38a-3fb1-48cf-a691-aafd10659009.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\5a97a38a-3fb1-48cf-a691-aafd10659009.json"
+    },
+    {
+      "trace_id": "d1479d35-f65a-4614-a9e7-12d1da1aff39",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 91229.905800079,
+      "end_to_end_ms": 245454.4222354889,
+      "stage_ms": {
+        "cache_lookup": 7.17100000474602,
+        "planner": 6.138399941846728,
+        "writer": 90536.22190002352,
+        "reviewer": 8.28250008635223,
+        "queue_wait_planner": 4.516839981079102,
+        "queue_wait_writer": 5.895853042602539,
+        "queue_wait_reviewer": 9.459257125854492,
+        "evaluation": 153557.0255999919,
+        "queue_wait_total": 19.871950149536133
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\d1479d35-f65a-4614-a9e7-12d1da1aff39.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\d1479d35-f65a-4614-a9e7-12d1da1aff39.json"
+    },
+    {
+      "trace_id": "cf5bb18a-132a-45dc-b4a7-02d7f9f59602",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76051.99099995662,
+      "end_to_end_ms": 228260.89096069336,
+      "stage_ms": {
+        "cache_lookup": 10.854399995878339,
+        "planner": 6.079199956730008,
+        "writer": 75608.77639998216,
+        "reviewer": 10.377699974924326,
+        "queue_wait_planner": 6.7310333251953125,
+        "queue_wait_writer": 7.5893402099609375,
+        "queue_wait_reviewer": 11.0321044921875,
+        "evaluation": 151712.36370003317,
+        "queue_wait_total": 25.35247802734375
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\cf5bb18a-132a-45dc-b4a7-02d7f9f59602.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\cf5bb18a-132a-45dc-b4a7-02d7f9f59602.json"
+    },
+    {
+      "trace_id": "beaf6de0-2764-408f-a773-c8d36562a665",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 73506.67619996238,
+      "end_to_end_ms": 224661.33856773376,
+      "stage_ms": {
+        "cache_lookup": 5.760999978519976,
+        "planner": 5.070499959401786,
+        "writer": 73114.06249995343,
+        "reviewer": 14.080599998123944,
+        "queue_wait_planner": 5.1517486572265625,
+        "queue_wait_writer": 5.788087844848633,
+        "queue_wait_reviewer": 10.26153564453125,
+        "evaluation": 150611.27370002214,
+        "queue_wait_total": 21.201372146606445
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\beaf6de0-2764-408f-a773-c8d36562a665.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\beaf6de0-2764-408f-a773-c8d36562a665.json"
+    },
+    {
+      "trace_id": "e5bc52bc-d380-4626-911e-3f23c09c9cd0",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74927.56900005043,
+      "end_to_end_ms": 224184.51690673828,
+      "stage_ms": {
+        "cache_lookup": 5.596500006504357,
+        "planner": 5.959199974313378,
+        "writer": 74563.36839997675,
+        "reviewer": 11.551599949598312,
+        "queue_wait_planner": 6.221294403076172,
+        "queue_wait_writer": 8.348703384399414,
+        "queue_wait_reviewer": 20.83897590637207,
+        "evaluation": 148823.6577999778,
+        "queue_wait_total": 35.408973693847656
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\e5bc52bc-d380-4626-911e-3f23c09c9cd0.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\e5bc52bc-d380-4626-911e-3f23c09c9cd0.json"
+    },
+    {
+      "trace_id": "eab1791e-a5ef-481b-926f-306c3d0fcf5c",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 77117.60270001832,
+      "end_to_end_ms": 219142.88806915283,
+      "stage_ms": {
+        "cache_lookup": 11.358599993400276,
+        "planner": 6.4974999986588955,
+        "writer": 76750.17030001618,
+        "reviewer": 7.480699918232858,
+        "queue_wait_planner": 8.185148239135742,
+        "queue_wait_writer": 6.793498992919922,
+        "queue_wait_reviewer": 10.21122932434082,
+        "evaluation": 141613.3082000306,
+        "queue_wait_total": 25.189876556396484
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\eab1791e-a5ef-481b-926f-306c3d0fcf5c.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\eab1791e-a5ef-481b-926f-306c3d0fcf5c.json"
+    },
+    {
+      "trace_id": "0cd13dbe-cd5f-4fe7-becb-d0396e601ca4",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74948.59849999193,
+      "end_to_end_ms": 222117.08807945251,
+      "stage_ms": {
+        "cache_lookup": 6.133200018666685,
+        "planner": 4.381799953989685,
+        "writer": 74576.10940001905,
+        "reviewer": 10.37280005402863,
+        "queue_wait_planner": 4.778861999511719,
+        "queue_wait_writer": 5.522727966308594,
+        "queue_wait_reviewer": 14.195442199707031,
+        "evaluation": 146716.88530000392,
+        "queue_wait_total": 24.497032165527344
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\0cd13dbe-cd5f-4fe7-becb-d0396e601ca4.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\0cd13dbe-cd5f-4fe7-becb-d0396e601ca4.json"
+    },
+    {
+      "trace_id": "c4ea875a-9150-4c9c-abdd-3da8f150a1b9",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 67078.40330002364,
+      "end_to_end_ms": 222605.84592819214,
+      "stage_ms": {
+        "cache_lookup": 6.473600049503148,
+        "planner": 4.28759993519634,
+        "writer": 66676.1185999494,
+        "reviewer": 8.251100080087781,
+        "queue_wait_planner": 6.941080093383789,
+        "queue_wait_writer": 4.774570465087891,
+        "queue_wait_reviewer": 9.31096076965332,
+        "evaluation": 155166.33909998927,
+        "queue_wait_total": 21.026611328125
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\c4ea875a-9150-4c9c-abdd-3da8f150a1b9.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\c4ea875a-9150-4c9c-abdd-3da8f150a1b9.json"
+    },
+    {
+      "trace_id": "db6e0e82-c85b-44c7-a942-2d94aac88282",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 68126.58619997092,
+      "end_to_end_ms": 210290.97938537598,
+      "stage_ms": {
+        "cache_lookup": 9.746299940161407,
+        "planner": 8.022699970752,
+        "writer": 67711.0256999731,
+        "reviewer": 12.219799915328622,
+        "queue_wait_planner": 5.648374557495117,
+        "queue_wait_writer": 8.25953483581543,
+        "queue_wait_reviewer": 15.387773513793945,
+        "evaluation": 141730.48310005106,
+        "queue_wait_total": 29.295682907104492
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\db6e0e82-c85b-44c7-a942-2d94aac88282.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\db6e0e82-c85b-44c7-a942-2d94aac88282.json"
+    },
+    {
+      "trace_id": "3ada8765-6eb2-4339-bc6d-e2cacb782bfc",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 69022.49220001977,
+      "end_to_end_ms": 222577.3787498474,
+      "stage_ms": {
+        "cache_lookup": 9.432399994693696,
+        "planner": 5.077100009657443,
+        "writer": 68668.22700004559,
+        "reviewer": 7.887299987487495,
+        "queue_wait_planner": 5.655765533447266,
+        "queue_wait_writer": 5.992412567138672,
+        "queue_wait_reviewer": 7.394075393676758,
+        "evaluation": 153153.2205999829,
+        "queue_wait_total": 19.042253494262695
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\3ada8765-6eb2-4339-bc6d-e2cacb782bfc.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\3ada8765-6eb2-4339-bc6d-e2cacb782bfc.json"
+    },
+    {
+      "trace_id": "bc67fc24-4275-462f-84c6-2fd010189618",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 67708.27800000552,
+      "end_to_end_ms": 218454.87022399902,
+      "stage_ms": {
+        "cache_lookup": 5.033699912019074,
+        "planner": 5.246500018984079,
+        "writer": 67358.66469994653,
+        "reviewer": 7.645000005140901,
+        "queue_wait_planner": 4.439115524291992,
+        "queue_wait_writer": 6.60395622253418,
+        "queue_wait_reviewer": 10.313034057617188,
+        "evaluation": 150281.34180000052,
+        "queue_wait_total": 21.35610580444336
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\bc67fc24-4275-462f-84c6-2fd010189618.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\bc67fc24-4275-462f-84c6-2fd010189618.json"
+    },
+    {
+      "trace_id": "8c58d2de-7814-4513-81fa-05da9d62ca9e",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 77065.97549992148,
+      "end_to_end_ms": 228046.7290878296,
+      "stage_ms": {
+        "cache_lookup": 5.4596998961642385,
+        "planner": 6.217699963599443,
+        "writer": 76659.23099999782,
+        "reviewer": 8.336800034157932,
+        "queue_wait_planner": 5.822420120239258,
+        "queue_wait_writer": 16.76654815673828,
+        "queue_wait_reviewer": 10.358572006225586,
+        "evaluation": 150095.55990004446,
+        "queue_wait_total": 32.947540283203125
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\8c58d2de-7814-4513-81fa-05da9d62ca9e.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\8c58d2de-7814-4513-81fa-05da9d62ca9e.json"
+    },
+    {
+      "trace_id": "20484d24-8a2c-4893-adbf-c43e5df21e2b",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 73406.09659999609,
+      "end_to_end_ms": 224255.6025981903,
+      "stage_ms": {
+        "cache_lookup": 6.72950001899153,
+        "planner": 6.281499983742833,
+        "writer": 73079.06840008218,
+        "reviewer": 8.244500029832125,
+        "queue_wait_planner": 4.7550201416015625,
+        "queue_wait_writer": 6.883859634399414,
+        "queue_wait_reviewer": 11.825799942016602,
+        "evaluation": 150372.51070002094,
+        "queue_wait_total": 23.464679718017578
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\20484d24-8a2c-4893-adbf-c43e5df21e2b.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\20484d24-8a2c-4893-adbf-c43e5df21e2b.json"
+    },
+    {
+      "trace_id": "dc76ae76-2ef6-4dfe-88d8-30dcb2803f52",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 75872.79309995938,
+      "end_to_end_ms": 230314.0206336975,
+      "stage_ms": {
+        "cache_lookup": 9.041500044986606,
+        "planner": 8.029799908399582,
+        "writer": 75470.30459996313,
+        "reviewer": 15.728799975477159,
+        "queue_wait_planner": 5.921602249145508,
+        "queue_wait_writer": 8.21232795715332,
+        "queue_wait_reviewer": 15.959501266479492,
+        "evaluation": 153942.48119997792,
+        "queue_wait_total": 30.09343147277832
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\dc76ae76-2ef6-4dfe-88d8-30dcb2803f52.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\dc76ae76-2ef6-4dfe-88d8-30dcb2803f52.json"
+    },
+    {
+      "trace_id": "524e285f-db3d-48de-8aed-f636b3d3c585",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71901.70499996748,
+      "end_to_end_ms": 224728.09600830078,
+      "stage_ms": {
+        "cache_lookup": 7.180199958384037,
+        "planner": 6.287800031714141,
+        "writer": 71523.29230005853,
+        "reviewer": 12.756799929775298,
+        "queue_wait_planner": 5.623817443847656,
+        "queue_wait_writer": 7.518291473388672,
+        "queue_wait_reviewer": 29.970884323120117,
+        "evaluation": 152298.41700010002,
+        "queue_wait_total": 43.112993240356445
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\524e285f-db3d-48de-8aed-f636b3d3c585.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\524e285f-db3d-48de-8aed-f636b3d3c585.json"
+    },
+    {
+      "trace_id": "c5dbc75a-90df-4779-858f-e6dc93bbb9ce",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 74218.41500001028,
+      "end_to_end_ms": 226588.1552696228,
+      "stage_ms": {
+        "cache_lookup": 13.309800066053867,
+        "planner": 9.343500016257167,
+        "writer": 73722.06419997383,
+        "reviewer": 10.707100038416684,
+        "queue_wait_planner": 14.561891555786133,
+        "queue_wait_writer": 11.905670166015625,
+        "queue_wait_reviewer": 11.300325393676758,
+        "evaluation": 151746.1517000338,
+        "queue_wait_total": 37.767887115478516
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\c5dbc75a-90df-4779-858f-e6dc93bbb9ce.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\c5dbc75a-90df-4779-858f-e6dc93bbb9ce.json"
+    },
+    {
+      "trace_id": "4ce42df0-f2a1-4d9a-9050-830899d4909d",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 76536.9499999797,
+      "end_to_end_ms": 230166.55921936035,
+      "stage_ms": {
+        "cache_lookup": 8.606299990788102,
+        "planner": 6.207700003869832,
+        "writer": 76125.54709997494,
+        "reviewer": 12.326000025495887,
+        "queue_wait_planner": 5.794048309326172,
+        "queue_wait_writer": 6.145954132080078,
+        "queue_wait_reviewer": 11.74616813659668,
+        "evaluation": 153199.39710001927,
+        "queue_wait_total": 23.68617057800293
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\4ce42df0-f2a1-4d9a-9050-830899d4909d.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\4ce42df0-f2a1-4d9a-9050-830899d4909d.json"
+    },
+    {
+      "trace_id": "40c30ead-31d4-4d06-84bd-616593353cb4",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 82110.38630001713,
+      "end_to_end_ms": 240214.73217010498,
+      "stage_ms": {
+        "cache_lookup": 8.065300062298775,
+        "planner": 8.025399991311133,
+        "writer": 81700.95559989568,
+        "reviewer": 12.109000002965331,
+        "queue_wait_planner": 5.759000778198242,
+        "queue_wait_writer": 8.221626281738281,
+        "queue_wait_reviewer": 12.633562088012695,
+        "evaluation": 157106.78160004318,
+        "queue_wait_total": 26.61418914794922
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\40c30ead-31d4-4d06-84bd-616593353cb4.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\40c30ead-31d4-4d06-84bd-616593353cb4.json"
+    },
+    {
+      "trace_id": "c8af52e4-6d92-46ce-8863-ffe187b38c30",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 73981.6439000424,
+      "end_to_end_ms": 231862.57696151733,
+      "stage_ms": {
+        "cache_lookup": 8.053699973970652,
+        "planner": 5.939799943007529,
+        "writer": 73567.45119998232,
+        "reviewer": 8.186600054614246,
+        "queue_wait_planner": 4.782199859619141,
+        "queue_wait_writer": 7.262945175170898,
+        "queue_wait_reviewer": 10.38980484008789,
+        "evaluation": 157431.15800002124,
+        "queue_wait_total": 22.43494987487793
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\c8af52e4-6d92-46ce-8863-ffe187b38c30.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\c8af52e4-6d92-46ce-8863-ffe187b38c30.json"
+    },
+    {
+      "trace_id": "eae11eae-d42a-4e29-876c-db001f79c2c0",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 80155.79600003548,
+      "end_to_end_ms": 232208.92071723938,
+      "stage_ms": {
+        "cache_lookup": 4.664000007323921,
+        "planner": 4.211700055748224,
+        "writer": 79781.28759993706,
+        "reviewer": 11.80979993660003,
+        "queue_wait_planner": 4.111528396606445,
+        "queue_wait_writer": 4.953622817993164,
+        "queue_wait_reviewer": 15.919923782348633,
+        "evaluation": 151433.84160008281,
+        "queue_wait_total": 24.985074996948242
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\eae11eae-d42a-4e29-876c-db001f79c2c0.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\eae11eae-d42a-4e29-876c-db001f79c2c0.json"
+    },
+    {
+      "trace_id": "3c8cbd75-fb40-437f-a4e2-53a12878cc61",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 70557.39289999474,
+      "end_to_end_ms": 216248.9242553711,
+      "stage_ms": {
+        "cache_lookup": 7.6240000780671835,
+        "planner": 5.222299951128662,
+        "writer": 70134.95289999992,
+        "reviewer": 11.06139994226396,
+        "queue_wait_planner": 6.779670715332031,
+        "queue_wait_writer": 6.5631866455078125,
+        "queue_wait_reviewer": 14.09459114074707,
+        "evaluation": 145132.89000000805,
+        "queue_wait_total": 27.437448501586914
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\3c8cbd75-fb40-437f-a4e2-53a12878cc61.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\3c8cbd75-fb40-437f-a4e2-53a12878cc61.json"
+    },
+    {
+      "trace_id": "72e3705f-4581-4a1e-a91f-b5cafadcf030",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 68326.8777000485,
+      "end_to_end_ms": 216879.91333007812,
+      "stage_ms": {
+        "cache_lookup": 9.223799919709563,
+        "planner": 6.4202999928966165,
+        "writer": 67999.06800000463,
+        "reviewer": 8.439600002020597,
+        "queue_wait_planner": 4.992485046386719,
+        "queue_wait_writer": 7.489919662475586,
+        "queue_wait_reviewer": 16.965150833129883,
+        "evaluation": 148102.1691999631,
+        "queue_wait_total": 29.447555541992188
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\72e3705f-4581-4a1e-a91f-b5cafadcf030.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\72e3705f-4581-4a1e-a91f-b5cafadcf030.json"
+    },
+    {
+      "trace_id": "eff1b107-e23d-4b66-8c69-85ebbe448e86",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 66268.2912000455,
+      "end_to_end_ms": 214125.15306472778,
+      "stage_ms": {
+        "cache_lookup": 8.140699937939644,
+        "planner": 8.825000026263297,
+        "writer": 65866.01849994622,
+        "reviewer": 8.995500043965876,
+        "queue_wait_planner": 7.616758346557617,
+        "queue_wait_writer": 8.401870727539062,
+        "queue_wait_reviewer": 14.394760131835938,
+        "evaluation": 147325.7742000278,
+        "queue_wait_total": 30.413389205932617
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\eff1b107-e23d-4b66-8c69-85ebbe448e86.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\eff1b107-e23d-4b66-8c69-85ebbe448e86.json"
+    },
+    {
+      "trace_id": "fa6073b8-c76f-458d-aa9f-32f1f17d4b74",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 67742.33580008149,
+      "end_to_end_ms": 231847.71609306335,
+      "stage_ms": {
+        "cache_lookup": 8.618799969553947,
+        "planner": 4.268800024874508,
+        "writer": 67408.82839995902,
+        "reviewer": 7.744499947875738,
+        "queue_wait_planner": 6.572246551513672,
+        "queue_wait_writer": 5.110263824462891,
+        "queue_wait_reviewer": 7.355451583862305,
+        "evaluation": 163657.9523999244,
+        "queue_wait_total": 19.037961959838867
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\fa6073b8-c76f-458d-aa9f-32f1f17d4b74.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\fa6073b8-c76f-458d-aa9f-32f1f17d4b74.json"
+    },
+    {
+      "trace_id": "93ad49d1-744e-49c9-9612-2b8731c53847",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 68330.66079998389,
+      "end_to_end_ms": 212319.31114196777,
+      "stage_ms": {
+        "cache_lookup": 40.20940000191331,
+        "planner": 26.95950004272163,
+        "writer": 67735.60969997197,
+        "reviewer": 5.908400053158402,
+        "queue_wait_planner": 6.781101226806641,
+        "queue_wait_writer": 28.914690017700195,
+        "queue_wait_reviewer": 11.528491973876953,
+        "evaluation": 143638.14970001113,
+        "queue_wait_total": 47.22428321838379
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\93ad49d1-744e-49c9-9612-2b8731c53847.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\93ad49d1-744e-49c9-9612-2b8731c53847.json"
+    },
+    {
+      "trace_id": "d69d8ce8-79a0-482c-a27c-afe2b6024a53",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 72945.22059999872,
+      "end_to_end_ms": 215613.2471561432,
+      "stage_ms": {
+        "cache_lookup": 13.234299956820905,
+        "planner": 8.584899944253266,
+        "writer": 72543.2875000406,
+        "reviewer": 6.986799999140203,
+        "queue_wait_planner": 7.983207702636719,
+        "queue_wait_writer": 8.738279342651367,
+        "queue_wait_reviewer": 7.50422477722168,
+        "evaluation": 142070.97840006463,
+        "queue_wait_total": 24.225711822509766
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\d69d8ce8-79a0-482c-a27c-afe2b6024a53.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\d69d8ce8-79a0-482c-a27c-afe2b6024a53.json"
+    },
+    {
+      "trace_id": "ee3b1b59-186c-433b-b09f-347442598b30",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 73192.75899999775,
+      "end_to_end_ms": 215879.37903404236,
+      "stage_ms": {
+        "cache_lookup": 5.6105999974533916,
+        "planner": 6.8672000197693706,
+        "writer": 72832.01500005089,
+        "reviewer": 9.91929997690022,
+        "queue_wait_planner": 3.554105758666992,
+        "queue_wait_writer": 7.584333419799805,
+        "queue_wait_reviewer": 12.25137710571289,
+        "evaluation": 142187.8492999822,
+        "queue_wait_total": 23.389816284179688
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\ee3b1b59-186c-433b-b09f-347442598b30.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\ee3b1b59-186c-433b-b09f-347442598b30.json"
+    },
+    {
+      "trace_id": "902b7868-b19e-4a13-9043-3d044eb10162",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 67443.88080004137,
+      "end_to_end_ms": 214532.15336799622,
+      "stage_ms": {
+        "cache_lookup": 7.347699953243136,
+        "planner": 5.03160001244396,
+        "writer": 67090.81740002148,
+        "reviewer": 9.420600021257997,
+        "queue_wait_planner": 3.823995590209961,
+        "queue_wait_writer": 4.784584045410156,
+        "queue_wait_reviewer": 14.684200286865234,
+        "evaluation": 146628.92970000394,
+        "queue_wait_total": 23.29277992248535
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\902b7868-b19e-4a13-9043-3d044eb10162.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\902b7868-b19e-4a13-9043-3d044eb10162.json"
+    },
+    {
+      "trace_id": "1108c345-d2e7-428c-a22f-45d6465e39ec",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71773.31339998636,
+      "end_to_end_ms": 218164.02769088745,
+      "stage_ms": {
+        "cache_lookup": 7.836999953724444,
+        "planner": 5.878999945707619,
+        "writer": 71357.4910000898,
+        "reviewer": 8.473700028844178,
+        "queue_wait_planner": 5.450725555419922,
+        "queue_wait_writer": 6.346940994262695,
+        "queue_wait_reviewer": 12.563228607177734,
+        "evaluation": 145854.90950010717,
+        "queue_wait_total": 24.36089515686035
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\1108c345-d2e7-428c-a22f-45d6465e39ec.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\1108c345-d2e7-428c-a22f-45d6465e39ec.json"
+    },
+    {
+      "trace_id": "e25a4ba3-6ccd-4ac3-9ef3-25d8d76aa53a",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 65807.65819991939,
+      "end_to_end_ms": 212601.04751586914,
+      "stage_ms": {
+        "cache_lookup": 8.545099990442395,
+        "planner": 5.03460003528744,
+        "writer": 65469.57270009443,
+        "reviewer": 18.088400014676154,
+        "queue_wait_planner": 4.482030868530273,
+        "queue_wait_writer": 5.688905715942383,
+        "queue_wait_reviewer": 11.521100997924805,
+        "evaluation": 146428.139799973,
+        "queue_wait_total": 21.69203758239746
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\e25a4ba3-6ccd-4ac3-9ef3-25d8d76aa53a.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\e25a4ba3-6ccd-4ac3-9ef3-25d8d76aa53a.json"
+    },
+    {
+      "trace_id": "4f3fb1d7-8733-48ca-a7cd-f05881403b7e",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71075.42029989418,
+      "end_to_end_ms": 214808.87579917908,
+      "stage_ms": {
+        "cache_lookup": 7.342899916693568,
+        "planner": 4.697900032624602,
+        "writer": 70705.52690001205,
+        "reviewer": 10.873000021092594,
+        "queue_wait_planner": 5.347967147827148,
+        "queue_wait_writer": 5.453824996948242,
+        "queue_wait_reviewer": 8.203744888305664,
+        "evaluation": 143339.55929998774,
+        "queue_wait_total": 19.005537033081055
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\4f3fb1d7-8733-48ca-a7cd-f05881403b7e.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\4f3fb1d7-8733-48ca-a7cd-f05881403b7e.json"
+    },
+    {
+      "trace_id": "eb166165-7839-46f4-9fc0-7713b55e9dc7",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 69365.30329997186,
+      "end_to_end_ms": 228481.30440711975,
+      "stage_ms": {
+        "cache_lookup": 7.116499939002097,
+        "planner": 4.890199983492494,
+        "writer": 69006.30350003485,
+        "reviewer": 9.04199993237853,
+        "queue_wait_planner": 8.785486221313477,
+        "queue_wait_writer": 5.689382553100586,
+        "queue_wait_reviewer": 16.903162002563477,
+        "evaluation": 158623.5250000609,
+        "queue_wait_total": 31.37803077697754
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\eb166165-7839-46f4-9fc0-7713b55e9dc7.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\eb166165-7839-46f4-9fc0-7713b55e9dc7.json"
+    },
+    {
+      "trace_id": "2c56657f-62f6-4bda-8827-6fbadd8155b2",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 71945.89900004212,
+      "end_to_end_ms": 215895.28846740723,
+      "stage_ms": {
+        "cache_lookup": 13.107700040563941,
+        "planner": 6.185700069181621,
+        "writer": 71521.65500004776,
+        "reviewer": 11.419399990700185,
+        "queue_wait_planner": 10.756492614746094,
+        "queue_wait_writer": 6.48951530456543,
+        "queue_wait_reviewer": 11.09004020690918,
+        "evaluation": 143346.2423000019,
+        "queue_wait_total": 28.336048126220703
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\2c56657f-62f6-4bda-8827-6fbadd8155b2.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\2c56657f-62f6-4bda-8827-6fbadd8155b2.json"
+    }
+  ],
+  "complete": true,
+  "summary": [
+    {
+      "stage": "cache_lookup",
+      "p50_ms": 8.421449980232865,
+      "p95_ms": 19.43740004207939,
+      "percent_end_to_end": 0.004503072597806591
+    },
+    {
+      "stage": "planner",
+      "p50_ms": 6.196700036525726,
+      "p95_ms": 13.050799956545234,
+      "percent_end_to_end": 0.00317783034039736
+    },
+    {
+      "stage": "writer",
+      "p50_ms": 72379.90770000033,
+      "p95_ms": 79781.28759993706,
+      "percent_end_to_end": 32.40969103508469
+    },
+    {
+      "stage": "reviewer",
+      "p50_ms": 9.018749988172203,
+      "p95_ms": 15.728799975477159,
+      "percent_end_to_end": 0.0044198045019614475
+    },
+    {
+      "stage": "queue_wait_total",
+      "p50_ms": 24.950027465820312,
+      "p95_ms": 43.112993240356445,
+      "percent_end_to_end": 0.01227129421436136
+    },
+    {
+      "stage": "evaluation",
+      "p50_ms": 150326.92625001073,
+      "p95_ms": 157991.11480009742,
+      "percent_end_to_end": 67.18171901622411
+    }
+  ]
+}

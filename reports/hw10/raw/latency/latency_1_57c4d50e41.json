@@ -1,0 +1,13 @@
+{
+  "target": 1,
+  "question": "What should a grocery store do after receiving a supplier recall notice?",
+  "boundary": "API ingress through evaluation completion",
+  "p95_method": "nearest rank",
+  "rows": [],
+  "complete": false,
+  "error": {
+    "request": 1,
+    "trace_id": "43bdef57-45b1-424e-97ff-53299bb37419",
+    "message": "43bdef57-45b1-424e-97ff-53299bb37419: expected exactly one successful queue_wait_writer span."
+  }
+}

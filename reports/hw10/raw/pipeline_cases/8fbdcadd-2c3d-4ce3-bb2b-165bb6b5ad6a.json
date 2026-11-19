@@ -1,0 +1,49 @@
+{
+  "trace_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+  "correlation_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+  "question": "How should a store follow up when its stock system shows affected units on hand but staff cannot locate them?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 76,
+      "timestamp_ms": 1794793153016,
+      "payload": {
+        "correlation_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+        "question": "How should a store follow up when its stock system shows affected units on hand but staff cannot locate them?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 167,
+      "timestamp_ms": 1794793205861,
+      "payload": {
+        "correlation_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+        "question": "How should a store follow up when its stock system shows affected units on hand but staff cannot locate them?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "To follow up on affected units that cannot be located, a store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to confirm the product and affected lot number. This information will be crucial in determining the next steps.\n2. **Isolate inventory**: Immediately isolate the affected product from the rest of the inventory to prevent further sales and potential exposure to customers. This can be done by:\n\t* Moving the product to a separate, secure area of the store.\n\t* Using tape or other visual indicators to clearly mark the product as \"Recalled\" or \"Isolated\".\n\t* Informing staff not to handle or sell the product.\n3. **Block sales**: Prevent sales of the affected product by:\n\t* Notifying the point-of-sale system to block sales of the product.\n\t* Informing cashiers and sales staff not to ring up sales of the product.\n\t* Displaying clear signage indicating that the product is recalled and not for sale.\n4. **Notify responsible people**: Inform the following parties:\n\t* Store management and district managers.\n\t* Supplier or manufacturer's customer service department.\n\t* Any other relevant stakeholders, such as quality control or logistics teams.\n5. **Document actions**: Keep a record of the following:\n\t* The steps taken to isolate and block sales of the affected product.\n\t* The date and time the recall was initiated.\n\t* Any communication with the supplier or manufacturer.\n\t* The actions taken to dispose of the affected product (if necessary).\n\nBy following these steps, the store can ensure that the affected product is properly isolated, sales are blocked, and responsible parties are notified, while also maintaining a record of the actions taken."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 167,
+      "timestamp_ms": 1794793205917,
+      "payload": {
+        "correlation_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+        "status": "approved",
+        "answer": "To follow up on affected units that cannot be located, a store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to confirm the product and affected lot number. This information will be crucial in determining the next steps.\n2. **Isolate inventory**: Immediately isolate the affected product from the rest of the inventory to prevent further sales and potential exposure to customers. This can be done by:\n\t* Moving the product to a separate, secure area of the store.\n\t* Using tape or other visual indicators to clearly mark the product as \"Recalled\" or \"Isolated\".\n\t* Informing staff not to handle or sell the product.\n3. **Block sales**: Prevent sales of the affected product by:\n\t* Notifying the point-of-sale system to block sales of the product.\n\t* Informing cashiers and sales staff not to ring up sales of the product.\n\t* Displaying clear signage indicating that the product is recalled and not for sale.\n4. **Notify responsible people**: Inform the following parties:\n\t* Store management and district managers.\n\t* Supplier or manufacturer's customer service department.\n\t* Any other relevant stakeholders, such as quality control or logistics teams.\n5. **Document actions**: Keep a record of the following:\n\t* The steps taken to isolate and block sales of the affected product.\n\t* The date and time the recall was initiated.\n\t* Any communication with the supplier or manufacturer.\n\t* The actions taken to dispose of the affected product (if necessary).\n\nBy following these steps, the store can ensure that the affected product is properly isolated, sales are blocked, and responsible parties are notified, while also maintaining a record of the actions taken."
+      }
+    }
+  }
+}

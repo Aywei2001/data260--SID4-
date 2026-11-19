@@ -1,0 +1,49 @@
+{
+  "trace_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+  "correlation_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+  "question": "What should a store do if the supplier recall notice names the product but gives no lot numbers or date range?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 62,
+      "timestamp_ms": 1794791066817,
+      "payload": {
+        "correlation_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+        "question": "What should a store do if the supplier recall notice names the product but gives no lot numbers or date range?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 149,
+      "timestamp_ms": 1794791102602,
+      "payload": {
+        "correlation_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+        "question": "What should a store do if the supplier recall notice names the product but gives no lot numbers or date range?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "If the supplier recall notice names the product but gives no lot numbers or date range, the store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to confirm the product is indeed the one being recalled. However, without specific lot numbers or date ranges, the store cannot isolate the exact affected inventory. They should contact the supplier to request this information or to confirm the product and any other relevant details.\n\n2. **Describe inventory isolation and sale blocking**: Due to the lack of specific lot numbers or date ranges, the store cannot isolate the exact affected inventory. However, they should:\n\t* Block sales of the product until they receive further guidance from the supplier.\n\t* Isolate the product from other inventory to prevent accidental sales or distribution.\n\n3. **Describe notification, disposition, and documentation**: The store should:\n\t* Notify their customers, employees, and any relevant stakeholders about the recall.\n\t* Dispose of the product in accordance with the supplier's instructions, which may include returning it to the supplier or a designated facility.\n\t* Document all actions taken, including the recall notice, communication with the supplier, and any inventory isolation or sale blocking measures."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 149,
+      "timestamp_ms": 1794791102646,
+      "payload": {
+        "correlation_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+        "status": "approved",
+        "answer": "If the supplier recall notice names the product but gives no lot numbers or date range, the store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to confirm the product is indeed the one being recalled. However, without specific lot numbers or date ranges, the store cannot isolate the exact affected inventory. They should contact the supplier to request this information or to confirm the product and any other relevant details.\n\n2. **Describe inventory isolation and sale blocking**: Due to the lack of specific lot numbers or date ranges, the store cannot isolate the exact affected inventory. However, they should:\n\t* Block sales of the product until they receive further guidance from the supplier.\n\t* Isolate the product from other inventory to prevent accidental sales or distribution.\n\n3. **Describe notification, disposition, and documentation**: The store should:\n\t* Notify their customers, employees, and any relevant stakeholders about the recall.\n\t* Dispose of the product in accordance with the supplier's instructions, which may include returning it to the supplier or a designated facility.\n\t* Document all actions taken, including the recall notice, communication with the supplier, and any inventory isolation or sale blocking measures."
+      }
+    }
+  }
+}

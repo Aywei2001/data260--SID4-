@@ -1,0 +1,49 @@
+{
+  "trace_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+  "correlation_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+  "question": "What should a manager verify before closing a recall task and releasing any remaining stock for sale?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 93,
+      "timestamp_ms": 1794793351437,
+      "payload": {
+        "correlation_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+        "question": "What should a manager verify before closing a recall task and releasing any remaining stock for sale?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 171,
+      "timestamp_ms": 1794793376652,
+      "payload": {
+        "correlation_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+        "question": "What should a manager verify before closing a recall task and releasing any remaining stock for sale?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "Before closing a recall task and releasing any remaining stock for sale, a manager should verify that:\n\n* The product and affected lot have been correctly identified from the recall notice.\n* Inventory isolation and sale blocking procedures have been successfully implemented to prevent further sale of the affected products.\n* Notification procedures have been completed, including notifying responsible personnel, customers, and any other relevant parties.\n* Disposition procedures have been followed, which may include holding, returning, or disposing of the affected products in accordance with the recall notice and supplier instructions.\n* Documentation has been completed, including recording the recall actions taken, the products affected, and any other relevant details.\n\nBy verifying these steps, the manager can ensure that the recall has been properly executed and that the remaining stock is safe for sale."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 171,
+      "timestamp_ms": 1794793376713,
+      "payload": {
+        "correlation_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+        "status": "needs_revision",
+        "answer": "Before closing a recall task and releasing any remaining stock for sale, a manager should verify that:\n\n* The product and affected lot have been correctly identified from the recall notice.\n* Inventory isolation and sale blocking procedures have been successfully implemented to prevent further sale of the affected products.\n* Notification procedures have been completed, including notifying responsible personnel, customers, and any other relevant parties.\n* Disposition procedures have been followed, which may include holding, returning, or disposing of the affected products in accordance with the recall notice and supplier instructions.\n* Documentation has been completed, including recording the recall actions taken, the products affected, and any other relevant details.\n\nBy verifying these steps, the manager can ensure that the recall has been properly executed and that the remaining stock is safe for sale."
+      }
+    }
+  }
+}

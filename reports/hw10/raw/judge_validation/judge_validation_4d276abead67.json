@@ -1,0 +1,575 @@
+{
+  "created_at_utc": "2026-11-16T20:22:10.647222+00:00",
+  "freeze_commit": "db00c5afd804c626d18dd3846eed14648421fa86",
+  "input_sha256": {
+    "eval_cases.json": "932fd4d54ab13088aee1955e565d14a06ad60ebd411bf9080291a76c48c07467",
+    "human_labels.csv": "23472555b33b952d7d4e5cb61affec1cb1ce44e4cec6807d5ab5f50dd17e8343"
+  },
+  "judge": {
+    "method": "DeepEval G-Eval",
+    "model": "llama3.2",
+    "base_url": "http://127.0.0.1:11434",
+    "temperature": 0.0,
+    "deepeval_version": "4.3.4",
+    "criteria": "Score whether the answer directly addresses the question, covers the relevant reference steps, and avoids unsupported claims or advice. Accept equivalent wording.",
+    "scale": "1 + 4 * raw_score",
+    "timeout_seconds_per_score": 120
+  },
+  "results": [
+    {
+      "run": 1,
+      "case_id": "case_01",
+      "trace_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides detailed steps but does not directly answer the scenario of an unreadable lot code. The answer also covers relevant reference steps, avoids unsupported claims, and has equivalent wording with the expected output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_02",
+      "trace_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims (e.g., 'to prevent any potential harm to customers') and lacks specificity in its instructions. The Input, Actual Output, and Expected Output are not entirely equivalent in wording."
+    },
+    {
+      "run": 1,
+      "case_id": "case_03",
+      "trace_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims about the importance of documentation for regulatory and compliance purposes. The Input, Actual Output, and Expected Output are not equivalent in wording, with the Actual Output providing more detailed information than the Expected Output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_04",
+      "trace_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+      "human_score": 3,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides a general solution without specifying how to handle the situation when the point-of-sale system cannot block individual lots. The answer also does not cover the relevant reference steps, such as the importance of verifying the product's UPC or other identifying codes to ensure accuracy."
+    },
+    {
+      "run": 1,
+      "case_id": "case_05",
+      "trace_id": "e84f342b-731b-4680-93c9-4688a5857ef5",
+      "human_score": 5,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in describing the recall process and documentation requirements. The answer also includes unsupported claims about customer notification and documentation, which should be verified with the recall lead and approved communication process."
+    },
+    {
+      "run": 1,
+      "case_id": "case_06",
+      "trace_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling recalled items but does not explicitly address how to handle online orders that contain recalled items and are still awaiting pickup. The answer also covers relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_07",
+      "trace_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+      "human_score": 5,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides additional information about the supplier's instructions, which is not relevant to the scenario. The answer also does not cover the relevant reference steps, such as isolating the new shipment and blocking sales, and instead provides a generic response that does not match the expected output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_08",
+      "trace_id": "c11dc189-2893-4888-a6b4-3ec51bde1370",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling a recalled lot, but does not specifically address how to reconcile quantities received, sold, isolated, and returned for a recalled lot."
+    },
+    {
+      "run": 1,
+      "case_id": "case_09",
+      "trace_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its guidance on isolating inventory and sale blocking. Additionally, the answer does not match the expected output in terms of scope treatment and documentation requirements."
+    },
+    {
+      "run": 1,
+      "case_id": "case_10",
+      "trace_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed response to a revised recall notice rather than addressing the specific scenario of a store responding to a notice that adds a second lot to the original scope. The answer also covers the relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_11",
+      "trace_id": "49c52bcf-c60e-4569-8d21-1bc511f9107d",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes unsupported claims (e.g., 'it is essential to follow the supplier's instructions') and uses more verbose language than the expected output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_12",
+      "trace_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the details provided, such as the exact steps for inventory isolation and sale blocking, and the procedures for notification, disposition, and documentation. The answer also contains unsupported claims, such as the importance of preventing further sales of the affected product, which is not explicitly stated in the recall notice and supplier instructions."
+    },
+    {
+      "run": 1,
+      "case_id": "case_13",
+      "trace_id": "e7bbc56e-d7f6-49d8-8d88-d3fe172274a5",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to mention the importance of following the supplier's procedures for return and disposal of the recalled product. The answer also does not match the wording of the Input, Actual Output, and Expected Output."
+    },
+    {
+      "run": 1,
+      "case_id": "case_14",
+      "trace_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specific details about the official notice, such as distribution locations or dates, and instructions for customers. The answer also avoids unsupported claims or advice."
+    },
+    {
+      "run": 1,
+      "case_id": "case_15",
+      "trace_id": "8a4a5db3-ccef-44c5-b5b2-d6185fa2c092",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer partially addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to provide a clear and concise process for checking transfer records and notifying branches. The answer also includes unsupported claims about isolating products and documenting actions."
+    },
+    {
+      "run": 1,
+      "case_id": "case_16",
+      "trace_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides detailed steps for handling repackaged items but does not directly answer the scenario of potentially affected items being repackaged in-store and the original labels being no longer attached. The answer also does not cover the relevant reference steps, as it does not mention tracing the repackaged units back to the source lot using repackaging records, original case labels, and receiving records."
+    },
+    {
+      "run": 1,
+      "case_id": "case_17",
+      "trace_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the required details, such as product and affected lot numbers, and fails to avoid unsupported claims or advice, instead providing a general outline."
+    },
+    {
+      "run": 1,
+      "case_id": "case_18",
+      "trace_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+      "human_score": 4,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed solution to a different scenario (reconciling receiving, sales, transfer, and disposition records) rather than focusing on how a store should follow up when its stock system shows affected units on hand but staff cannot locate them."
+    },
+    {
+      "run": 1,
+      "case_id": "case_19",
+      "trace_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+      "human_score": 4,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes additional information not present in the expected output, such as the specific actions to be taken and the importance of maintaining accurate records. The answer also avoids unsupported claims or advice, and the input, actual output, and expected output are equivalent in wording."
+    },
+    {
+      "run": 1,
+      "case_id": "case_20",
+      "trace_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+      "human_score": 5,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed list of steps to follow, rather than a direct answer to the specific scenario of verifying before closing a recall task and releasing any remaining stock for sale."
+    },
+    {
+      "run": 2,
+      "case_id": "case_01",
+      "trace_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+      "human_score": 4,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed procedure for handling a recalled item with an unreadable lot code, but does not specifically address what a grocery store should do in this situation."
+    },
+    {
+      "run": 2,
+      "case_id": "case_02",
+      "trace_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims (e.g., 'to prevent any potential harm to customers') and lacks specificity in its instructions. The Input, Actual Output, and Expected Output are not entirely equivalent in wording."
+    },
+    {
+      "run": 2,
+      "case_id": "case_03",
+      "trace_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims about the importance of documentation for regulatory and compliance purposes. The Input, Actual Output, and Expected Output are not equivalent in wording, with the Actual Output providing more detailed information than the Expected Output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_04",
+      "trace_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+      "human_score": 3,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides a general solution without specifying how to handle the situation when the point-of-sale system cannot block individual lots. The answer also does not cover the relevant reference steps, such as the importance of verifying the product's UPC or other identifying codes to ensure accuracy."
+    },
+    {
+      "run": 2,
+      "case_id": "case_05",
+      "trace_id": "e84f342b-731b-4680-93c9-4688a5857ef5",
+      "human_score": 5,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in describing the recall process and documentation requirements. The answer also includes unsupported claims about customer notification and documentation, which should be verified with the recall lead and approved communication process."
+    },
+    {
+      "run": 2,
+      "case_id": "case_06",
+      "trace_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling recalled items but does not explicitly address how to handle online orders that contain recalled items and are still awaiting pickup. The answer also covers relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_07",
+      "trace_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+      "human_score": 5,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides additional information about the supplier's instructions, which is not relevant to the scenario. The answer also does not cover the relevant reference steps, such as isolating the new shipment and blocking sales, and instead provides a generic response that does not match the expected output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_08",
+      "trace_id": "c11dc189-2893-4888-a6b4-3ec51bde1370",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling a recalled lot, but does not specifically address how to reconcile quantities received, sold, isolated, and returned for a recalled lot."
+    },
+    {
+      "run": 2,
+      "case_id": "case_09",
+      "trace_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its guidance on isolating inventory and sale blocking. Additionally, the answer does not match the expected output in terms of scope treatment and documentation requirements."
+    },
+    {
+      "run": 2,
+      "case_id": "case_10",
+      "trace_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed response to a revised recall notice rather than addressing the specific scenario of a store responding to a notice that adds a second lot to the original scope. The answer also covers the relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_11",
+      "trace_id": "49c52bcf-c60e-4569-8d21-1bc511f9107d",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes unsupported claims (e.g., 'it is essential to follow the supplier's instructions') and uses more verbose language than the expected output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_12",
+      "trace_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the details provided, such as the exact steps for inventory isolation and sale blocking, and the procedures for notification, disposition, and documentation. The answer also contains unsupported claims, such as the importance of preventing further sales of the affected product, which is not explicitly stated in the recall notice and supplier instructions."
+    },
+    {
+      "run": 2,
+      "case_id": "case_13",
+      "trace_id": "e7bbc56e-d7f6-49d8-8d88-d3fe172274a5",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to mention the importance of following the supplier's procedures for return and disposal of the recalled product. The answer also does not match the wording of the Input, Actual Output, and Expected Output."
+    },
+    {
+      "run": 2,
+      "case_id": "case_14",
+      "trace_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specific details about the official notice, such as distribution locations or dates, and instructions for customers. The answer also avoids unsupported claims or advice."
+    },
+    {
+      "run": 2,
+      "case_id": "case_15",
+      "trace_id": "8a4a5db3-ccef-44c5-b5b2-d6185fa2c092",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer partially addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to provide a clear and concise process for checking transfer records and notifying branches. The answer also includes unsupported claims about isolating products and documenting actions."
+    },
+    {
+      "run": 2,
+      "case_id": "case_16",
+      "trace_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides detailed steps for handling repackaged items but does not directly answer the scenario of potentially affected items being repackaged in-store and the original labels being no longer attached. The answer also does not cover the relevant reference steps, as it does not mention tracing the repackaged units back to the source lot using repackaging records, original case labels, and receiving records."
+    },
+    {
+      "run": 2,
+      "case_id": "case_17",
+      "trace_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the required details, such as product and affected lot numbers, and fails to avoid unsupported claims or advice, instead providing a general outline."
+    },
+    {
+      "run": 2,
+      "case_id": "case_18",
+      "trace_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+      "human_score": 4,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed solution to a different scenario (reconciling receiving, sales, transfer, and disposition records) rather than focusing on how a store should follow up when its stock system shows affected units on hand but staff cannot locate them."
+    },
+    {
+      "run": 2,
+      "case_id": "case_19",
+      "trace_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+      "human_score": 4,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes additional information not present in the expected output, such as the specific actions to be taken and the importance of maintaining accurate records. The answer also avoids unsupported claims or advice, and the input, actual output, and expected output are equivalent in wording."
+    },
+    {
+      "run": 2,
+      "case_id": "case_20",
+      "trace_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+      "human_score": 5,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed list of steps to follow, rather than a direct answer to the specific scenario of verifying before closing a recall task and releasing any remaining stock for sale."
+    },
+    {
+      "run": 3,
+      "case_id": "case_01",
+      "trace_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+      "human_score": 4,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed procedure for handling a recalled item with an unreadable lot code, but does not specifically address what a grocery store should do in this situation."
+    },
+    {
+      "run": 3,
+      "case_id": "case_02",
+      "trace_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims (e.g., 'to prevent any potential harm to customers') and lacks specificity in its instructions. The Input, Actual Output, and Expected Output are not entirely equivalent in wording."
+    },
+    {
+      "run": 3,
+      "case_id": "case_03",
+      "trace_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it includes unsupported claims about the importance of documentation for regulatory and compliance purposes. The Input, Actual Output, and Expected Output are not equivalent in wording, with the Actual Output providing more detailed information than the Expected Output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_04",
+      "trace_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+      "human_score": 3,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides a general solution without specifying how to handle the situation when the point-of-sale system cannot block individual lots. The answer also does not cover the relevant reference steps, such as the importance of verifying the product's UPC or other identifying codes to ensure accuracy."
+    },
+    {
+      "run": 3,
+      "case_id": "case_05",
+      "trace_id": "e84f342b-731b-4680-93c9-4688a5857ef5",
+      "human_score": 5,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in describing the recall process and documentation requirements. The answer also includes unsupported claims about customer notification and documentation, which should be verified with the recall lead and approved communication process."
+    },
+    {
+      "run": 3,
+      "case_id": "case_06",
+      "trace_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling recalled items but does not explicitly address how to handle online orders that contain recalled items and are still awaiting pickup. The answer also covers relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_07",
+      "trace_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+      "human_score": 5,
+      "raw_score": 0.4,
+      "score_1_to_5": 2.6,
+      "reason": "The answer does not directly address the question, as it provides additional information about the supplier's instructions, which is not relevant to the scenario. The answer also does not cover the relevant reference steps, such as isolating the new shipment and blocking sales, and instead provides a generic response that does not match the expected output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_08",
+      "trace_id": "c11dc189-2893-4888-a6b4-3ec51bde1370",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed process for handling a recalled lot, but does not specifically address how to reconcile quantities received, sold, isolated, and returned for a recalled lot."
+    },
+    {
+      "run": 3,
+      "case_id": "case_09",
+      "trace_id": "0b4c9d88-64fd-41df-8cfa-39861fcc36cb",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its guidance on isolating inventory and sale blocking. Additionally, the answer does not match the expected output in terms of scope treatment and documentation requirements."
+    },
+    {
+      "run": 3,
+      "case_id": "case_10",
+      "trace_id": "54ac610b-8ebb-448f-b0c6-d9880c071351",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer does not directly address the question, as it provides a detailed response to a revised recall notice rather than addressing the specific scenario of a store responding to a notice that adds a second lot to the original scope. The answer also covers the relevant reference steps, avoids unsupported claims, and has equivalent wording with the input, expected output, and actual output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_11",
+      "trace_id": "49c52bcf-c60e-4569-8d21-1bc511f9107d",
+      "human_score": 3,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes unsupported claims (e.g., 'it is essential to follow the supplier's instructions') and uses more verbose language than the expected output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_12",
+      "trace_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the details provided, such as the exact steps for inventory isolation and sale blocking, and the procedures for notification, disposition, and documentation. The answer also contains unsupported claims, such as the importance of preventing further sales of the affected product, which is not explicitly stated in the recall notice and supplier instructions."
+    },
+    {
+      "run": 3,
+      "case_id": "case_13",
+      "trace_id": "e7bbc56e-d7f6-49d8-8d88-d3fe172274a5",
+      "human_score": 4,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to mention the importance of following the supplier's procedures for return and disposal of the recalled product. The answer also does not match the wording of the Input, Actual Output, and Expected Output."
+    },
+    {
+      "run": 3,
+      "case_id": "case_14",
+      "trace_id": "11594145-c418-4edf-a4a6-bb4d820369a8",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specific details about the official notice, such as distribution locations or dates, and instructions for customers. The answer also avoids unsupported claims or advice."
+    },
+    {
+      "run": 3,
+      "case_id": "case_15",
+      "trace_id": "8a4a5db3-ccef-44c5-b5b2-d6185fa2c092",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer partially addresses the question and covers relevant reference steps, but it lacks specificity in its instructions and fails to provide a clear and concise process for checking transfer records and notifying branches. The answer also includes unsupported claims about isolating products and documenting actions."
+    },
+    {
+      "run": 3,
+      "case_id": "case_16",
+      "trace_id": "e3d50019-3044-4d4e-9238-bfd58e86111b",
+      "human_score": 3,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides detailed steps for handling repackaged items but does not directly answer the scenario of potentially affected items being repackaged in-store and the original labels being no longer attached. The answer also does not cover the relevant reference steps, as it does not mention tracing the repackaged units back to the source lot using repackaging records, original case labels, and receiving records."
+    },
+    {
+      "run": 3,
+      "case_id": "case_17",
+      "trace_id": "69a597da-a656-4d73-ae46-d17ed2924ef7",
+      "human_score": 5,
+      "raw_score": 0.6,
+      "score_1_to_5": 3.4,
+      "reason": "The answer directly addresses the question and covers relevant reference steps, but lacks specificity in the required details, such as product and affected lot numbers, and fails to avoid unsupported claims or advice, instead providing a general outline."
+    },
+    {
+      "run": 3,
+      "case_id": "case_18",
+      "trace_id": "8fbdcadd-2c3d-4ce3-bb2b-165bb6b5ad6a",
+      "human_score": 4,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed solution to a different scenario (reconciling receiving, sales, transfer, and disposition records) rather than focusing on how a store should follow up when its stock system shows affected units on hand but staff cannot locate them."
+    },
+    {
+      "run": 3,
+      "case_id": "case_19",
+      "trace_id": "3df5a24e-a49c-4fba-aaba-5f97a6a7c174",
+      "human_score": 4,
+      "raw_score": 0.8,
+      "score_1_to_5": 4.2,
+      "reason": "The answer directly addresses the question and covers the relevant reference steps, but it includes additional information not present in the expected output, such as the specific actions to be taken and the importance of maintaining accurate records. The answer also avoids unsupported claims or advice, and the input, actual output, and expected output are equivalent in wording."
+    },
+    {
+      "run": 3,
+      "case_id": "case_20",
+      "trace_id": "55ffc9a1-7c1e-4c37-8d11-a07a5844f609",
+      "human_score": 5,
+      "raw_score": 0.2,
+      "score_1_to_5": 1.8,
+      "reason": "The answer does not directly address the question, as it provides a detailed list of steps to follow, rather than a direct answer to the specific scenario of verifying before closing a recall task and releasing any remaining stock for sale."
+    }
+  ],
+  "complete": true,
+  "summary": {
+    "cases": 20,
+    "agreement_run": 1,
+    "spearman_rho": 0.28119496154125484,
+    "mean_absolute_difference": 1.22,
+    "repeatability": {
+      "runs": 3,
+      "cases_with_score_change": 1,
+      "percent_with_score_change": 5.0,
+      "run_pairs_compared": 60,
+      "mean_absolute_pairwise_change": 0.05333333333333333,
+      "max_absolute_pairwise_change": 1.5999999999999999
+    }
+  }
+}

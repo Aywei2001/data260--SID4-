@@ -1,0 +1,49 @@
+{
+  "trace_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+  "correlation_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+  "question": "How can a store prevent checkout sales of a recalled product if its point-of-sale system cannot block individual lots?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 79,
+      "timestamp_ms": 1794790558752,
+      "payload": {
+        "correlation_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+        "question": "How can a store prevent checkout sales of a recalled product if its point-of-sale system cannot block individual lots?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 139,
+      "timestamp_ms": 1794790622759,
+      "payload": {
+        "correlation_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+        "question": "How can a store prevent checkout sales of a recalled product if its point-of-sale system cannot block individual lots?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "To prevent checkout sales of a recalled product when the point-of-sale system cannot block individual lots, a store can take the following steps:\n\n**Identify the product and affected lot from the recall notice.**\n\n* Review the recall notice to determine the specific product and affected lot(s) that need to be isolated.\n* Verify the product's UPC or other identifying codes to ensure accuracy.\n\n**Describe inventory isolation and sale blocking.**\n\n* Isolate the affected product by removing it from the sales floor and storing it in a secure, designated area.\n* Block sales of the product by:\n\t+ Temporarily removing the product from the point-of-sale system's inventory.\n\t+ Using a temporary or placeholder product in the point-of-sale system to prevent sales of the recalled product.\n\t+ Informing cashiers and other sales staff not to ring up sales of the affected product.\n* Consider using a \"hold\" or \"block\" code in the point-of-sale system to prevent sales of the recalled product.\n\n**Describe notification, disposition, and documentation.**\n\n* Notify the supplier and relevant authorities (e.g., FDA, CPSC) of the recall and the store's actions.\n* Document the store's actions, including:\n\t+ The date and time the recall was notified to the supplier and authorities.\n\t+ The steps taken to isolate the affected product and block sales.\n\t+ The date and time the product was removed from sale and the reason for the removal.\n\t+ Any other relevant details or documentation required by the recall notice or supplier instructions.\n\nBy following these steps, a store can prevent checkout sales of a recalled product and ensure compliance with the recall notice and supplier instructions."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 139,
+      "timestamp_ms": 1794790622843,
+      "payload": {
+        "correlation_id": "d51c1870-887e-4c66-b235-18d992f56bf3",
+        "status": "approved",
+        "answer": "To prevent checkout sales of a recalled product when the point-of-sale system cannot block individual lots, a store can take the following steps:\n\n**Identify the product and affected lot from the recall notice.**\n\n* Review the recall notice to determine the specific product and affected lot(s) that need to be isolated.\n* Verify the product's UPC or other identifying codes to ensure accuracy.\n\n**Describe inventory isolation and sale blocking.**\n\n* Isolate the affected product by removing it from the sales floor and storing it in a secure, designated area.\n* Block sales of the product by:\n\t+ Temporarily removing the product from the point-of-sale system's inventory.\n\t+ Using a temporary or placeholder product in the point-of-sale system to prevent sales of the recalled product.\n\t+ Informing cashiers and other sales staff not to ring up sales of the affected product.\n* Consider using a \"hold\" or \"block\" code in the point-of-sale system to prevent sales of the recalled product.\n\n**Describe notification, disposition, and documentation.**\n\n* Notify the supplier and relevant authorities (e.g., FDA, CPSC) of the recall and the store's actions.\n* Document the store's actions, including:\n\t+ The date and time the recall was notified to the supplier and authorities.\n\t+ The steps taken to isolate the affected product and block sales.\n\t+ The date and time the product was removed from sale and the reason for the removal.\n\t+ Any other relevant details or documentation required by the recall notice or supplier instructions.\n\nBy following these steps, a store can prevent checkout sales of a recalled product and ensure compliance with the recall notice and supplier instructions."
+      }
+    }
+  }
+}

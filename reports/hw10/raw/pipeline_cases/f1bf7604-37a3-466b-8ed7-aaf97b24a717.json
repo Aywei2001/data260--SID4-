@@ -1,0 +1,49 @@
+{
+  "trace_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+  "correlation_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+  "question": "What should receiving staff do if a supplier delivers another shipment of the affected lot after the recall begins?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 83,
+      "timestamp_ms": 1794790925409,
+      "payload": {
+        "correlation_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+        "question": "What should receiving staff do if a supplier delivers another shipment of the affected lot after the recall begins?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 145,
+      "timestamp_ms": 1794790955388,
+      "payload": {
+        "correlation_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+        "question": "What should receiving staff do if a supplier delivers another shipment of the affected lot after the recall begins?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "If a supplier delivers another shipment of the affected lot after the recall begins, receiving staff should:\n\n1. **Verify the shipment**: Check the shipment documentation to confirm that it is indeed the affected lot and not a replacement or new product.\n2. **Notify the receiving team lead or supervisor**: Inform the receiving team lead or supervisor immediately, so they can escalate the issue to the relevant parties.\n3. **Isolate the new shipment**: Immediately isolate the new shipment from the rest of the inventory to prevent further distribution or sale.\n4. **Block sales**: Prevent any sales of the new shipment until further notice from the supplier or regulatory authorities.\n5. **Notify the supplier**: Inform the supplier that the shipment is being held and that further instructions will be provided.\n6. **Document the incident**: Record the details of the incident, including the shipment number, date, and time, in the company's recall log or incident report.\n\nThe receiving staff should follow the supplier's instructions for holding, returning, or disposing of the affected product, as outlined in the recall notice."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 145,
+      "timestamp_ms": 1794790955470,
+      "payload": {
+        "correlation_id": "f1bf7604-37a3-466b-8ed7-aaf97b24a717",
+        "status": "approved",
+        "answer": "If a supplier delivers another shipment of the affected lot after the recall begins, receiving staff should:\n\n1. **Verify the shipment**: Check the shipment documentation to confirm that it is indeed the affected lot and not a replacement or new product.\n2. **Notify the receiving team lead or supervisor**: Inform the receiving team lead or supervisor immediately, so they can escalate the issue to the relevant parties.\n3. **Isolate the new shipment**: Immediately isolate the new shipment from the rest of the inventory to prevent further distribution or sale.\n4. **Block sales**: Prevent any sales of the new shipment until further notice from the supplier or regulatory authorities.\n5. **Notify the supplier**: Inform the supplier that the shipment is being held and that further instructions will be provided.\n6. **Document the incident**: Record the details of the incident, including the shipment number, date, and time, in the company's recall log or incident report.\n\nThe receiving staff should follow the supplier's instructions for holding, returning, or disposing of the affected product, as outlined in the recall notice."
+      }
+    }
+  }
+}

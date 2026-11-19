@@ -1,0 +1,49 @@
+{
+  "trace_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+  "correlation_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+  "question": "What details should a shift lead include when handing off an active recall to the next shift?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 68,
+      "timestamp_ms": 1794791498693,
+      "payload": {
+        "correlation_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+        "question": "What details should a shift lead include when handing off an active recall to the next shift?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 155,
+      "timestamp_ms": 1794791532285,
+      "payload": {
+        "correlation_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+        "question": "What details should a shift lead include when handing off an active recall to the next shift?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "When handing off an active recall to the next shift, a shift lead should include the following details:\n\n1. **Product and affected lot**: Provide the next shift with the specific product and affected lot number(s) from the recall notice, as well as any relevant batch numbers or codes.\n2. **Inventory isolation and sale blocking**: Inform the next shift about the steps taken to isolate the affected inventory, such as:\n\t* Which shelves or displays need to be blocked or removed from sale.\n\t* Any specific product codes or SKUs that need to be isolated.\n\t* Instructions on how to prevent further sales of the affected product.\n3. **Notification, disposition, and documentation**: Provide the next shift with information on:\n\t* Who needs to be notified (e.g., suppliers, distributors, customers) and when.\n\t* The procedures for disposing of or returning the affected product, as specified by the recall notice and supplier instructions.\n\t* Any necessary documentation, such as recall notice copies, inventory records, or shipping labels.\n\nBy providing this information, the shift lead ensures a smooth transition and helps prevent further sales of the affected product, while also ensuring compliance with the recall notice and supplier instructions."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 155,
+      "timestamp_ms": 1794791532336,
+      "payload": {
+        "correlation_id": "643a9d5f-f763-4da8-861e-837aafe58867",
+        "status": "needs_revision",
+        "answer": "When handing off an active recall to the next shift, a shift lead should include the following details:\n\n1. **Product and affected lot**: Provide the next shift with the specific product and affected lot number(s) from the recall notice, as well as any relevant batch numbers or codes.\n2. **Inventory isolation and sale blocking**: Inform the next shift about the steps taken to isolate the affected inventory, such as:\n\t* Which shelves or displays need to be blocked or removed from sale.\n\t* Any specific product codes or SKUs that need to be isolated.\n\t* Instructions on how to prevent further sales of the affected product.\n3. **Notification, disposition, and documentation**: Provide the next shift with information on:\n\t* Who needs to be notified (e.g., suppliers, distributors, customers) and when.\n\t* The procedures for disposing of or returning the affected product, as specified by the recall notice and supplier instructions.\n\t* Any necessary documentation, such as recall notice copies, inventory records, or shipping labels.\n\nBy providing this information, the shift lead ensures a smooth transition and helps prevent further sales of the affected product, while also ensuring compliance with the recall notice and supplier instructions."
+      }
+    }
+  }
+}

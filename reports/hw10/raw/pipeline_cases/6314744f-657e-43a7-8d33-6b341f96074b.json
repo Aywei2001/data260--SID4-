@@ -1,0 +1,49 @@
+{
+  "trace_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+  "correlation_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+  "question": "What should a grocery store do if the lot code on a recalled item is unreadable?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 77,
+      "timestamp_ms": 1794790140533,
+      "payload": {
+        "correlation_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+        "question": "What should a grocery store do if the lot code on a recalled item is unreadable?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 133,
+      "timestamp_ms": 1794790196435,
+      "payload": {
+        "correlation_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+        "question": "What should a grocery store do if the lot code on a recalled item is unreadable?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "If the lot code on a recalled item is unreadable, a grocery store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the product and affected lot that may be missing the lot code. This can be done by checking the product's packaging, labeling, or documentation.\n2. **Isolate inventory**: Immediately isolate the affected product from sale and inventory by:\n\t* Removing the product from shelves and display areas.\n\t* Blocking sales of the product to prevent further distribution.\n\t* Notifying the supplier or manufacturer to confirm the affected lot.\n3. **Notify responsible people**: Inform the following parties:\n\t* Store management and quality control team.\n\t* Supplier or manufacturer (if not already notified).\n\t* Regulatory authorities (if required by law).\n4. **Document actions**: Keep a record of the actions taken, including:\n\t* The date and time the product was isolated.\n\t* The reason for the isolation (i.e., unreadable lot code).\n\t* The steps taken to notify the supplier or manufacturer.\n\t* Any further actions taken, such as returning or disposing of the product.\n\nIt is essential to follow the specific recall notice and supplier instructions for handling the affected product, as they may provide additional guidance on procedures to ensure compliance with regulations and minimize potential risks."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 133,
+      "timestamp_ms": 1794790196624,
+      "payload": {
+        "correlation_id": "6314744f-657e-43a7-8d33-6b341f96074b",
+        "status": "approved",
+        "answer": "If the lot code on a recalled item is unreadable, a grocery store should:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the product and affected lot that may be missing the lot code. This can be done by checking the product's packaging, labeling, or documentation.\n2. **Isolate inventory**: Immediately isolate the affected product from sale and inventory by:\n\t* Removing the product from shelves and display areas.\n\t* Blocking sales of the product to prevent further distribution.\n\t* Notifying the supplier or manufacturer to confirm the affected lot.\n3. **Notify responsible people**: Inform the following parties:\n\t* Store management and quality control team.\n\t* Supplier or manufacturer (if not already notified).\n\t* Regulatory authorities (if required by law).\n4. **Document actions**: Keep a record of the actions taken, including:\n\t* The date and time the product was isolated.\n\t* The reason for the isolation (i.e., unreadable lot code).\n\t* The steps taken to notify the supplier or manufacturer.\n\t* Any further actions taken, such as returning or disposing of the product.\n\nIt is essential to follow the specific recall notice and supplier instructions for handling the affected product, as they may provide additional guidance on procedures to ensure compliance with regulations and minimize potential risks."
+      }
+    }
+  }
+}

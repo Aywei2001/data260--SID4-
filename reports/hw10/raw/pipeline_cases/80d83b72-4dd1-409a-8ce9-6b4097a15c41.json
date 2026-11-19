@@ -1,0 +1,49 @@
+{
+  "trace_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+  "correlation_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+  "question": "What should staff record when moving recalled products from the sales floor to a designated hold area?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 58,
+      "timestamp_ms": 1794790509214,
+      "payload": {
+        "correlation_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+        "question": "What should staff record when moving recalled products from the sales floor to a designated hold area?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 137,
+      "timestamp_ms": 1794790539176,
+      "payload": {
+        "correlation_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+        "question": "What should staff record when moving recalled products from the sales floor to a designated hold area?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "When moving recalled products from the sales floor to a designated hold area, staff should record the following information:\n\n* The product name and affected lot number from the recall notice to ensure accurate tracking and identification of the recalled products.\n* A description of the inventory isolation and sale blocking procedures to prevent further sales of the affected products and to prevent cross-contamination with other products.\n* A record of notification, including who was notified (e.g., suppliers, other staff members), when notification was made, and any relevant details or instructions provided by the supplier or regulatory authorities.\n* A description of the disposition plan for the recalled products, including how they will be held, returned, or disposed of in accordance with the recall notice and supplier instructions.\n\nThis information will help ensure that the recall is handled properly and that all necessary documentation is maintained for regulatory and compliance purposes."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 137,
+      "timestamp_ms": 1794790539251,
+      "payload": {
+        "correlation_id": "80d83b72-4dd1-409a-8ce9-6b4097a15c41",
+        "status": "needs_revision",
+        "answer": "When moving recalled products from the sales floor to a designated hold area, staff should record the following information:\n\n* The product name and affected lot number from the recall notice to ensure accurate tracking and identification of the recalled products.\n* A description of the inventory isolation and sale blocking procedures to prevent further sales of the affected products and to prevent cross-contamination with other products.\n* A record of notification, including who was notified (e.g., suppliers, other staff members), when notification was made, and any relevant details or instructions provided by the supplier or regulatory authorities.\n* A description of the disposition plan for the recalled products, including how they will be held, returned, or disposed of in accordance with the recall notice and supplier instructions.\n\nThis information will help ensure that the recall is handled properly and that all necessary documentation is maintained for regulatory and compliance purposes."
+      }
+    }
+  }
+}

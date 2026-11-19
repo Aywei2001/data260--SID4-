@@ -1,0 +1,49 @@
+{
+  "trace_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+  "correlation_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+  "question": "How should a store identify affected inventory when recalled and unaffected lots share the same UPC?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 0,
+      "offset": 56,
+      "timestamp_ms": 1794790435649,
+      "payload": {
+        "correlation_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+        "question": "How should a store identify affected inventory when recalled and unaffected lots share the same UPC?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 135,
+      "timestamp_ms": 1794790475858,
+      "payload": {
+        "correlation_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+        "question": "How should a store identify affected inventory when recalled and unaffected lots share the same UPC?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "To identify affected inventory when recalled and unaffected lots share the same UPC, a store should:\n\n1. Carefully review the recall notice provided by the supplier or manufacturer to identify the specific product and affected lot.\n2. Check the product packaging, labels, or documentation for any unique identifiers, such as batch numbers, codes, or serial numbers, that may indicate the affected lot.\n3. Verify the UPC code on the product packaging or labels to ensure it matches the one listed in the recall notice.\n4. Use the supplier's or manufacturer's instructions for identifying the affected lot, as they may have specific procedures or guidelines for this purpose.\n\nOnce the affected lot is identified, the store should:\n\n* Isolate the affected inventory by removing it from sale and storing it in a separate, secure area.\n* Block sales of the product by removing it from shelves and any online platforms where it is sold.\n* Notify the supplier or manufacturer of the identified affected lot and follow their instructions for disposition and documentation.\n\nIt is essential to follow the supplier's or manufacturer's instructions for handling and disposing of the affected inventory to ensure compliance with the recall notice and to prevent any potential harm to customers."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 135,
+      "timestamp_ms": 1794790475945,
+      "payload": {
+        "correlation_id": "52b6a7a3-5595-4844-bac4-21017d65d7cf",
+        "status": "approved",
+        "answer": "To identify affected inventory when recalled and unaffected lots share the same UPC, a store should:\n\n1. Carefully review the recall notice provided by the supplier or manufacturer to identify the specific product and affected lot.\n2. Check the product packaging, labels, or documentation for any unique identifiers, such as batch numbers, codes, or serial numbers, that may indicate the affected lot.\n3. Verify the UPC code on the product packaging or labels to ensure it matches the one listed in the recall notice.\n4. Use the supplier's or manufacturer's instructions for identifying the affected lot, as they may have specific procedures or guidelines for this purpose.\n\nOnce the affected lot is identified, the store should:\n\n* Isolate the affected inventory by removing it from sale and storing it in a separate, secure area.\n* Block sales of the product by removing it from shelves and any online platforms where it is sold.\n* Notify the supplier or manufacturer of the identified affected lot and follow their instructions for disposition and documentation.\n\nIt is essential to follow the supplier's or manufacturer's instructions for handling and disposing of the affected inventory to ensure compliance with the recall notice and to prevent any potential harm to customers."
+      }
+    }
+  }
+}

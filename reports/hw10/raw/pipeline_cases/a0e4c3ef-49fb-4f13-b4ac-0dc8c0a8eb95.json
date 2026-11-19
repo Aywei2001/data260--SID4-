@@ -1,0 +1,49 @@
+{
+  "trace_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+  "correlation_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+  "question": "How should a store handle online orders that contain recalled items and are still awaiting pickup?",
+  "messages": {
+    "plan": {
+      "topic": "s1339_tasks",
+      "partition": 1,
+      "offset": 81,
+      "timestamp_ms": 1794790759270,
+      "payload": {
+        "correlation_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+        "question": "How should a store handle online orders that contain recalled items and are still awaiting pickup?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ]
+      }
+    },
+    "draft": {
+      "topic": "s1339_drafts",
+      "partition": 0,
+      "offset": 143,
+      "timestamp_ms": 1794790803882,
+      "payload": {
+        "correlation_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+        "question": "How should a store handle online orders that contain recalled items and are still awaiting pickup?",
+        "plan": [
+          "Identify the product and affected lot from the recall notice.",
+          "Describe inventory isolation and sale blocking.",
+          "Describe notification, disposition, and documentation."
+        ],
+        "draft": "To handle online orders that contain recalled items and are still awaiting pickup, follow these steps:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the specific product and affected lot number(s) that need to be isolated.\n2. **Inventory isolation and sale blocking**: Immediately stop sales of the affected product and isolate the inventory by:\n\t* Removing the product from online inventory and sales channels.\n\t* Blocking sales of the product in-store.\n\t* Preventing any further shipments of the product to the store.\n3. **Notification, disposition, and documentation**: Notify the following parties:\n\t* The supplier or manufacturer of the recalled product.\n\t* The customer who placed the online order (informing them of the recall and the steps being taken to resolve the issue).\n\t* Store management and quality control teams.\n\t* Document the actions taken, including:\n\t\t+ A record of the affected product and lot number(s).\n\t\t+ A description of the isolation and sale blocking measures taken.\n\t\t+ A note of the notification sent to the supplier, customer, and store management.\n\t\t+ Any other relevant documentation as required by the recall notice or supplier instructions.\n\nBy following these steps, the store can ensure a safe and responsible handling of recalled products, protect customers, and maintain compliance with recall regulations."
+      }
+    },
+    "final": {
+      "topic": "s1339_final",
+      "partition": 0,
+      "offset": 143,
+      "timestamp_ms": 1794790803958,
+      "payload": {
+        "correlation_id": "a0e4c3ef-49fb-4f13-b4ac-0dc8c0a8eb95",
+        "status": "approved",
+        "answer": "To handle online orders that contain recalled items and are still awaiting pickup, follow these steps:\n\n1. **Identify the product and affected lot**: Review the recall notice to determine the specific product and affected lot number(s) that need to be isolated.\n2. **Inventory isolation and sale blocking**: Immediately stop sales of the affected product and isolate the inventory by:\n\t* Removing the product from online inventory and sales channels.\n\t* Blocking sales of the product in-store.\n\t* Preventing any further shipments of the product to the store.\n3. **Notification, disposition, and documentation**: Notify the following parties:\n\t* The supplier or manufacturer of the recalled product.\n\t* The customer who placed the online order (informing them of the recall and the steps being taken to resolve the issue).\n\t* Store management and quality control teams.\n\t* Document the actions taken, including:\n\t\t+ A record of the affected product and lot number(s).\n\t\t+ A description of the isolation and sale blocking measures taken.\n\t\t+ A note of the notification sent to the supplier, customer, and store management.\n\t\t+ Any other relevant documentation as required by the recall notice or supplier instructions.\n\nBy following these steps, the store can ensure a safe and responsible handling of recalled products, protect customers, and maintain compliance with recall regulations."
+      }
+    }
+  }
+}

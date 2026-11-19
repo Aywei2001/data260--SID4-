@@ -1,0 +1,67 @@
+{
+  "target": 1,
+  "question": "What should a grocery store do after receiving a supplier recall notice?",
+  "boundary": "API ingress through evaluation completion",
+  "p95_method": "nearest rank",
+  "rows": [
+    {
+      "trace_id": "db2d5da4-be15-4223-8f99-b30f6feb70a6",
+      "cache_outcome": "miss",
+      "http_status": 200,
+      "api_ms": 80570.28440001886,
+      "end_to_end_ms": 234128.9083957672,
+      "stage_ms": {
+        "cache_lookup": 65.51579991355538,
+        "planner": 32.81769994646311,
+        "writer": 79837.59340003598,
+        "reviewer": 17.32900005299598,
+        "queue_wait_planner": 70.41239738464355,
+        "queue_wait_writer": 22.443771362304688,
+        "queue_wait_reviewer": 23.21600914001465,
+        "evaluation": 153035.0366999628,
+        "queue_wait_total": 116.07217788696289
+      },
+      "case": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\pipeline_cases\\db2d5da4-be15-4223-8f99-b30f6feb70a6.json",
+      "evaluation_report": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\reports\\hw10\\evaluations\\db2d5da4-be15-4223-8f99-b30f6feb70a6.json"
+    }
+  ],
+  "complete": true,
+  "summary": [
+    {
+      "stage": "cache_lookup",
+      "p50_ms": 65.51579991355538,
+      "p95_ms": 65.51579991355538,
+      "percent_end_to_end": 0.02798278963604472
+    },
+    {
+      "stage": "planner",
+      "p50_ms": 32.81769994646311,
+      "p95_ms": 32.81769994646311,
+      "percent_end_to_end": 0.014016936298608914
+    },
+    {
+      "stage": "writer",
+      "p50_ms": 79837.59340003598,
+      "p95_ms": 79837.59340003598,
+      "percent_end_to_end": 34.099844375082455
+    },
+    {
+      "stage": "reviewer",
+      "p50_ms": 17.32900005299598,
+      "p95_ms": 17.32900005299598,
+      "percent_end_to_end": 0.007401478173598006
+    },
+    {
+      "stage": "queue_wait_total",
+      "p50_ms": 116.07217788696289,
+      "p95_ms": 116.07217788696289,
+      "percent_end_to_end": 0.0495761837708467
+    },
+    {
+      "stage": "evaluation",
+      "p50_ms": 153035.0366999628,
+      "p95_ms": 153035.0366999628,
+      "percent_end_to_end": 65.36358015272305
+    }
+  ]
+}
