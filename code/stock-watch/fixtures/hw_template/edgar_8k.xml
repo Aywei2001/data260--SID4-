@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DATA 260 fictional homework filings</title>
+
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999901-26-000701</id>
+    <title>NBRX: 8-K - Homework earnings results</title>
+    <updated>2026-11-20T13:00:00-05:00</updated>
+    <summary>Fictional fixture. Item 2.02. NorthBay Robotics reported quarterly revenue of $120 million, up from $100 million a year earlier.</summary>
+  </entry>
+
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999903-26-000702</id>
+    <title>LKSP: 8-K - Homework product launch</title>
+    <updated>2026-11-20T13:15:00-05:00</updated>
+    <summary>Fictional fixture. Item 8.01. Larkspur Biotech announced a new laboratory product. The filing disclosed no contract, revenue estimate, or financial impact.</summary>
+  </entry>
+
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999903-26-000703</id>
+    <title>LKSP: 8-K - Homework material supply agreement</title>
+    <updated>2026-11-20T13:30:00-05:00</updated>
+    <summary>Fictional fixture. Item 1.01. Larkspur Biotech signed a material three-year supply agreement worth $90 million.</summary>
+  </entry>
+
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999903-26-000704</id>
+    <title>LKSP: 8-K/A - Homework date correction</title>
+    <updated>2026-11-20T14:00:00-05:00</updated>
+    <summary>Fictional fixture. This amendment corrects the signing date in the prior supply-agreement filing. The parties, value, duration, and all other terms remain the same.</summary>
+  </entry>
+
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999903-26-000705</id>
+    <title>LKSP: 8-K - Homework CEO departure</title>
+    <updated>2026-11-20T14:30:00-05:00</updated>
+    <summary>Fictional fixture. Item 5.02. Larkspur Biotech announced its CEO's immediate departure and named an interim CEO.</summary>
+  </entry>
+</feed>
