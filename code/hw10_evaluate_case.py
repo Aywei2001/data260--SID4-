@@ -4,6 +4,7 @@ import subprocess
 import sys
 from importlib.metadata import version
 from pathlib import Path
+
 from hw10_trace import init_trace_db, trace_stage
 
 RESULTS = Path(__file__).resolve().parents[1] / "reports" / "hw10" / "evaluations"
@@ -55,11 +56,13 @@ def grade(case_path):
             model=judge,
             async_mode=False,
         )
-        metric.measure(LLMTestCase(
-            input=case["question"],
-            actual_output=output,
-            expected_output=REFERENCE,
-        ))
+        metric.measure(
+            LLMTestCase(
+                input=case["question"],
+                actual_output=output,
+                expected_output=REFERENCE,
+            )
+        )
         raw = float(metric.score)
         if not 0 <= raw <= 1:
             raise ValueError(f"Unexpected normalized score: {raw}")
@@ -70,7 +73,10 @@ def grade(case_path):
         "draft_helpfulness": score("Helpfulness", draft, HELPFULNESS_CRITERIA),
         "final_helpfulness": score("Helpfulness", final, HELPFULNESS_CRITERIA),
     }
-    delta = scores["final_helpfulness"]["score_1_to_5"] - scores["draft_helpfulness"]["score_1_to_5"]
+    delta = (
+        scores["final_helpfulness"]["score_1_to_5"]
+        - scores["draft_helpfulness"]["score_1_to_5"]
+    )
     if draft == final:
         interpretation = "The Reviewer returned identical text. Any score difference is judge variation."
     elif delta > 0:
@@ -82,25 +88,34 @@ def grade(case_path):
 
     RESULTS.mkdir(parents=True, exist_ok=True)
     output = RESULTS / f"{trace_id}.json"
-    output.write_text(json.dumps({
-        "trace_id": trace_id,
-        "question": case["question"],
-        "judge": {
-            "method": "DeepEval G-Eval",
-            "model": MODEL,
-            "temperature": TEMPERATURE,
-            "base_url": BASE_URL,
-            "deepeval_version": version("deepeval"),
-            "scale": "1 + 4 × raw_score",
-        },
-        "criteria": {"plan": PLAN_CRITERIA, "draft_and_final": HELPFULNESS_CRITERIA},
-        "reference": REFERENCE,
-        "scores": scores,
-        "final_minus_draft": delta,
-        "draft": draft,
-        "final_answer": final,
-        "interpretation": interpretation,
-    }, indent=2), encoding="utf-8")
+    output.write_text(
+        json.dumps(
+            {
+                "trace_id": trace_id,
+                "question": case["question"],
+                "judge": {
+                    "method": "DeepEval G-Eval",
+                    "model": MODEL,
+                    "temperature": TEMPERATURE,
+                    "base_url": BASE_URL,
+                    "deepeval_version": version("deepeval"),
+                    "scale": "1 + 4 × raw_score",
+                },
+                "criteria": {
+                    "plan": PLAN_CRITERIA,
+                    "draft_and_final": HELPFULNESS_CRITERIA,
+                },
+                "reference": REFERENCE,
+                "scores": scores,
+                "final_minus_draft": delta,
+                "draft": draft,
+                "final_answer": final,
+                "interpretation": interpretation,
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     print(f"Saved {output}")
 
 

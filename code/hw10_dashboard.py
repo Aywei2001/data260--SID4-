@@ -1,10 +1,11 @@
 import json
-from urllib.error import URLError
-from urllib.request import urlopen
-import streamlit as st
 from datetime import datetime, timezone
-from time import time
 from pathlib import Path
+from time import time
+from urllib.request import urlopen
+
+import streamlit as st
+
 from hw10_trace import DB_PATH, trace_db
 
 METRICS_URL = "http://127.0.0.1:8440/qa/metrics"
@@ -80,7 +81,7 @@ if page == "Summary":
         st.stop()
 
     start, end, rows = load_recent_requests(minutes)
-    
+
     total = len(rows)
     hits = sum(row["cache_outcome"] == "hit" for row in rows)
     misses = sum(row["cache_outcome"] == "miss" for row in rows)
@@ -97,12 +98,14 @@ if page == "Summary":
     error_rate.metric("HTTP error rate", percent(errors, total))
     latency.metric("Mean end-to-end latency", milliseconds(mean_ms))
     hit_rows = [
-        row for row in rows
+        row
+        for row in rows
         if row["cache_outcome"] == "hit" and row["http_status"] == 200
     ]
     mean_hit_ms = (
         sum(row["duration_ms"] for row in hit_rows) / len(hit_rows)
-        if hit_rows else None
+        if hit_rows
+        else None
     )
     st.metric("Mean successful cache-hit latency", milliseconds(mean_hit_ms))
     st.caption(
@@ -153,8 +156,11 @@ elif page == "Evaluation":
         st.caption(f"Judge: {result['judge']['model']} · Scores on a 1–5 scale")
         st.dataframe(
             [
-                {"Criterion": name, "Score": round(item["score_1_to_5"], 2),
-                 "Reason": item["reason"]}
+                {
+                    "Criterion": name,
+                    "Score": round(item["score_1_to_5"], 2),
+                    "Reason": item["reason"],
+                }
                 for name, item in result["scores"].items()
             ],
             hide_index=True,

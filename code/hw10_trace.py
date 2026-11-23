@@ -1,10 +1,9 @@
-import sqlite3
 import json
+import sqlite3
 from contextlib import closing, contextmanager
 from contextvars import ContextVar
 from pathlib import Path
 from time import perf_counter, time
-
 
 DB_PATH = Path(__file__).resolve().with_name("hw10_traces.sqlite3")
 
@@ -68,9 +67,8 @@ def record_request(trace, started_at, elapsed_ms, http_status):
                 elapsed_ms,
                 http_status,
                 trace["cache_outcome"],
-                trace.get("error") or (
-                    f"HTTP {http_status}" if http_status >= 400 else None
-                ),
+                trace.get("error")
+                or (f"HTTP {http_status}" if http_status >= 400 else None),
             ),
         )
 
@@ -129,6 +127,7 @@ def trace_stage(stage, trace_id=None):
                     error,
                 ),
             )
+
 
 def record_queue_wait(stage, record, received_at):
     try:

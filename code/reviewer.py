@@ -5,8 +5,8 @@ import os
 import sqlite3
 import time
 from pathlib import Path
-
 from kafka import KafkaConsumer, KafkaProducer
+from hw10_trace import init_trace_db, record_queue_wait, trace_stage
 
 PREFIX = os.environ.get("KAFKA_PREFIX", "s1339")
 
@@ -70,10 +70,11 @@ def process_once(stage, incoming, target, transform, client):
             log.info("%s DUPLICATE SKIP correlation_id=%s", stage, cid)
             connection.commit()
             return False
-        outgoing = transform(incoming)
-        if outgoing.get("correlation_id") != cid:
-            raise ValueError("Stage changed correlation_id")
-        publish(client, target, outgoing, stage)
+        with trace_stage(stage.lower(), trace_id=cid):
+            outgoing = transform(incoming)
+            if outgoing.get("correlation_id") != cid:
+                raise ValueError("Stage changed correlation_id")
+            publish(client, target, outgoing, stage)
         connection.execute(
             "INSERT INTO completed VALUES (?, ?, ?, ?)",
             (PREFIX, stage, cid, payload),
@@ -168,6 +169,7 @@ def run_stage(stage, source_suffix, target_suffix, transform):
                 ready = True
             for batch in batches.values():
                 for record in batch:
+                    record_queue_wait(stage, record, time.time())
                     log.info(
                         "%s RECEIVE topic=%s partition=%s offset=%s raw=%s",
                         stage,
@@ -213,4 +215,5 @@ def review(message):
 
 
 if __name__ == "__main__":
+    init_trace_db()
     run_stage("REVIEWER", "drafts", "final", review)

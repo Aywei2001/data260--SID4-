@@ -9,6 +9,11 @@ from semantic_cache import SemanticCache
 from semantic_demo import run_pipeline
 from semantic_handler import SemanticQuestionHandler
 
+from time import perf_counter, time
+from uuid import uuid4
+
+from hw10_trace import current_trace, init_trace_db, record_request
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,6 +24,7 @@ log = logging.getLogger("semantic_api")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    init_trace_db()
     cache = await asyncio.to_thread(SemanticCache)
 
     app.state.handler = SemanticQuestionHandler(
@@ -38,6 +44,40 @@ app = FastAPI(
 )
 
 
+@app.middleware("http")
+async def log_qa_request(request: Request, call_next):
+    if request.method != "POST" or request.url.path != "/qa":
+        return await call_next(request)
+
+    trace = {
+        "trace_id": str(uuid4()),
+        "cache_outcome": "unknown",
+    }
+    token = current_trace.set(trace)
+    started_at = time()
+    started = perf_counter()
+    http_status = 500
+
+    try:
+        response = await call_next(request)
+        http_status = response.status_code
+        response.headers["X-Trace-ID"] = trace["trace_id"]
+        return response
+    except Exception as exc:
+        trace["error"] = type(exc).__name__
+        raise
+    finally:
+        try:
+            record_request(
+                trace,
+                started_at,
+                (perf_counter() - started) * 1000,
+                http_status,
+            )
+        finally:
+            current_trace.reset(token)
+
+
 class QuestionRequest(BaseModel):
     question: str = Field(min_length=1, max_length=4000)
 
@@ -52,7 +92,11 @@ async def answer_question(body: QuestionRequest, request: Request):
         )
 
     try:
-        return await request.app.state.handler.answer(question)
+        result = await request.app.state.handler.answer(question)
+        trace = current_trace.get()
+        if trace is not None:
+            result["trace_id"] = trace["trace_id"]
+        return result
     except TimeoutError as exc:
         raise HTTPException(
             status_code=504,

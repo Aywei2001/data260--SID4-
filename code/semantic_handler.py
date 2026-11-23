@@ -1,8 +1,9 @@
 import logging
+import os
 from time import perf_counter
 from typing import Awaitable, Callable
-
 from semantic_cache import SemanticCache
+from hw10_trace import current_trace, trace_stage
 
 log = logging.getLogger("semantic_cache")
 
@@ -25,12 +26,21 @@ class SemanticQuestionHandler:
         started = perf_counter()
 
         operation_started = perf_counter()
-        embedding = self.cache.embed(question)
+        with trace_stage("embedding"):
+            embedding = self.cache.embed(question)
         embedding_ms = (perf_counter() - operation_started) * 1000
 
         operation_started = perf_counter()
-        match = self.cache.lookup(embedding)
+        with trace_stage("cache_lookup"):
+            match = self.cache.lookup(embedding)
+            trace = current_trace.get()
+            if trace is not None:
+                trace["cache_outcome"] = "hit" if match["is_cached"] else "miss"
         lookup_ms = (perf_counter() - operation_started) * 1000
+
+        trace = current_trace.get()
+        if trace is not None:
+            trace["cache_outcome"] = "hit" if match["is_cached"] else "miss"
 
         agent_ms = 0.0
         store_ms = 0.0
@@ -49,16 +59,18 @@ class SemanticQuestionHandler:
             )
 
             operation_started = perf_counter()
-            answer = await self.run_pipeline(question)
+            with trace_stage("pipeline"):
+                answer = await self.run_pipeline(question)
+                if not isinstance(answer, str) or not answer.strip():
+                    raise ValueError("Agent did not return a valid final answer")
             agent_ms = (perf_counter() - operation_started) * 1000
 
-            # The pipeline wrapper must raise on failed/incomplete runs.
-            if not isinstance(answer, str) or not answer.strip():
-                raise ValueError("Agent did not return a valid final answer")
-
             operation_started = perf_counter()
-            self.cache.store(question, embedding, answer)
-            store_ms = (perf_counter() - operation_started) * 1000
+            if os.environ.get("HW10_DISABLE_CACHE_WRITES") != "1":
+                operation_started = perf_counter()
+                with trace_stage("cache_store"):
+                    self.cache.store(question, embedding, answer)
+                store_ms = (perf_counter() - operation_started) * 1000
 
         latency_ms = (perf_counter() - started) * 1000
 

@@ -1,12 +1,14 @@
-import json
 import argparse
+import json
 from pathlib import Path
 from time import monotonic
-from uuid import uuid4
-from kafka import KafkaConsumer, TopicPartition
-from send_question import BROKER, PREFIX, producer, publish
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
+from uuid import uuid4
+
+from kafka import KafkaConsumer, TopicPartition
+
+from send_question import BROKER, PREFIX, producer, publish
 
 QUESTION = "What should a grocery store do after receiving a supplier recall notice?"
 REPORTS = Path(__file__).resolve().parents[1] / "reports" / "hw10" / "pipeline_cases"
@@ -95,7 +97,9 @@ def main():
                     try:
                         payload = json.loads(record.value)
                     except (ValueError, UnicodeError):
-                        print(f"Skipping malformed JSON at {record.topic}:{record.offset}")
+                        print(
+                            f"Skipping malformed JSON at {record.topic}:{record.offset}"
+                        )
                         continue
 
                     if not isinstance(payload, dict):
@@ -107,28 +111,41 @@ def main():
                     expected_type = list if stage == "plan" else str
                     value = payload.get(field)
                     if not isinstance(value, expected_type) or not value:
-                        raise ValueError(f"Matching {stage} message has an invalid {field}")
+                        raise ValueError(
+                            f"Matching {stage} message has an invalid {field}"
+                        )
 
-                    messages.setdefault(stage, {
-                        "topic": record.topic,
-                        "partition": record.partition,
-                        "offset": record.offset,
-                        "timestamp_ms": record.timestamp,
-                        "payload": payload,
-                    })
+                    messages.setdefault(
+                        stage,
+                        {
+                            "topic": record.topic,
+                            "partition": record.partition,
+                            "offset": record.offset,
+                            "timestamp_ms": record.timestamp,
+                            "payload": payload,
+                        },
+                    )
 
         missing = {stage for stage, field in topics.values()} - messages.keys()
         if missing:
-            raise TimeoutError(f"{correlation_id}: missing {', '.join(sorted(missing))}")
+            raise TimeoutError(
+                f"{correlation_id}: missing {', '.join(sorted(missing))}"
+            )
 
         REPORTS.mkdir(parents=True, exist_ok=True)
         path = REPORTS / f"{correlation_id}.json"
-        path.write_text(json.dumps({
-            "trace_id": correlation_id,
-            "correlation_id": correlation_id,
-            "question": question,
-            "messages": messages,
-        }, indent=2), encoding="utf-8")
+        path.write_text(
+            json.dumps(
+                {
+                    "trace_id": correlation_id,
+                    "correlation_id": correlation_id,
+                    "question": question,
+                    "messages": messages,
+                },
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
         print(f"Saved {path}")
 
     finally:

@@ -7,6 +7,7 @@ from kafka import KafkaConsumer, TopicPartition #kafka transport is local to thi
 import logging
 import os
 from kafka import KafkaProducer
+from hw10_trace import current_trace, trace_stage
 
 PREFIX = os.environ.get('KAFKA_PREFIX', 's1339')
 
@@ -60,17 +61,19 @@ def ask_pipeline(question: str, timeout: float = 180):
         for partition in assigned:
             consumer.position(partition)
 
-        correlation_id = str(uuid4())
+        trace = current_trace.get()
+        correlation_id = trace["trace_id"] if trace else str(uuid4())
 
-        publish(
-            client,
-            f"{PREFIX}_inbox",
-            {
-                "correlation_id": correlation_id,
-                "question": question,
-            },
-            "YOU",
-        )
+        with trace_stage("inbox_publish", trace_id=correlation_id):
+            publish(
+                client,
+                f"{PREFIX}_inbox",
+                {
+                    "correlation_id": correlation_id,
+                    "question": question,
+                },
+                "YOU",
+            )
 
         deadline = time.monotonic() + timeout
 

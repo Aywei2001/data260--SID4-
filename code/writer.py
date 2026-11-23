@@ -8,10 +8,10 @@ import sqlite3
 import sys
 import time
 from pathlib import Path
-
 import yaml
 from kafka import KafkaConsumer, KafkaProducer
 from sqlalchemy import create_engine, text
+from hw10_trace import init_trace_db, record_queue_wait, trace_stage
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -79,10 +79,11 @@ def process_once(stage, incoming, target, transform, client):
             log.info("%s DUPLICATE SKIP correlation_id=%s", stage, cid)
             connection.commit()
             return False
-        outgoing = transform(incoming)
-        if outgoing.get("correlation_id") != cid:
-            raise ValueError("Stage changed correlation_id")
-        publish(client, target, outgoing, stage)
+        with trace_stage(stage.lower(), trace_id=cid):
+            outgoing = transform(incoming)
+            if outgoing.get("correlation_id") != cid:
+                raise ValueError("Stage changed correlation_id")
+            publish(client, target, outgoing, stage)
         connection.execute(
             "INSERT INTO completed VALUES (?, ?, ?, ?)",
             (PREFIX, stage, cid, payload),
@@ -232,6 +233,7 @@ def run_stage(stage, source_suffix, target_suffix, transform):
                 ready = True
             for batch in batches.values():
                 for record in batch:
+                    record_queue_wait(stage, record, time.time())
                     log.info(
                         "%s RECEIVE topic=%s partition=%s offset=%s raw=%s",
                         stage,
@@ -370,4 +372,5 @@ def make_draft(message):
 
 
 if __name__ == "__main__":
+    init_trace_db()
     run_stage("WRITER", "tasks", "drafts", make_draft)

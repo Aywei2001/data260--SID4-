@@ -12,8 +12,8 @@ from importlib.metadata import version
 from itertools import combinations
 from pathlib import Path
 from uuid import uuid4
-from hw10_evaluate_case import BASE_URL, HELPFULNESS_CRITERIA, MODEL, TEMPERATURE
 
+from hw10_evaluate_case import BASE_URL, HELPFULNESS_CRITERIA, MODEL, TEMPERATURE
 
 ROOT = Path(__file__).resolve().parent
 
@@ -27,7 +27,7 @@ def write_json(path, data):
 
 
 def rank(values):
-    #use average ranks for ties
+    # use average ranks for ties
     ranked = [0.0] * len(values)
     order = sorted(range(len(values)), key=values.__getitem__)
     start = 0
@@ -48,7 +48,7 @@ def summarize(rows):
     try:
         rho = statistics.correlation(rank(human), rank(judge))
     except statistics.StatisticsError:
-        rho = None  #constant score series has undefined rank correlation
+        rho = None  # constant score series has undefined rank correlation
 
     by_case = {}
     for row in rows:
@@ -94,24 +94,32 @@ def grade(input_path, output_path):
         model=OllamaModel(model=MODEL, base_url=BASE_URL, temperature=TEMPERATURE),
         async_mode=False,
     )
-    metric.measure(LLMTestCase(
-        input=case["question"],
-        actual_output=case["writer_draft"],
-        expected_output=case["reference"],
-    ))
+    metric.measure(
+        LLMTestCase(
+            input=case["question"],
+            actual_output=case["writer_draft"],
+            expected_output=case["reference"],
+        )
+    )
     raw = float(metric.score)
     if not math.isfinite(raw) or not 0 <= raw <= 1:
         raise ValueError(f"Invalid normalized score: {raw}")
-    write_json(output_path, {
-        "raw_score": raw,
-        "score_1_to_5": 1 + 4 * raw,
-        "reason": metric.reason,
-    })
+    write_json(
+        output_path,
+        {
+            "raw_score": raw,
+            "score_1_to_5": 1 + 4 * raw,
+            "reason": metric.reason,
+        },
+    )
 
 
 def git(*args):
     return subprocess.check_output(
-        ["git", *args], cwd=ROOT, text=True, timeout=20,
+        ["git", *args],
+        cwd=ROOT,
+        text=True,
+        timeout=20,
     ).strip()
 
 
@@ -128,8 +136,11 @@ def run(commit, timeout):
         raise ValueError("Expected 20 uniquely identified cases.")
     if len(label_ids) != 20 or set(ids) != set(label_ids):
         raise ValueError("Expected one human label for each of the 20 cases.")
-    if any(not case[key].strip() for case in cases
-           for key in ("question", "writer_draft", "reference")):
+    if any(
+        not case[key].strip()
+        for case in cases
+        for key in ("question", "writer_draft", "reference")
+    ):
         raise ValueError("Every case needs a question, draft, and reference.")
     scores = {row["case_id"]: int(row["human_score"]) for row in labels}
     if any(not 1 <= score <= 5 for score in scores.values()):
@@ -173,31 +184,49 @@ def run(commit, timeout):
         for number in range(1, 4):
             for case in cases:
                 case_id = case["case_id"]
-                #judge receives the case fields and the reference
-                write_json(input_path, {
-                    key: case[key] for key in ("question", "writer_draft", "reference")
-                })
+                # judge receives the case fields and the reference
+                write_json(
+                    input_path,
+                    {
+                        key: case[key]
+                        for key in ("question", "writer_draft", "reference")
+                    },
+                )
                 output_path.unlink(missing_ok=True)
                 print(f"Run {number}/3 | {case_id}", flush=True)
                 try:
                     subprocess.run(
-                        [sys.executable, str(Path(__file__).resolve()),
-                         "--worker", str(input_path), str(output_path)],
+                        [
+                            sys.executable,
+                            str(Path(__file__).resolve()),
+                            "--worker",
+                            str(input_path),
+                            str(output_path),
+                        ],
                         check=True,
                         timeout=timeout,
                     )
                     score = load_json(output_path)
                 except (subprocess.SubprocessError, OSError, ValueError) as exc:
                     report["error"] = {
-                        "run": number, "case_id": case_id,
-                        "type": type(exc).__name__, "message": str(exc),
+                        "run": number,
+                        "case_id": case_id,
+                        "type": type(exc).__name__,
+                        "message": str(exc),
                     }
                     write_json(path, report)
-                    raise SystemExit(f"Grading stopped. Partial report: {path}") from exc
-                report["results"].append({
-                    "run": number, "case_id": case_id, "trace_id": case["trace_id"],
-                    "human_score": scores[case_id], **score,
-                })
+                    raise SystemExit(
+                        f"Grading stopped. Partial report: {path}"
+                    ) from exc
+                report["results"].append(
+                    {
+                        "run": number,
+                        "case_id": case_id,
+                        "trace_id": case["trace_id"],
+                        "human_score": scores[case_id],
+                        **score,
+                    }
+                )
                 write_json(path, report)
 
     for source in (case_path, label_path):
