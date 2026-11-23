@@ -1,0 +1,56 @@
+{
+  "homework_number": 10,
+  "SID4": "1339",
+  "tag": "hw10",
+  "commit_hash": "9624a6cd5422af0716a7f98ba08b152766366f9c",
+  "SEED": 1339,
+  "VERIFY_SEED": 261339,
+  "created_at_utc": "2026-11-23T05:27:25.643195+00:00",
+  "configuration": {
+    "judge_model": "llama3.2",
+    "temperature": 0.0,
+    "prefix": "s1339",
+    "redis_image": "redis:8",
+    "kafka_image": "apache/kafka:4.1.2",
+    "seed_scope": "Python and child hash seed; adapter does not set an Ollama seed",
+    "app_python": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\code\\.venv\\Scripts\\python.exe",
+    "eval_python": "C:\\Users\\wei_1\\Desktop\\AngelaWei\\Angela-projects\\Data260\\Homework\\data260--SID4-\\code\\.venv-eval\\Scripts\\python.exe"
+  },
+  "checks": [
+    {
+      "name": "tagged_hw10_source",
+      "passed": true,
+      "detail": {
+        "commit": "9624a6cd5422af0716a7f98ba08b152766366f9c",
+        "required_sources": 16
+      }
+    },
+    {
+      "name": "application_dependencies",
+      "passed": true,
+      "detail": {
+        "fastapi": "0.161.1",
+        "kafka-python": "2.3.3",
+        "redis": "8.1.0",
+        "sentence-transformers": "6.2.0",
+        "streamlit": "1.67.0"
+      }
+    },
+    {
+      "name": "saved_judge_and_latency_statistics",
+      "passed": true,
+      "detail": {
+        "judge_cases": 20,
+        "judge_scores": 60,
+        "latency_requests": 50,
+        "latency_report": "reports\\hw10\\raw\\latency\\latency_50_1fca8ddacd.json"
+      }
+    },
+    {
+      "name": "hw10_smoke_execution",
+      "passed": false,
+      "detail": "RuntimeError: Client:\n Cloud integration: v1.0.29\n Version:           20.10.17\n API version:       1.41\n Go version:        go1.17.11\n Git commit:        100c701\n Built:             Mon Jun  6 23:09:02 2022\n OS/Arch:           windows/amd64\n Context:           default\n Experimental:      true\nerror during connect: This error may indicate that the docker daemon is not running.: Get \"http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/version\": open //./pipe/docker_engine: The system cannot find the file specified.\n"
+    }
+  ],
+  "passed": false
+}
